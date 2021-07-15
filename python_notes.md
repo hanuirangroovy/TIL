@@ -35,7 +35,7 @@ for i in range(len(lunch_box)):
 리스트 모두 반복하기
 
 ```python
-lunch = ['햄버거', '피자', '치킨']
+lunch = ['덮밥', '돈까스', '제육쌈밥']
 for lunch in lunch_box:
 	print(lunch)
 ```
