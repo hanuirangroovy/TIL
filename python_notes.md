@@ -39,3 +39,7 @@ lunch = ['햄버거', '피자', '치킨']
 for lunch in lunch_box:
 	print(lunch)
 ```
+
+
+
+아직 정리 덜 했어요ㅠㅠㅠㅠㅠ
