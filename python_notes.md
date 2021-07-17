@@ -136,7 +136,7 @@ print('안녕하세요!!!')
 
 ```python
 i=0
-while < 3:
+while i < 3:
   print('안녕하세요!!!')
   i += 1
 for i in range(3):
