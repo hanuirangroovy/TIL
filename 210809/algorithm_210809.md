@@ -22,6 +22,14 @@ A = list(map(int, input.split()))
 
 이렇게 형태가 되는 이유 = c+, c++에서 숫자를 하나씩 읽기에
 
+```
+def BubbleSort(a): #정렬할 List
+	for i in range(len(a)-1, 0, -1): #범위의 끝 위치
+		for j in range(0, i):
+			if a[j] > a[j+1]:
+				if a[j], a[j+1] = a[j+1]. a[j]
+```
+
 
 
 i
@@ -55,6 +63,25 @@ maxIdx (위치, 인덱스를 찾을 때)
 
 
 ## 카운팅 정렬
+
+```
+def Counting_Sort(A, B, k)
+# A [] : 입력배열 (1 to k) 
+# B [] : 정렬된배열
+# c [] : 카운트 배열
+
+C = [0] * (k+1)
+
+for i in range(0, len(B)) :
+	C[A[i]] += 1
+	
+for i in range(1, len(C)):
+	C[i] += C[i-1]
+	
+for i in range(len(B)-1, -1, -1):
+	B[C[A[i]]-1] = A[i]
+	C[A[i]] -= -1
+```
 
 
 
