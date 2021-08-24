@@ -41,11 +41,12 @@ def step2(t):
                 ST.append(n1*n2)
 
     return ST.pop()
-s = 입력
-t = []
+s = input()
 t = step1(s)
 result = step2(t)
-
+for tc in range(1, 11):
+    N = int(input())
+    print('#{} {}'.format(tc, result))
 
 
 
