@@ -11,7 +11,8 @@
 | 2021.08.09 - 2021.08.27 | 알고리즘 |                   List, Stack, Queue, Tree                   |
 | 2021.08.30 - 2021.09.17 |  Django  | Template, View, Routing, Model, Form/Model Form, STATIC, MEDIA files, Authentication System |
 |       2021.09.14        |    DB    |                             SQL                              |
-|                         |          |                                                              |
+| 2021.09.15 - 2021.09.17 |  Django  |                     사용자 인증 및 권한                      |
+|      2021.09.23 -       | 알고리즘 |           Tree, 복잡도 분석, 비트 연산, 진수, 실수           |
 
 - 기타 활동
 

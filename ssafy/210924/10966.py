@@ -12,7 +12,7 @@ dc = [0, 0, -1, 1]
 t = int(input())
 
 for tc in range(1, t+1):
-    N, M = map(int, input().split()) #M:세로크기, M:가로크기
+    N, M = map(int, input().split()) #  N:세로크기, M:가로크기
 
     arr = [input() for _ in range(N)]
     dist = [[987654321] * M for _ in range(N)] #방문체크 겸 거리 체크
