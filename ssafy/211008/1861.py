@@ -8,7 +8,7 @@ def dfs(x,y,v):
     for dx, dy in [(0,1),(0,-1),(1,0),(-1,0)]:
         newx = x +dx
         newy = y +dy
-        if 0 <= newx <= n and 0<=newy<=n and v+1 ==arr[newy][newx]:
+        if 0 <= newx < n and 0<=newy<n and v+1 ==arr[newy][newx]:
             t = dfs(newx,newy,v+1)
     result[y][x] = t+1
     return t+1
@@ -31,4 +31,4 @@ for tc in range(1, t + 1):
                 maxV = arr[i][j]
 
 
-    print("#{} {}".format(tc, maxV))
+    print("#{} {} {}".format(tc, maxV, maxC))
