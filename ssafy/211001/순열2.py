@@ -1,6 +1,6 @@
 def f(n, m, k):   # n:순열의 길이, k:결정할 위치
     if n==k:
-        print(p)
+        print(' '.join(map(str,p)))
     else:
         for i in range(m):   #주어진 숫자의 개숨나큼
             if u[i] == 0:
