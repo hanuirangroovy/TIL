@@ -17,6 +17,7 @@
 | 2021.10.25 - 2021.10.26 |   Django   |                           REST API                           |
 | 2021.10.27 - 2021.11.02 | Javascript |                          JavaScript                          |
 |      2021.11.03 -       |    Vue     |                           Vue CDN                            |
+|       2021.11.05        |    PJT     |                infinite scroll, social login                 |
 
 - 기타 활동
 
