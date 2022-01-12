@@ -375,13 +375,434 @@
 
 ### 6. 숙제 해설 : 블로그 수정버튼 만들기
 
+- Q. 버튼을 누르면 첫째 제목이 '여자코트 추천'
+
+  - Array, Object state 데이터 수정 방법
+
+    - 일단 변경함수 써야함
+    - 변경함수(대체할 데이터)
+    - state는 직접 건들면 안됨 -> deep copy 해서 건들어야함
+
+  - 하드코딩
+
+    ```
+    #App.js
+    /* eslint-disable */
+    import React, { useState } from 'react';
+    import logo from './logo.svg';
+    import './App.css';
+    
+    function App() {
+    
+      let [글제목, 글제목변경] = useState(['남자 코트 추천', '강남 우동 맛집']); 
+      let [따봉, 따봉변경] = useState(0);
+      let posts = '파이썬 독학'
+    
+      function 제목바꾸기(){
+        글제목변경( ['여자 코트 추천', '강남 우동 맛집'] );   /* <-state를 아예 대체해주는 함수, state 직접 수정 안됨 */
+      }
+    
+      return (
+        <div className="App">
+          <div className="black-nav">
+            <div>개발blog</div>
+          </div>
+          <button onClick={ 제목바꾸기 } >버튼</button>
+          <div className="list">
+            <h3> { 글제목[0] } <span onClick={ ()=>{ 1 + 1 } }>👍</span>0 </h3>
+            <h4>1. 누를 때마다 콘솔창에 1이 뜨게</h4>
+            <h3> { 글제목[1] } <span onClick={ ()=>{ console.log(1) } }>👍</span>0 </h3> 
+            <h4>2. 누를 때마다 1 증가시키기</h4>
+            <h3> { posts } <span onClick={ ()=>{ 따봉변경(따봉 + 1) } }>👍</span> {따봉} </h3> 
+            <p>1월 11일 발행</p>
+            <hr/>
+          </div>
+          <div className="list">
+            <h3> { 글제목[1] } </h3>
+            <p>1월 11일 발행</p>
+            <hr/>
+          </div>
+        </div>
+      );
+    }
+    
+    export default App;
+    
+    ```
+
+    ![1_6_1](react%20class/blog/public/1_6_1.PNG)
+
+    ![1_6_2](react%20class/blog/public/1_6_2.PNG)
+
+  - 하면안됨 : reference data type 특징, 이건 복사가 아니라 값 공유
+
+    - 리액트 대 원칙 : immutable data
+
+    ```
+    function 제목바꾸기(){
+        var newArray = 글제목;  
+        newArray[0] = '여자 코트 추천';    
+        글제목변경( newArray );
+      }
+    ```
+
+  - deep copy : 값공유X,서로 독립적인 값을 가지는 복사
+
+    ```
+    #App.js
+    /* eslint-disable */
+    import React, { useState } from 'react';
+    import logo from './logo.svg';
+    import './App.css';
+    
+    function App() {
+    
+      let [글제목, 글제목변경] = useState(['남자 코트 추천', '강남 우동 맛집']); 
+      let [따봉, 따봉변경] = useState(0);
+      let posts = '파이썬 독학'
+    
+      function 제목바꾸기(){
+        var newArray = [...글제목];   /* 수정된[데이터] 만듦, 원본 state 수정X(특히 state가 Array, Object 자료형이면), 글제목에 있던 0번째 데이터를 여자코트추천으로 바꿈 */
+        newArray[0] = '여자 코트 추천';    /* 고로 state의 복사본을 만들어서 수정, state를 deep copy해서 수정해야함  */
+        글제목변경( newArray );
+      }
+    
+      return (
+        <div className="App">
+          <div className="black-nav">
+            <div>개발blog</div>
+          </div>
+          <button onClick={ 제목바꾸기 } >버튼</button>
+          <div className="list">
+            <h3> { 글제목[0] } <span onClick={ ()=>{ 1 + 1 } }>👍</span>0 </h3>
+            <h4>1. 누를 때마다 콘솔창에 1이 뜨게</h4>
+            <h3> { 글제목[1] } <span onClick={ ()=>{ console.log(1) } }>👍</span>0 </h3> 
+            <h4>2. 누를 때마다 1 증가시키기</h4>
+            <h3> { posts } <span onClick={ ()=>{ 따봉변경(따봉 + 1) } }>👍</span> {따봉} </h3> 
+            <p>1월 11일 발행</p>
+            <hr/>
+          </div>
+          <div className="list">
+            <h3> { 글제목[1] } </h3>
+            <p>1월 11일 발행</p>
+            <hr/>
+          </div>
+        </div>
+      );
+    }
+    
+    export default App;
+    ```
+
+- Q.버튼을 누르면 제목들을 글자순 정렬?
+
+  - 일단 기존 state 카피본 만들고
+  - 카피본에 수정상항 반영하고
+  - 변경함수()에 집어넣기
+
 
 
 ### 7. React Component : 많은 div들을 한 단어로 줄이고 싶은 충동이 들 때
 
+- Modal UI 디자인하기
+
+  ![1_7_1](react%20class/blog/public/1_7_1.PNG)
+
+  - HTML 줄여서 쓸 수 잇는 방법 : 리액트의 Component 문법
+
+    - 전
+
+      ```
+      #App.js
+      /* eslint-disable */
+      import React, { useState } from 'react';
+      import logo from './logo.svg';
+      import './App.css';
+      
+      function App() {
+      
+        let [글제목, 글제목변경] = useState(['남자 코트 추천', '강남 우동 맛집']); 
+        let [따봉, 따봉변경] = useState(0);
+        let posts = '파이썬 독학'
+      
+        return (
+          <div className="App">
+            <div className="black-nav">
+              <div>개발blog</div>
+            </div>
+            
+            <div className="list">
+              <h3> { 글제목[0] } <span onClick={ ()=>{ 1 + 1 } }>👍</span>0 </h3>
+              <h4>1. 누를 때마다 콘솔창에 1이 뜨게</h4>
+              <h3> { 글제목[1] } <span onClick={ ()=>{ console.log(1) } }>👍</span>0 </h3> 
+              <h4>2. 누를 때마다 1 증가시키기</h4>
+              <h3> { posts } <span onClick={ ()=>{ 따봉변경(따봉 + 1) } }>👍</span> {따봉} </h3> 
+              <p>1월 11일 발행</p>
+              <hr/>
+            </div>
+            <div className="list">
+              <h3> { 글제목[1] } </h3>
+              <p>1월 11일 발행</p>
+              <hr/>
+            </div>
+            <div className='modal'>
+              <h2>제목</h2>
+              <p>날짜</p>
+              <p>상세내용</p>
+            </div>
+      
+            <Modal></Modal>
+          </div>
+        );
+        
+      }
+      
+      export default App;
+      ```
+
+    - 후
+
+      ```
+      #App.js
+      /* eslint-disable */
+      import React, { useState } from 'react';
+      import logo from './logo.svg';
+      import './App.css';
+      
+      function App() {            <- Component 임
+      
+        let [글제목, 글제목변경] = useState(['남자 코트 추천', '강남 우동 맛집']); 
+        let [따봉, 따봉변경] = useState(0);
+        let posts = '파이썬 독학'
+      
+        return (
+          <div className="App">
+            <div className="black-nav">
+              <div>개발blog</div>
+            </div>
+            
+            <div className="list">
+              <h3> { 글제목[0] } <span onClick={ ()=>{ 1 + 1 } }>👍</span>0 </h3>
+              <h4>1. 누를 때마다 콘솔창에 1이 뜨게</h4>
+              <h3> { 글제목[1] } <span onClick={ ()=>{ console.log(1) } }>👍</span>0 </h3> 
+              <h4>2. 누를 때마다 1 증가시키기</h4>
+              <h3> { posts } <span onClick={ ()=>{ 따봉변경(따봉 + 1) } }>👍</span> {따봉} </h3> 
+              <p>1월 11일 발행</p>
+              <hr/>
+            </div>
+            <div className="list">
+              <h3> { 글제목[1] } </h3>
+              <p>1월 11일 발행</p>
+              <hr/>
+            </div>
+      
+            <Modal />
+            
+          </div>
+        );
+        
+      }
+      
+      //Component 만드는 법
+      function Modal(){    // 이름 짓기
+        return (
+          <div className='modal'>   
+            <h2>제목</h2>
+            <p>날짜</p>
+            <p>상세내용</p>
+          </div>
+          )
+      }
+      
+      export default App;
+      ```
+
+      - Component 유의사항
+
+        - 참고
+          - Component 만들어두면 관리가 편리해짐
+          - 어떤 걸 Component로 만드는 게 좋을까
+            - 반복출현하는 HTML 덩어리들
+            - 자주 변경되는 HTML UI들
+            - 다른 페이지 만들 때도 컴포넌트로 만듦
+          - 마음에 드는 부분을 잘라서 Component로 만들어도 전혀 상관없음
+          - Component 많이 만들면 단점
+            - state 쓸 때 복잡해짐 -> 상위 component에서 만든 state를 쓰려면 props 문법 이용해야함
+
+        1. 이름은 대괄호
+        2. return() 안에 있는 건 태그하나로 묶어야함
+           - return() 내부를 묶을 때 의미없는 <div>를 쓰기 싫으면 <></>
+
 
 
 ### 8. 클릭하면 동작하는 UI(모달창) 만드는 법
+
+- '<h3>'를 클릭하면 <Modal />  등장하도록 하려면?
+
+  - JSX 중간에 변수넣고 싶으면 { 변수명 } 하듯
+
+  - if 대신 산항연산자
+
+    - if문
+
+      ```
+      if (조건식){
+      	실행할 코드
+      } else{
+      	실행할 코드
+      }
+      ```
+
+    - 삼항연산자
+
+      - JSX 안의 {} 내에서 쓰기 가능
+
+      ```
+      #   조건식, 참일 때 실행할 코드, 거짓일 때 실행할 코드
+      {
+      	1 < 3
+          ? console.log('맞아요') 
+          : console.log('틀려요')
+      }
+      ```
+
+      ![1_8_1](react%20class/blog/public/1_8_1.PNG)
+
+  - <Modal> 언제보여줄까?
+
+    - 리액트에선 UI를 만들 때 state 데이터 이용, state로 UI 보임/안보임 스위치를 넣음
+    - null : 텅빈 HTML
+    - state 변경하려면 state 변경함수 써야
+    - UI가 보임/안보임 정보를 state로 저장해둠 -> if문을 통해 state가 true일 때 UI를 보여줌
+
+- '<h3>'를 클릭하면 <Modal />  등장
+
+  - ```
+    #App.js
+    /* eslint-disable */
+    import React, { useState } from 'react';
+    import logo from './logo.svg';
+    import './App.css';
+    
+    function App() {
+    
+      let [글제목, 글제목변경] = useState(['남자 코트 추천', '강남 우동 맛집']); 
+      let [따봉, 따봉변경] = useState(0);
+      let [modal, modal변경] = useState(false); //모달창을 켜고 닫는 스위치, 사이트 첫 로드시 모달창은 안보임
+      let posts = '파이썬 독학'
+    
+      return (
+        <div className="App">
+          <div className="black-nav">
+            <div>개발blog</div>
+          </div>
+          
+          <div className="list">
+            <h3> { 글제목[0] } <span onClick={ ()=>{ 1 + 1 } }>👍</span>0 </h3>
+            <h4>1. 누를 때마다 콘솔창에 1이 뜨게</h4>
+            <h3> { 글제목[1] } <span onClick={ ()=>{ console.log(1) } }>👍</span>0 </h3> 
+            <h4>2. 누를 때마다 1 증가시키기</h4>
+            <h3> { posts } <span onClick={ ()=>{ 따봉변경(따봉 + 1) } }>👍</span> {따봉} </h3> 
+            <p>1월 11일 발행</p>
+            <hr/>
+          </div>
+          <div className="list">
+            <h3 onClick={ ()=>{ modal변경(true) } }> { 글제목[1] } </h3>
+            <p>1월 11일 발행</p>
+            <hr/>
+          </div>
+    
+          {
+      	  modal === true
+          ? <Modal></Modal>
+          : null
+          }
+          
+        </div>
+      );
+      
+    }
+    
+    //Component 만드는 법
+    function Modal(){    // 이름 짓기
+      return (
+        <div className='modal'>   
+          <h2>제목</h2>
+          <p>날짜</p>
+          <p>상세내용</p>
+        </div>
+        )
+    }
+    
+    export default App;
+    ```
+
+- 버튼 눌렀을 때 열리고 한 번 더 누르면 닫히는 모달창
+
+  ```
+  x #App.js
+  /* eslint-disable */
+  import React, { useState } from 'react';
+  import logo from './logo.svg';
+  import './App.css';
+  
+  function App() {
+  
+    let [글제목, 글제목변경] = useState(['남자 코트 추천', '강남 우동 맛집']); 
+    let [따봉, 따봉변경] = useState(0);
+    let [modal, modal변경] = useState(false); //모달창을 켜고 닫는 스위치, 사이트 첫 로드시 모달창은 안보임
+    let posts = '파이썬 독학'
+  
+    return (
+      <div className="App">
+        <div className="black-nav">
+          <div>개발blog</div>
+        </div>
+        
+        <div className="list">
+          <h3> { 글제목[0] } <span onClick={ ()=>{ 1 + 1 } }>👍</span>0 </h3>
+          <h4>1. 누를 때마다 콘솔창에 1이 뜨게</h4>
+          <h3> { 글제목[1] } <span onClick={ ()=>{ console.log(1) } }>👍</span>0 </h3> 
+          <h4>2. 누를 때마다 1 증가시키기</h4>
+          <h3> { posts } <span onClick={ ()=>{ 따봉변경(따봉 + 1) } }>👍</span> {따봉} </h3> 
+          <p>1월 11일 발행</p>
+          <hr/>
+        </div>
+        <div className="list">
+          <h3 onClick={ ()=>{ modal변경(true) } }> { 글제목[1] } </h3>
+          <p>1월 11일 발행</p>
+          <hr/>
+        </div>
+         
+        <button onClick={ ()=>{ modal변경(!modal) } }> 열고닫는 버튼 </button>
+        {
+          modal === true
+          ? <Modal />
+          : null
+        }
+  
+      </div>
+    );
+    
+  }
+  
+  //Component 만드는 법
+  function Modal(){    // 이름 짓기
+    return (
+      <div className='modal'>   
+        <h2>제목</h2>
+        <p>날짜</p>
+        <p>상세내용</p>
+      </div>
+      )
+  }
+  
+  
+  
+  export default App;
+  ```
+
+  ![1_8_2](react%20class/blog/public/1_8_2.PNG)
 
 
 
