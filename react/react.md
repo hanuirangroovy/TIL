@@ -2,8 +2,8 @@
 
 ## 목차
 
-1. Part 1 : 블로그 제작 & 기초 문법
-   1. React 강의 OT : 왜 리액트가 필요한가
+1. [Part 1 : 블로그 제작 & 기초 문법](#part-1--블로그-제작--기초-문법)
+   1. [React 강의 OT : 왜 리액트가 필요한가](#react-강의-ot--왜-리액트가-필요한가)
    2. 리액트 React 설치와 개발환경 셋팅(2021 ver)
    3. JSX를 이용해 HTML 페이지 제작해보는 건 처음이겠죠
    4. 중요한 데이터는 변수말고 리액트 state로 만들랬죠
@@ -808,9 +808,271 @@
 
 ### 9. map : 많은 div들을 반복문으로 줄이고 싶은 충동이 들 때
 
+- 리액트에선 HTML도 반복문으로 반복시킬 수 있음
+
+- 반복문 쓰는 법 : { map() }
+
+  - JSX 중괄호 내에 for 못넣음
+  - { 변수명, 함수명 }
+  - .map() : array 내의 모든 데이터에 똑같은 작업을 시켜주고 싶을 때, 유사반복문
+  - { 반복할데이터.map(()=>{ return<HTML> }) }
+
+  ```
+  #App.js
+  {
+          글제목.map(function(){
+            return <div>안녕</div>
+          })
+  
+        }
+  ```
+
+  ![1_9_1](react%20class/blog/public/1_9_1.PNG)
+
+  ```
+        {                   🔽 array 안에 있던 하나하나의 데이터
+          글제목.map(function(){
+            return <div className='list'>
+              <h3> { 글제목[1] } </h3>
+              <p>1월 13일 발행</p>
+              <hr/>
+              </div>
+          })
+  
+        }
+  ```
+
+  ![1_9_2](react%20class/blog/public/1_9_2.PNG)
+
+  - 반복될 떄마다 제목부분에 각각 다른 데이터가 들어가고 싶어요
+
+    - onClick 포함해서 반복해도 되나? 가능
+    - 따봉 누를 때 여러 개가 동시에 변경이 되는 이유?
+      - 따봉 state는 한 개의 숫자인데 그걸 전부 공유하고 있어서
+
+    ```
+    {
+        글제목.map(function(글){
+          return <div className='list'>
+            <h3> { 글 } <span onClick={ ()=>{ 따봉변경(따봉 + 1) } }>👍</span> {따봉}
+            </h3>
+            <p>1월 13일 발행</p>
+            <hr/>
+            </div>
+        })
+    
+    }
+    ```
+
+    ![1_9_3](react%20class/blog/public/1_9_3.PNG)
+
+  - for 반복문을 쓰고 싶다면?
+
+    - 보통 함수안에서 사용함
+    - array에 HTML 추가하는 방식
+    - 그리고 array를 return으로 뱉어냄
+    - for in / for of 동일
+
+    ```
+    #App.js
+    /* eslint-disable */
+    import React, { useState } from 'react';
+    import logo from './logo.svg';
+    import './App.css';
+    
+    function App() {
+    
+      let [글제목, 글제목변경] = useState(['남자 코트 추천', '강남 우동 맛집']); 
+      let [따봉, 따봉변경] = useState(0);
+      let [modal, modal변경] = useState(false); //모달창을 켜고 닫는 스위치, 사이트 첫 로드시 모달창은 안보임
+    
+      function 반복된UI(){
+    
+        var 어레이 = [];
+        for (var i = 0; i < 3; i++){
+          어레이.push(<div>안녕</div>);
+        }
+        return 어레이
+      }
+    
+      let posts = '파이썬 독학'
+    
+      return (
+        <div className="App">
+          <div className="black-nav">
+            <div>개발blog</div>
+          </div>
+          
+          <div className="list">
+            <h3> { 글제목[0] } <span onClick={ ()=>{ 1 + 1 } }>👍</span>0 </h3>
+            <h4>1. 누를 때마다 콘솔창에 1이 뜨게</h4>
+            <h3> { 글제목[1] } <span onClick={ ()=>{ console.log(1) } }>👍</span>0 </h3> 
+            <h4>2. 누를 때마다 1 증가시키기</h4>
+            <h3> { posts } <span onClick={ ()=>{ 따봉변경(따봉 + 1) } }>👍</span> {따봉} </h3> 
+            <p>1월 11일 발행</p>
+            <hr/>
+          </div>
+          <div className="list">
+            <h3 onClick={ ()=>{ modal변경(true) } }> { 글제목[1] } </h3>
+            <p>1월 11일 발행</p>
+            <hr/>
+          </div>
+    
+          { 반복된UI() }
+    
+    
+          {
+            글제목.map(function(글){
+              return <div className='list'>
+                <h3> { 글 } <span onClick={ ()=>{ 따봉변경(따봉 + 1) } }>👍</span> {따봉}
+                </h3>
+                <p>1월 13일 발행</p>
+                <hr/>
+                </div>
+            })
+    
+          }
+        
+          
+          <button onClick={ ()=>{ modal변경(!modal) } }> 열고닫는 버튼 </button>
+    
+          {
+            modal === true
+            ? <Modal />
+            : null
+          }
+    
+        </div>
+      );
+      
+    }
+    
+    //Component 만드는 법
+    function Modal(){    // 이름 짓기
+      return (
+        <div className='modal'>   
+          <h2>제목</h2>
+          <p>날짜</p>
+          <p>상세내용</p>
+        </div>
+        )
+    }
+    
+    
+    
+    export default App;
+    
+    ```
+
+    ![1_9_4](react%20class/blog/public/1_9_4.PNG)
+
 
 
 ### 10. props : 자식이 부모의 state를 가져다쓰고 싶을 땐 말하고 쓰셔야 합니다
+
+- <Modal> 안에 진짜 글제목을 넣어보자
+
+  - 그냥 { 글제목[0] } 쓰면 에러남
+  - App(){} 안에 있는 글제목 state를 Modal(){} 안에서 쓰고 싶으면
+    - App -> 부모 컴포넌트
+    - Modal -> 자식 컴포넌트
+    - App이 가진 State를 쓸 수 있게 전송가능
+    - props로 전송해줘야 자식컴포넌트는 부모 컴포넌트가 가진 state 사용가능
+  - props로 자식에게 state 전해주는 법
+    - <자식컴포넌트 작명={state명}/>
+    - 자식컴포넌트에서 props 파라미터 입력 후 사용
+
+  ```
+  #App.js
+  /* eslint-disable */
+  import React, { useState } from 'react';
+  import logo from './logo.svg';
+  import './App.css';
+  
+  function App() {
+  
+    let [글제목, 글제목변경] = useState(['남자 코트 추천', '강남 우동 맛집']); 
+    let [따봉, 따봉변경] = useState(0);
+    let [modal, modal변경] = useState(false); //모달창을 켜고 닫는 스위치, 사이트 첫 로드시 모달창은 안보임
+  
+    function 반복된UI(){
+  
+      var 어레이 = [];
+      for (var i = 0; i < 3; i++){
+        어레이.push(<div>안녕</div>);
+      }
+      return 어레이
+    }
+  
+    let posts = '파이썬 독학'
+  
+    return (
+      <div className="App">
+        <div className="black-nav">
+          <div>개발blog</div>
+        </div>
+        
+        <div className="list">
+          <h3> { 글제목[0] } <span onClick={ ()=>{ 1 + 1 } }>👍</span>0 </h3>
+          <h4>1. 누를 때마다 콘솔창에 1이 뜨게</h4>
+          <h3> { 글제목[1] } <span onClick={ ()=>{ console.log(1) } }>👍</span>0 </h3> 
+          <h4>2. 누를 때마다 1 증가시키기</h4>
+          <h3> { posts } <span onClick={ ()=>{ 따봉변경(따봉 + 1) } }>👍</span> {따봉} </h3> 
+          <p>1월 11일 발행</p>
+          <hr/>
+        </div>
+        <div className="list">
+          <h3 onClick={ ()=>{ modal변경(true) } }> { 글제목[1] } </h3>
+          <p>1월 11일 발행</p>
+          <hr/>
+        </div>
+  
+        { 반복된UI() }
+  
+  
+        {
+          글제목.map(function(글){
+            return <div className='list'>
+              <h3> { 글 } <span onClick={ ()=>{ 따봉변경(따봉 + 1) } }>👍</span> {따봉}
+              </h3>
+              <p>1월 13일 발행</p>
+              <hr/>
+              </div>
+          })
+  
+        }
+      
+        
+        <button onClick={ ()=>{ modal변경(!modal) } }> 열고닫는 버튼 </button>
+  
+        {
+          modal === true
+          ? <Modal 글제목={글제목} ></Modal>
+          : null
+        }
+  
+      </div>
+    );
+    
+  }
+  
+  //Component 만드는 법
+  function Modal(props){    // 부모에게 전달받은 props는 여기에 다 들어있음
+    return (
+      <div className='modal'>   
+        <h2> { props.글제목[1] } </h2>
+        <p>날짜</p>
+        <p>상세내용</p>
+      </div>
+      )
+  }
+  
+  
+  
+  export default App;
+  ```
+
+  ![1_10_1](react%20class/blog/public/1_10_1.PNG)
 
 
 

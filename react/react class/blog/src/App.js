@@ -8,6 +8,16 @@ function App() {
   let [글제목, 글제목변경] = useState(['남자 코트 추천', '강남 우동 맛집']); 
   let [따봉, 따봉변경] = useState(0);
   let [modal, modal변경] = useState(false); //모달창을 켜고 닫는 스위치, 사이트 첫 로드시 모달창은 안보임
+
+  function 반복된UI(){
+
+    var 어레이 = [];
+    for (var i = 0; i < 3; i++){
+      어레이.push(<div>안녕</div>);
+    }
+    return 어레이
+  }
+
   let posts = '파이썬 독학'
 
 
@@ -39,13 +49,27 @@ function App() {
         <hr/>
       </div>
 
+      { 반복된UI() }
+
+
+      {
+        글제목.map(function(글){
+          return <div className='list'>
+            <h3> { 글 } <span onClick={ ()=>{ 따봉변경(따봉 + 1) } }>👍</span> {따봉}
+            </h3>
+            <p>1월 13일 발행</p>
+            <hr/>
+            </div>
+        })
+
+      }
     
       
       <button onClick={ ()=>{ modal변경(!modal) } }> 열고닫는 버튼 </button>
 
       {
         modal === true
-        ? <Modal />
+        ? <Modal 글제목={글제목} ></Modal>
         : null
       }
 
@@ -55,10 +79,10 @@ function App() {
 }
 
 //Component 만드는 법
-function Modal(){    // 이름 짓기
+function Modal(props){    // 부모에게 전달받은 props는 여기에 다 들어있음
   return (
     <div className='modal'>   
-      <h2>제목</h2>
+      <h2> { props.글제목[1] } </h2>
       <p>날짜</p>
       <p>상세내용</p>
     </div>
