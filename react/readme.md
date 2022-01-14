@@ -110,7 +110,7 @@
 
    1. 태그에 class를 주고싶으면?
 
-      - < div className="클래스명" >
+      - ```<div className="클래스명">```
 
       ```
       #App.js
@@ -637,7 +637,7 @@
 
 ### 8. 클릭하면 동작하는 UI(모달창) 만드는 법
 
-- '<h3>'를 클릭하면 <Modal />  등장하도록 하려면?
+- ```<h3>```를 클릭하면 ```<Modal />```  등장하도록 하려면?
 
   - JSX 중간에 변수넣고 싶으면 { 변수명 } 하듯
 
@@ -668,14 +668,14 @@
 
       ![1_8_1](react%20class/blog/public/1_8_1.PNG)
 
-  - <Modal> 언제보여줄까?
+  - ```<Modal>``` 언제보여줄까?
 
     - 리액트에선 UI를 만들 때 state 데이터 이용, state로 UI 보임/안보임 스위치를 넣음
     - null : 텅빈 HTML
     - state 변경하려면 state 변경함수 써야
     - UI가 보임/안보임 정보를 state로 저장해둠 -> if문을 통해 state가 true일 때 UI를 보여줌
 
-- '<h3>'를 클릭하면 <Modal />  등장
+- ```<h3>```를 클릭하면 ```<Modal />```  등장
 
   - ```
     #App.js
@@ -970,7 +970,7 @@
 
 ### 10. props : 자식이 부모의 state를 가져다쓰고 싶을 땐 말하고 쓰셔야 합니다
 
-- <Modal> 안에 진짜 글제목을 넣어보자
+- ```<Modal>``` 안에 진짜 글제목을 넣어보자
 
   - 그냥 { 글제목[0] } 쓰면 에러남
   - App(){} 안에 있는 글제목 state를 Modal(){} 안에서 쓰고 싶으면
@@ -1077,6 +1077,104 @@
 
 
 ### 11. UI 제작 패턴 : props를 응용한 상세페이지 만들기
+
+- 모달창 만드는 법 (지난 강의)
+
+  - 모달창 보이는/안보이는 상태정보를 state에 저장
+  - state가 true면 모달창 보여주고
+  - state가 false면 모달창 숨기고
+
+- 각각 다른 모달창 제목 만드는 법
+
+  - 몇번째 제목 눌렀는지 상태정보를 state에 저장
+  - state에 따라서 UI가 수정되게 만들면 됨
+    - state가 0일 때는 0번째 제목 출력 -> 0번째 버튼을 누르면 props.글제목[0]
+    - state가 1일 때는 1번째 제목 출력 ....
+  - state 변경할 땐 변경함수 사용
+  - 버튼 누르면 누른제목 state가 변경 -> 그럼 ```<Modal>``` 안의 누른제목도 변경됨
+
+  ![1_11_3](react%20class/blog/public/1_11_3.PNG)
+
+- ```<h3>``` 글제목을 누를 때 각각 다른 모달 창이 뜨게
+
+  - i : 반복문 돌 때마다 0,1,2...가 되는 변수
+
+  ```
+  #App.js
+  /* eslint-disable */
+  import React, { useState } from 'react';
+  import logo from './logo.svg';
+  import './App.css';
+  
+  function App() {
+  
+    let [글제목, 글제목변경] = useState(['남자 코트 추천', '강남 우동 맛집', '광주디저트맛집']); 
+    let [따봉, 따봉변경] = useState(0);
+    let [modal, modal변경] = useState(false); //모달창을 켜고 닫는 스위치, 사이트 첫 로드시 모달창은 안보임
+    let [누른제목, 누른제목변경] = useState(0);
+  
+    function 반복된UI(){
+  
+      var 어레이 = [];
+      for (var i = 0; i < 3; i++){
+        어레이.push(<div>안녕</div>);
+      }
+      return 어레이
+    }
+  
+    let posts = '파이썬 독학'
+  
+    return (
+      <div className="App">
+        <div className="black-nav">
+          <div>개발blog</div>
+        </div>
+        
+        {
+          글제목.map(function(글, i){
+            return <div className='list'>
+              <h3 onClick={ ()=>{ 누른제목변경(i) } }> { 글 } <span onClick={ ()=>{ 따봉변경(따봉 + 1) } }>👍</span> {따봉}
+              </h3>
+              <p>1월 14일 발행</p>
+              <hr/>
+              </div>
+          })
+  
+        }
+        
+        {/*<button onClick={ ()=>{ 누른제목변경(0) } }>버튼1</button>
+        <button onClick={ ()=>{ 누른제목변경(1) } }>버튼2</button>
+      <button onClick={ ()=>{ 누른제목변경(2) } }>버튼3</button>*/}
+  
+  
+        <button onClick={ ()=>{ modal변경(!modal) } }> 열고닫는 버튼 </button>
+  
+        {
+          modal === true
+          ? <Modal 글제목={글제목} 누른제목={누른제목} ></Modal>
+          : null
+        }
+  
+      </div>
+    );
+    
+  }
+  
+  //Component 만드는 법
+  function Modal(props){    // 부모에게 전달받은 props는 여기에 다 들어있음
+    return (
+      <div className='modal'>   
+        <h2> { props.글제목[props.누른제목] } </h2>
+        <p>날짜</p>
+        <p>상세내용</p>
+      </div>
+      )
+  }
+  
+  export default App;
+  ```
+
+  ![1_11_4](react%20class/blog/public/1_11_4.PNG)
 
 
 
