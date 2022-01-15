@@ -1180,9 +1180,241 @@
 
 ### 12. input 다루기 1 : 사용자가 입력한 글을 변수에 저장하는 법
 
+- 리액트에서 사용자의 input을 받는 법
+
+  - 사용자가 input에 입력한 값을 입력값 state로 저장해보자
+
+  ```
+                    🔽 뭔가 입력될 때 안의 함수가 실행됨
+  <input onChange={ ()=>{} } />
+  ```
+
+  ```
+   <input onChange={ ()=>{ console.log('안녕') } } />  #콘솔창에 안녕 출력
+  ```
+
+  - 사용자가 입력한 값은? ```e.target.value```
+
+    - e.target => 현재 이벤트가 동작하는 곳
+    - value => input에 입력된 값을 가져오세요
+
+  - 콘솔창에 입력값 출력
+
+    ```
+    <input onChange={ (e)=>{ console.log( e.target.value ) } } />
+    ```
+
+  - state에 저장
+
+    ```
+    { 입력값 }
+    <input onChange={ (e)=>{ 입력값변경( e.target.value ) } } />
+    ```
+
+  - 콘솔창에 등장하는 warning : map 반복문으로 돌린 HTMP에는 key={}가 필요 
+
+  ```
+  #App.js
+  /* eslint-disable */
+  import React, { useState } from 'react';
+  import logo from './logo.svg';
+  import './App.css';
+  
+  function App() {
+  
+    let [글제목, 글제목변경] = useState(['남자 코트 추천', '강남 우동 맛집', '광주디저트맛집']); 
+    let [따봉, 따봉변경] = useState(0);
+    let [modal, modal변경] = useState(false); //모달창을 켜고 닫는 스위치, 사이트 첫 로드시 모달창은 안보임
+    let [누른제목, 누른제목변경] = useState(0);
+    let [입력값, 입력값변경] = useState('');
+  
+    function 반복된UI(){
+  
+      var 어레이 = [];
+      for (var i = 0; i < 3; i++){
+        어레이.push(<div>안녕</div>);
+      }
+      return 어레이
+    }
+  
+    let posts = '파이썬 독학'
+  
+    return (
+      <div className="App">
+        <div className="black-nav">
+          <div>개발blog</div>
+        </div>
+        
+        {
+          글제목.map(function(글, i){
+            return (
+            <div className='list' key={i}>
+              <h3 onClick={ ()=>{ 누른제목변경(i) } }> { 글 } <span onClick={ ()=>{ 따봉변경(따봉 + 1) } }>👍</span> {따봉}
+              </h3>
+              <p>1월 14일 발행</p>
+              <hr/>
+            </div>
+            )
+          })
+  
+        }
+        
+        
+        { 입력값 }
+        <input onChange={ (e)=>{ 입력값변경( e.target.value ) } } />
+  
+        <button onClick={ ()=>{ modal변경(!modal) } }> 열고닫는 버튼 </button>
+  
+        {
+          modal === true
+          ? <Modal 글제목={글제목} 누른제목={누른제목} ></Modal>
+          : null
+        }
+  
+      </div>
+    );
+    
+  }
+  
+  //Component 만드는 법
+  function Modal(props){    // 부모에게 전달받은 props는 여기에 다 들어있음
+    return (
+      <div className='modal'>   
+        <h2> { props.글제목[props.누른제목] } </h2>
+        <p>날짜</p>
+        <p>상세내용</p>
+      </div>
+      )
+  }
+  
+  
+  
+  export default App;
+  ```
+
+  
+
+  ![1_12_1](react%20class/blog/public/1_12_1.PNG)
+
 
 
 ### 13. input 다루기 2 : 블로그 글 발행 기능 만들기
+
+- 블로그 글 발행기능 제작
+
+  - ```
+                                       🔽새 글은 여기에 저장
+    let [글제목, 글제목변경] = useState(['남자 코트 추천', '강남 우동 맛집', '광주디저트맛집']); 
+    ```
+
+  - 글발행기능 만들기 : 글적고 저장버튼 누르면 글이 위에 하나 더 떠야함
+
+    - 사용자가 입력한 글 state로 저장하기
+    - 저장버튼 누르면 입력한 글 state를  글제목 state에 추가함
+
+    ```
+    이렇게 해도 되지만.....
+    <div className='publish'>
+          <input onChange={ (e)=>{ 입력값변경(e.target.value) } } />
+          <button onClick={ ()=>{
+            글제목변경( [입력값, '남자 코트 추천', '강남 우동 맛집', '광주디저트맛집'] )
+          } }>저장</button>
+        </div>
+    ```
+
+    - state 데이터는 = 등호로 직접 수정X, 사본을 만들어서 수정
+
+    ```
+    #App.js
+    /* eslint-disable */
+    import React, { useState } from 'react';
+    import logo from './logo.svg';
+    import './App.css';
+    
+    function App() {
+    
+      let [글제목, 글제목변경] = useState(['남자 코트 추천', '강남 우동 맛집', '광주디저트맛집']); 
+      let [따봉, 따봉변경] = useState(0);
+      let [modal, modal변경] = useState(false); //모달창을 켜고 닫는 스위치, 사이트 첫 로드시 모달창은 안보임
+      let [누른제목, 누른제목변경] = useState(0);
+      let [입력값, 입력값변경] = useState('');
+    
+      function 반복된UI(){
+    
+        var 어레이 = [];
+        for (var i = 0; i < 3; i++){
+          어레이.push(<div>안녕</div>);
+        }
+        return 어레이
+      }
+    
+      let posts = '파이썬 독학'
+    
+      return (
+        <div className="App">
+          <div className="black-nav">
+            <div>개발blog</div>
+          </div>
+          
+          {
+            글제목.map(function(글, i){
+              return (
+              <div className='list' key={i}>
+                <h3 onClick={ ()=>{ 누른제목변경(i) } }> { 글 } <span onClick={ ()=>{ 따봉변경(따봉 + 1) } }>👍</span> {따봉}
+                </h3>
+                <p>1월 14일 발행</p>
+                <hr/>
+              </div>
+              )
+            })
+    
+          }
+         
+    
+        <div className='publish'>
+          <input onChange={ (e)=>{ 입력값변경(e.target.value) } } />
+          <button onClick={ ()=>{
+            var arrayCopy = [...글제목];
+            arrayCopy.unshift(입력값);
+            글제목변경( arrayCopy );
+          } }>저장</button>
+        </div>
+    
+    
+          <button onClick={ ()=>{ modal변경(!modal) } }> 열고닫는 버튼 </button>
+    
+          {
+            modal === true
+            ? <Modal 글제목={글제목} 누른제목={누른제목} ></Modal>
+            : null
+          }
+    
+        </div>
+      );
+      
+    }
+    
+    //Component 만드는 법
+    function Modal(props){    // 부모에게 전달받은 props는 여기에 다 들어있음
+      return (
+        <div className='modal'>   
+          <h2> { props.글제목[props.누른제목] } </h2>
+          <p>날짜</p>
+          <p>상세내용</p>
+        </div>
+        )
+    }
+    
+    
+    
+    export default App;
+    ```
+
+    ![1_13_1](react%20class/blog/public/1_13_1.PNG)
+
+
+
+
 
 
 
