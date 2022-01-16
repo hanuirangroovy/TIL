@@ -1416,6 +1416,85 @@
 
 
 
-
-
 ### 14. class를 이용한 옛날 옛적 React 문법 
+
+- 예전 리액트 문법 : 실제 개발 시 예전 코드 수정할 일도 있기에...
+
+  - component 만드는 기본 문법
+
+  ```
+  
+  <Profile />
+  
+  
+  class Profile extends React.Component {
+  	constructor(){
+  		super();
+  		this.state = { name : 'Kim', age : 30 }
+  	}
+  	
+  	render(){
+  		return(
+  			<div>
+  				<h3>프로필입니다</h3>
+  				<p>저는 { this.state.name }입니다.</p>
+  			</div>
+  		)
+  	}
+  }
+  ```
+
+  - class : 변수 / 함수 보관하는 덩어리
+  - extends : 오른쪽에 있는 것의 성질을 물려받겠습니다
+  - state는 constructor 안에 작성. 
+  - state 꺼내쓰려면 this.state.state명
+  - constructor : class의 변수/초기값 저장할 때 씀
+
+- 버튼을 누르면 state를 변경해보자
+
+  ```
+  class Profile extends React.Component {
+  	constructor(){
+  		super();
+  		this.state = { name : 'Kim', age : 30 }
+  	}
+  		
+  	render(){
+  		return(
+  			<div>
+  				<h3>프로필입니다</h3>
+  				<p>저는 { this.state.name }입니다.</p>
+  				<button onClick={ ()=>{ this.setState( {name:'Park'} ) } }>버튼</button>
+  			</div>
+  		)
+  	}
+  }
+  ```
+
+  - setState(변경할state)
+  - 함수 만들기
+
+  ```
+  class Profile extends React.Component {
+  	constructor(){
+  		super();
+  		this.state = { name : 'Kim', age : 30 }
+  	}
+  	
+  	changeName() => {
+  		this.setState( {name:'Park'} )
+  	}
+  	
+  	render(){
+  		return(
+  			<div>
+  				<h3>프로필입니다</h3>
+  				<p>저는 { this.state.name }입니다.</p>
+  				<button onClick={ this.changeName }>버튼</button>
+  			</div>
+  		)
+  	}
+  }
+  ```
+
+  
