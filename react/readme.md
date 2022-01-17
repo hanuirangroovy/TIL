@@ -17,6 +17,7 @@
    12. [input 다루기 1 : 사용자가 입력한 글을 변수에 저장하는 법](#12-input-다루기-1--사용자가-입력한-글을-변수에-저장하는-법)
    13. [input 다루기 2 : 블로그 글 발행 기능 만들기](#13-input-다루기-2--블로그-글-발행-기능-만들기)
    14. [class를 이용한 옛날 옛적 React 문법](#14-class를-이용한-옛날-옛적-react-문법)
+2. [Part 2 : 쇼핑몰 프로젝트](#part-2--쇼핑몰-프로젝트)
 
 ## Part 1 : 블로그 제작 & 기초 문법 
 
@@ -1498,3 +1499,276 @@
   ```
 
   
+
+## Part 2 : 쇼핑몰 프로젝트
+
+### 1. 쇼핑몰 프로젝트 : 프로젝트 생성 & Bootstrap 설치
+
+- 프로젝트 새로 만들기
+
+  - 작업폴더 에디터로 오픈
+  - 터미널에 npx create-react-app shop
+  - yarn 이용하기
+  - shop 이라는 프로젝트 에디터로 오픈
+  - npm run start 혹은 yarn start(yarn 설치 후 프로젝트를 만들었다면)
+
+- HTML/CSS 디자인 쌩코딩이 싫다면 Bootstrap 이용
+
+  - https://getbootstrap.com/docs/5.1/getting-started/introduction/
+  - https://react-bootstrap.github.io/
+
+  ```
+  npm install react-bootstrap bootstrap
+  yarn add react-bootstrap bootstrap
+  ```
+
+  - react bootstrap 사이트의 CSS link 태그해서 index.html에 복붙
+
+
+
+### 2. 평화로운 쇼핑몰 레이아웃 디자인 시간
+
+- src 안에 있는 파일은 경로를 무조건 ./부터 -> src에 넣은 파일은 파일명 변경 + 압축됨
+- public에도 저장가능 -> public에 넣은 파일은 보존됨
+- 상품 레이아웃 만들기
+  - 가로로 3분할
+    - ```<div className='col-md-4'>상품</div>```
+
+```
+#App.js
+import React from 'react';
+import { Navbar,Container,Nav,NavDropdown } from 'react-bootstrap';
+import './App.css';
+
+function App() {
+  return (
+    <div className="App">
+
+
+<Navbar bg="light" expand="lg">
+  <Container>
+    <Navbar.Brand href="#home">쇼핑몰</Navbar.Brand>
+    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+    <Navbar.Collapse id="basic-navbar-nav">
+      <Nav className="me-auto">
+        <Nav.Link href="#home">Home</Nav.Link>
+        <Nav.Link href="#link">Link</Nav.Link>
+        <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+          <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+          <NavDropdown.Divider />
+          <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+        </NavDropdown>
+      </Nav>
+    </Navbar.Collapse>
+  </Container>
+</Navbar>
+
+<div class="container2">
+      <div class="jumbotron">
+        <h1 class="text-center">20% SALE</h1>
+        <p class="text-center">해당 품목 20% 세일 중입니다.</p>
+        <p class="text-center"><a class="btn btn-primary btn-lg" href="#" role="button">구매</a></p>
+      </div>
+    </div>
+
+<div className="container">
+  <div className="row">
+    <div className="col-md-4">
+      <img src="https://codingapple1.github.io/shop/shoes1.jpg" width="100%"/>
+      <h4>상품명</h4>
+      <p>상품설명 & 가격</p>
+    </div>
+      
+    <div className="col-md-4">
+    <img src="https://codingapple1.github.io/shop/shoes2.jpg" width="100%"/>
+      <h4>상품명</h4>
+      <p>상품설명 & 가격</p>
+    </div>
+    <div className="col-md-4">
+    <img src="https://codingapple1.github.io/shop/shoes3.jpg" width="100%"/>
+      <h4>상품명</h4>
+      <p>상품설명 & 가격</p>
+    </div>
+  </div>
+</div>
+
+    </div>
+  );
+}
+
+export default App;
+
+```
+
+```
+#App.css
+
+.container2 {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+.jumbotron {
+  padding: 30px 15px;
+  margin-bottom: 30px;
+  color: inherit;
+  background-image: url('./disney.PNG');
+  background-size: cover;
+  color: white;
+}
+```
+
+![2_2_1](md-images/2_2_1.PNG)
+
+![2_2_2](md-images/2_2_2.PNG)
+
+
+
+### 3. 코드가 길어진다면 import/export 사용해보기
+
+- 파일 쪼갤 때 활용하는 import / export
+
+  - 내보내기 : export default 변수명
+
+    - export {변수1,변수2}
+
+    ```
+    #data.js
+    var name = 'Kim';
+    var name = 'Park';
+    
+    export { name, name2 }
+    ```
+
+    ```
+    #App.js
+    import { name, name2 } from './data.js';
+    ```
+
+    
+
+  - 가져오기 : import 변수명 from 경로
+
+- data.js -> App.js 보내기
+
+  - src 폴더 내에서 data.js 생성
+  - export default 적고 array 생성
+  - data.js에서 원하는 데이터를 export
+  - App.js에서는 data.js를 import
+
+- data.js에 보관한 뒤 App.js로 보내려면?
+
+  ```
+  #data.js
+  export default [
+  
+  {
+      id : 0,
+      title : "White and Black",
+      content : "Born in France",
+      price : 120000
+  },
+  
+  {
+      id : 1,
+      title : "Red knit",
+      content : "Born in Seoul",
+      price : 110000
+  },
+  
+  {
+      id : 2,
+      title : "Grey Yordan",
+      content : "Born in the States",
+      price : 130000
+  }
+  ]
+  ```
+
+  - import해온 데이터로 상품명 데이터바인딩
+
+  ```
+  #App.js
+  import React, { useState } from 'react';
+  import { Navbar,Container,Nav,NavDropdown } from 'react-bootstrap';
+  import './App.css';
+  import Data from './data.js';
+  
+  function App() {
+  
+    let [shoes, shoes변경] = useState(Data);
+  
+    return (
+      <div className="App">
+  
+  
+  <Navbar bg="light" expand="lg">
+    <Container>
+      <Navbar.Brand href="#home">쇼핑몰</Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="me-auto">
+          <Nav.Link href="#home">Home</Nav.Link>
+          <Nav.Link href="#link">Link</Nav.Link>
+          <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+            <NavDropdown.Divider />
+            <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+          </NavDropdown>
+        </Nav>
+      </Navbar.Collapse>
+    </Container>
+  </Navbar>
+  
+  <div class="container2">
+        <div class="jumbotron">
+          <h1 class="text-center">20% SALE</h1>
+          <p class="text-center">해당 품목 20% 세일 중입니다.</p>
+          <p class="text-center"><a class="btn btn-primary btn-lg" href="#" role="button">구매</a></p>
+        </div>
+      </div>
+  
+  <div className="container">
+    <div className="row">
+      <div className="col-md-4">
+        <img src="https://codingapple1.github.io/shop/shoes1.jpg" width="100%"/>
+        <h4>{ shoes[0].title }</h4>
+        <p>{ shoes[0].content } & { shoes[0].price }</p>
+      </div>
+        
+      <div className="col-md-4">
+        <img src="https://codingapple1.github.io/shop/shoes2.jpg" width="100%"/>
+        <h4>{ shoes[1].title }</h4>
+        <p>{ shoes[1].content } & { shoes[1].price }</p>
+      </div>
+      <div className="col-md-4">
+        <img src="https://codingapple1.github.io/shop/shoes3.jpg" width="100%"/>
+        <h4>{ shoes[2].title }</h4>
+        <p>{ shoes[2].content } & { shoes[2].price }</p>
+      </div>
+    </div>
+  </div>
+  
+      </div>
+    );
+  }
+  
+  export default App;
+  ```
+
+  ![2_3_1](md-images/2_3_1.PNG)
+
+
+
+### 4. 상품목록 Component화 + 반복문
+
+- component로 만들어 첨부하기
+- component에 데이터바인딩 완료하기
+- component를 반복문 돌리기
