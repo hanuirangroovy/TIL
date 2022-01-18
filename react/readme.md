@@ -1772,3 +1772,105 @@ export default App;
 - component로 만들어 첨부하기
 - component에 데이터바인딩 완료하기
 - component를 반복문 돌리기
+
+
+
+### 5. React Router 1 : 셋팅과 기본 라우팅
+
+- ```yarn add react-router-dom@5``` or ```npm install react-router-dom@5``` 설치
+
+- react-router-dom 초기세팅법
+
+  ```
+  #index.js
+  
+  import { BrowserRouter } from 'react-router-dom';
+  
+  ReactDOM.render(
+  	<React.StrictMode>
+  		<BrowserRouter>
+  			<App />          #/abc abc페이지 보여주세요
+  		</BrowserRouter>
+  	</React.StrictMode>,
+  	document.getElementById('root')
+  );
+  ```
+
+- BrowserRouter vs HashRouter
+
+  - HashRouter -> #기호로 동작, 라우팅 안전하게 할 수 있게 도와줌
+
+    - 사이트 주소 뒤에 #이 붙는데 #뒤에 적는 것은 서버로 전달X
+    - 그래서 라우팅은 리액트가 알아서 잘 해줄 수 있음
+
+  - BrowserRouter  : 라우팅을 리액트가 아니라 서버에게 요청할 수도 있어서 위험
+
+    - 서버 : "어 그런페이지 없는데요?" 할 수 있음
+    - 서버에서 서버 라우팅 방지하는 API를 자겅해둬야함
+
+  - Route를 만들어보자(페이지를 나누자)
+
+    - 메인페이지
+
+    - 상품상세페이지
+
+      - 일단 import 해옵니다
+
+      ```
+      #App.js
+      
+      import { Link, Route, Switch } from 'react-router-dom';
+      ```
+
+      - ```<Route>```
+        - /로 접속하면 메인페이지
+        - /detail로 접속하면 상세페이지
+
+      ```
+      <Route path="/">
+      	<div>메인페이지예요</div>   #메인페이지에 해당하는 HTML 더 추가
+      </Route>
+      <Route path="/detail">
+      	<div>디테일페이지예요</div>   #상세페이지에 해당하는 HTML 더 추가
+      </Route>
+      {/*<Route path="/어쩌구"> component={Modal} ></Route>*/}
+      ```
+
+      - /detail 경로로 접속해도 /경로내용이 보이는 이유?
+        - exact 라는 속성을 추가하면 경로가 저왁히 일치할 때만 보여줌
+
+      ```
+      <Route exact path="/">
+      	<div>메인페이지예요</div>   #메인페이지에 해당하는 HTML 더 추가
+      </Route>
+      <Route path="/detail">
+      	<div>디테일페이지예요</div>   #상세페이지에 해당하는 HTML 더 추가
+      </Route>
+      {/*<Route path="/어쩌구"> component={Modal} ></Route>*/}
+      ```
+
+      - 페이지별로 HTML 내용 완성하기 -> 길면 component화 해도됨
+
+      ```
+      <Route exact path="/">
+      	<div>메인페이지예요</div>   <- <Jumbotron>이랑 상품리스트 여기에 넣기
+      </Route>
+      <Route path="/detail">
+      	<div>디테일페이지예요</div>   #상세페이지에 해당하는 HTML 더 추가
+      </Route>
+      {/*<Route path="/어쩌구"> component={Modal} ></Route>*/}
+      ```
+
+      - Route 만들어놓으면 뒤로 가기/앞으로 가기 작동
+
+- React Router 특징
+
+  - 페이지마다 다른 html이 아닙니다 (index.html 하나만 있음)
+  - HTML 내부의 내용을 갈아치워서 다른페이지처럼 보여주는 것
+
+
+
+### 6. React Router 2 : Link, Switch, history 기능
+
+
+
