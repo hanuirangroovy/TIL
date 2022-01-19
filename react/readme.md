@@ -1872,5 +1872,52 @@ export default App;
 
 ### 6. React Router 2 : Link, Switch, history 기능
 
+- 상세페이지를 컴포넌트화
 
+  - function 컴포넌트명(){}
+
+  - 다른 파일로 빼보자(import/export)
+
+    ```
+    #Detail.js (src 폴더 내에 만들었음)
+    import React, {usestate} from 'react';
+    
+    function Detail(){
+    	return(
+    	<div className="container">
+        	<div className="row">
+        		<div className="col-md-6">
+        			<img src="https://codingapple1.github.o/shop/shoes1.jpg"
+        			width="100%">
+        		</div>
+        		<div className="col-md-6 mt-4">
+        			<h4 className="btn btn-danger">주문하기</button>
+        		</div>
+        	</div>
+        </div>
+    	)	
+    }
+    
+    export default Detail;
+    ```
+
+  - Detail.js에 있던 컴포넌트를 import해와서 쓰는 중
+
+    ```
+    #App.js
+    import Detail from './Detail.js';
+    
+    <Route path="/detail">
+    	<Detail/>
+    </Route>
+    ```
+
+  - src 내에 컴포넌트 파일만 모아놓은 폴더를 만들기도 함
+
+- 페이지 이동하는 버튼만들기
+  - Navbar 안의 버튼에 href 지우고 ```<Link to="경로">``` 버튼```</Link>```
+  - ```<Nav.Link><Link to="/">Home</Link></Nav.Link>```
+  - ```<Nav.Link><Link to="/detail">Detail</Link></Nav.Link>```
+- 페이지 이동시키는 다른 방법
+  - 페이지 이동 함수 사용
 
