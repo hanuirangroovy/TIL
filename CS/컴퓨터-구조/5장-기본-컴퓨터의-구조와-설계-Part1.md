@@ -49,6 +49,18 @@
 - 내장 프로그램
   - 제어 신호에 의하여 명령어의 이진 코드를 해석하여 실행
   - 명령어를 저장하여 실행하는 컴퓨터 구동 방식
+- 저장(내장) 프로그램 구조
+  - 명령어의 집합으로 구성
+  - 각 명령어는 명령어 포맷(Instruction format)에 따라서 정의
+  - 프로그램 실행부분에 따라서 메모리의 다른 부분(segment)에 저장
+  - 명령어 실행 결과는 AC에 저장
+  - ![Instructionformat](md-images/Instructionformat.PNG)
+  - ![Instructionformat](md-images/Instructionformat2.PNG)
+
+- 간접주소(Indirect Address) 시스템
+  - 많은 경우, 직접주소를 사용하여 데이터 지정
+  - 필요한 경우, 간접주소로 데이터 지정
+  - ![Demonstrationofdirect_indirect_address](md-images/Demonstrationofdirect_indirect_address.PNG)
 
 
 
