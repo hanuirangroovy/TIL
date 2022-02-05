@@ -66,6 +66,38 @@
 
 ## 2. 컴퓨터 레지스터
 
+- 기본 컴퓨터의 레지스터
+  - 기본 컴퓨터란?
+    - DEC PDP-11 Mini Computer
+    - 가상의 컴퓨터가 아닌 실제 제품
+    - 1980년대 주력 메인프레임급
+    - 최신의 CPU도 기본적으로 동일한 구조
+  - 기본 컴퓨터 레지스터 종류
+    - ![register_basiccomputer](md-images/register_basiccomputer.PNG)
+
+- ![basiccomputerregister_memory](md-images/basiccomputerregister_memory.PNG)
+
+- 버스 시스템의 종류
+  - 내부 버스
+    - CPU(컴퓨터)내부 레지스터간 연결
+  - 외부 버스
+    - CPU 내부 레지스터 - 메모리간 연결
+  - 입출력 버스
+    - CPU ↔ 주변장치(I/O) 연결
+- 공통 버스 시스템
+  - 내부 버스를 통칭
+  - 내부 버스의 크기(Width)로 CPU 워드 크기 결정
+    - 16bit 컴퓨터 - 내부 버스/레지스터 크기가 16bit
+    - 32bit 컴퓨터 - 내부 버스/레지스터 크기가 32bit
+  - 전송 연결 통로
+    - 레지스터-레지스터 데이터 전송 통로
+    - 레지스터-메모리 데이터 전송 통로(예외적 표현)
+    - 한 순간에는 하나의 전송 신호만이 버스에 존재 가능
+      - 2개 이상의 신호 발생시에는 버스 충돌(Collison) 발생
+      - 버스 제어기(정확한 타이밍과 MUX 제어 수행)
+
+
+
 
 
 
