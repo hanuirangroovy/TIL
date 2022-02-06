@@ -84,6 +84,7 @@
     - CPU 내부 레지스터 - 메모리간 연결
   - 입출력 버스
     - CPU ↔ 주변장치(I/O) 연결
+  
 - 공통 버스 시스템
   - 내부 버스를 통칭
   - 내부 버스의 크기(Width)로 CPU 워드 크기 결정
@@ -95,6 +96,30 @@
     - 한 순간에는 하나의 전송 신호만이 버스에 존재 가능
       - 2개 이상의 신호 발생시에는 버스 충돌(Collison) 발생
       - 버스 제어기(정확한 타이밍과 MUX 제어 수행)
+  
+- 공통 버스 시스템
+
+  - 레지스터 출력은 버스의 MUX 입력에 연결
+  - 각 레지스터에 MUX 입력번호 설정됨
+  - 레지스터 입력은 버스에 직접 연결(LD로 제어)
+  - S₂, S₁, S₀에 의하여 레지스터 출력 결정
+  - ![basiccomputerresister_connectedto_commmbus](md-images/basiccomputerresister_connectedto_commmbus.PNG)
+    - MUX Inputs
+      - 1 : AR
+      - 2 : PC
+      - 3 : DR
+      - 4 : AC
+      - 5 : DR
+      - 6 : TR
+      - 7 : Memory
+
+- 버스의 동작
+
+  - DR <- AC, AC <- DR
+  - M[AR] <- DR
+  - AR <- PC
+
+  
 
 
 
