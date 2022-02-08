@@ -119,22 +119,23 @@
   - M[AR] <- DR
   - AR <- PC
 
-  
-
-
-
-
-
 
 
 ## 3. 컴퓨터 명령어
-
-
-
+- 기본 컴퓨터 명령어의 종류
+  - MRI 명령 7가지
+  - RRI 명령 12가지
+  - IO 명령 6가지
+  - ![basic_computer_instructions](md-images/basic_computer_instructions.png)
+- 명령어 포맷
+  - ![명령어포맷](md-images/명령어포맷.PNG)
 
 
 ## 4. 타이밍과 제어
-
+- 명령어 실행 타이밍 예
+  - D₃T₄:SC <- 0
+  - ![controltimingsignals](md-images/controltimingsignals.PNG)
+  - ![controlunitofBasiccomputer](md-images/controlunitofBasiccomputer.PNG)
 
 
 
