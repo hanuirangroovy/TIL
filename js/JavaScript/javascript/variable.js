@@ -3,7 +3,7 @@
 // use this for Vanila Javascript.
 'use strict';
 
-// 2. Variable
+// 2. Variable, rw(read/write)
 let globalName = 'global name';
 {
 let name = 'ellie';
@@ -34,7 +34,7 @@ console.log(globalName);
 }
 console.log(age);
 
-// 3. Constant
+// 3. Constant, r(read only)
 const daysInWeek = 7;
 const maxNumber = 5;
 
@@ -105,3 +105,7 @@ console.log(`value:${text}, type: ${typeof text}`);
 text = '8' / '2';
 console.log(`value:${text}, type: ${typeof text}`);
 console.log(text.charAt(0));
+
+//object, real-life object, data structure
+const ellie = {name:'ellie', age:20};
+ellie.age = 21;
