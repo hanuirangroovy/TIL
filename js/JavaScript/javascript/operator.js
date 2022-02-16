@@ -23,3 +23,53 @@ console.log(`preIncrement: ${preIncrement}, counter: ${counter}`);
 const postIncrement= counter++;
 // postIncrement = counter;
 // counter = counter + 1;
+console.log(`postIncrement: ${postIncrement}, counter: ${counter}`);
+const preDecrement = --counter;
+console.log(`preDecrement: ${preDecrement}, counter: ${counter}`);
+const postDecrement = counter--;
+console.log(`postDecrement: ${postDecrement}, counter: ${counter}`);
+
+
+// 4. Assignment operators
+let x = 3;
+let y = 6;
+x += y; // x = x + y;
+x -= y;
+x *= y;
+x /= y;
+
+// 5. Comparison operators
+console.log(10 < 6);  // less than
+console.log(10 <= 6);  // less than or equal
+console.log(10 > 6);  // greater than
+console.log(10 >= 6);  //greater than or equal
+
+
+// 6. Logical operators: || (or), && (and), !(not) (논리 연산자)
+const value1 = false;
+const value2 = 4 < 2;
+
+// || (or)
+console.log(`or: ${value1 || value2 || check()} `);
+
+// && (and), finds the first falsy value
+console.log(`and: ${value1 && value2 && check()}`);
+
+
+// often used to comparess long if-statement
+// nullableObject && nullableObject.something
+if (nullableObject != null) {
+    nullableObject.something;
+}
+function check() {
+    for (let i = 0; i < 10; i++) {
+        //wasting time
+        console.log('🙃');
+    }
+    return true;
+}
+
+// !(not) 
+console.log(!value1)
+
+
