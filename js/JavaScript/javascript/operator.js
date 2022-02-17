@@ -58,9 +58,9 @@ console.log(`and: ${value1 && value2 && check()}`);
 
 // often used to comparess long if-statement
 // nullableObject && nullableObject.something
-if (nullableObject != null) {
-    nullableObject.something;
-}
+// if (nullableObject != null) {
+//     nullableObject.something;
+// }
 function check() {
     for (let i = 0; i < 10; i++) {
         //wasting time
@@ -71,5 +71,27 @@ function check() {
 
 // !(not) 
 console.log(!value1)
+
+// 7. Equality
+const stringFive = '5';
+const numberFive = 5;
+
+// == loose equality, with type conversion
+console.log(stringFive == numberFive);
+console.log(stringFive != numberFive);
+
+// === strict equality, no type conversion
+console.log(stringFive === numberFive);
+console.log(stringFive !== numberFive);
+
+//object equality by reference
+const ellie1 = { namme: 'ellie2' };
+const ellie2 = { namme: 'ellie2' };
+const ellie3 = ellie1;
+console.log(ellie1 == ellie2);
+console.log(ellie1 === ellie2);
+console.log(ellie1 === ellie3);
+
+
 
 
