@@ -93,5 +93,45 @@ console.log(ellie1 === ellie2);
 console.log(ellie1 === ellie3);
 
 
+//equality - puzzler
+console.log(0 == false);
+console.log(0 === false);
+console.log('' == false);
+console.log('' === false);
+console.log(null == undefined);
+console.log(null === undefined);
 
+// 8. Coditional operators:if
+// if, else if, else
+const name = 'df'
+if (name === 'ellie') {
+    console.log('Welcome, Ellie!');
+ } else if (name === 'coder') {
+     console.log('You are amazing coder');
+ } else {
+     console.log('unknown')
+ }
 
+// 9. Ternary operator:?
+//  condition ? value1 : value2;
+console.log(name === 'ellie' ? 'yes' : 'no');
+
+// 10. Switch statement
+// use for multiple if checks
+// use for enum-like value check
+// use for multiple type checks in TS
+const browser = 'IE';
+switch (browser) {
+    case 'IE':
+        console.log('go away!');
+        break;
+    case 'Chrome':
+        console.log('love you!');
+        break;
+    case 'Firefox':
+        console.log('love you!');
+        break;
+    default:
+        console.log('same all!');
+        break;
+}
