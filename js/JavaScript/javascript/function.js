@@ -127,6 +127,7 @@ const printYes = function () {
 
 const printNo = function print() {
     console.log('no!');
+    // print();   error
 };
 randomQuiz('wrong', printYes, printNo);
 randomQuiz('love you', printYes, printNo);
@@ -134,16 +135,16 @@ randomQuiz('love you', printYes, printNo);
 
 // Arrow function
 // always anonymous
-const simplePrint = function () {
-    console.log('simplePrint!');
-};
-
-// const simplePrint = () => console.log('simplePrint!');
-// const add = (a,b) => a + b;
-// const simpleMultiply = (a,b) => {
-//     // do somethig more
-//     return a * b;
+// const simplePrint = function () {
+//     console.log('simplePrint!');
 // };
+
+const simplePrint = () => console.log('simplePrint!');
+const add = (a,b) => a + b;
+const simpleMultiply = (a,b) => {
+    // do somethig more
+    return a * b;
+};
 
 // IIFE: Immediately Invoked Function Expression
 (function hello() {
