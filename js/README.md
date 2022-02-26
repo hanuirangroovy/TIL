@@ -12,12 +12,12 @@
 
 | No.  | 주제                                                         | 비고 |
 | ---- | ------------------------------------------------------------ | ---- |
-| 1    | [자바스크립트의 역사와 현재 그리고 미래 (JavaScript, ECMAScript, JQuery, Babel, Node.js)](JavaScript/1.자바스크립트의 역사와 현재 그리고 미래.md) |      |
-| 2    | [콘솔에 출력, script async와 defer의 차이점 및 앞으로 자바스크립트 공부 방향 (JavaScript ES5+)](javascript/2.콘솔에 출력, script async와 defer의 차이점 및 앞으로 자바스크립트 공부 방향.md) |      |
-| 3    | [데이터타입, data types, let vs var, hoisting (JavaScript ES5+)](javascript/3.데이터타입, data types, let vs var, hoisting.md) |      |
-| 4    | [코딩의 기본 operator, if, for loop 코드리뷰 팁(JavaScript ES6)](javascript/4.코딩의 기본 operator, if, for loop 코드리뷰 팁.md) |      |
-| 5    | [Arrow Function은 무엇인가? 함수의 선언과 표현 (JavaScript ES6)](javascript/5.Arrow Function은 무엇인가 함수의 선언과 표현.md) |      |
-| 6    | [클래스와 오브젝트의 차이점(class vs object), 객체지향 언어 클래스 정리(JavaScript ES6)](javascript/6.클래스와 오브젝트의 차이점, 객체지향 언어 클래스 정리.md) |      |
+| 1    | [자바스크립트의 역사와 현재 그리고 미래 (JavaScript, ECMAScript, JQuery, Babel, Node.js)](JavaScript/1강 자바스크립트의 역사와 현재 그리고 미래.md) |      |
+| 2    | [콘솔에 출력, script async와 defer의 차이점 및 앞으로 자바스크립트 공부 방향 (JavaScript ES5+)](JavaScript/2강 콘솔에 출력, script async와 defer의 차이점 및 앞으로 자바스크립트 공부 방향.md) |      |
+| 3    | [데이터타입, data types, let vs var, hoisting (JavaScript ES5+)](JavaScript/3강 데이터타입, data types, let vs var, hoisting.md) |      |
+| 4    | [코딩의 기본 operator, if, for loop 코드리뷰 팁(JavaScript ES6)](JavaScript/4강 코딩의 기본 operator, if, for loop 코드리뷰 팁.md) |      |
+| 5    | [Arrow Function은 무엇인가? 함수의 선언과 표현 (JavaScript ES6)](JavaScript/5강 Arrow Function은 무엇인가 함수의 선언과 표현.md) |      |
+| 6    | [클래스와 오브젝트의 차이점(class vs object), 객체지향 언어 클래스 정리(JavaScript ES6)](JavaScript/6강 클래스와 오브젝트의 차이점, 객체지향 언어 클래스 정리.md) |      |
 | 7    | 오브젝트 넌 뭐니?(JavaScript ES6)                            |      |
 | 8    | 배열 제대로 알고 쓰자. 자바스크립트 배열 개념과 APIs 총정리(JavaScript ES6) |      |
 | 9    | 유용한 10가지 배열 함수들. Array APIs 총정리(JavaScript ES6) |      |
