@@ -12,7 +12,7 @@
 
 | No.  | 주제                                                         | 비고 |
 | ---- | ------------------------------------------------------------ | ---- |
-| 1    | [자바스크립트의 역사와 현재 그리고 미래 (JavaScript, ECMAScript, JQuery, Babel, Node.js)](JavaScript/1강 자바스크립트의 역사와 현재 그리고 미래.md) |      |
+| 1    | [자바스크립트의 역사와 현재 그리고 미래 (JavaScript, ECMAScript, JQuery, Babel, Node.js)](JavaScript/1강-자바스크립트의-역사와-현재-그리고-미래.md) |      |
 | 2    | [콘솔에 출력, script async와 defer의 차이점 및 앞으로 자바스크립트 공부 방향 (JavaScript ES5+)](JavaScript/2강 콘솔에 출력, script async와 defer의 차이점 및 앞으로 자바스크립트 공부 방향.md) |      |
 | 3    | [데이터타입, data types, let vs var, hoisting (JavaScript ES5+)](JavaScript/3강 데이터타입, data types, let vs var, hoisting.md) |      |
 | 4    | [코딩의 기본 operator, if, for loop 코드리뷰 팁(JavaScript ES6)](JavaScript/4강 코딩의 기본 operator, if, for loop 코드리뷰 팁.md) |      |
