@@ -18,7 +18,7 @@
 | 4    | [코딩의 기본 operator, if, for loop 코드리뷰 팁(JavaScript ES6)](JavaScript/4강-코딩의-기본-operator-if-for-loop-코드리뷰-팁.md) |      |
 | 5    | [Arrow Function은 무엇인가? 함수의 선언과 표현 (JavaScript ES6)](JavaScript/5강-Arrow-Function은-무엇인가-함수의-선언과-표현.md) |      |
 | 6    | [클래스와 오브젝트의 차이점(class vs object), 객체지향 언어 클래스 정리(JavaScript ES6)](JavaScript/6강-클래스와-오브젝트의-차이점-객체지향-언어-클래스-정리.md) |      |
-| 7    | 오브젝트 넌 뭐니?(JavaScript ES6)                            |      |
+| 7    | [오브젝트 넌 뭐니?(JavaScript ES6)](JavaScript/7강-오브젝트-넌-뭐니.md) |      |
 | 8    | 배열 제대로 알고 쓰자. 자바스크립트 배열 개념과 APIs 총정리(JavaScript ES6) |      |
 | 9    | 유용한 10가지 배열 함수들. Array APIs 총정리(JavaScript ES6) |      |
 | 10   | JSON 개념 정리와 활용방법 및 유용한 사이트 공유 JavaScript JSON(JavaScript ES6) |      |
