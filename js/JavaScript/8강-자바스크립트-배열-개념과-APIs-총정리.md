@@ -16,3 +16,75 @@
   - 한 배열 안에는 동일한 type의 data를 넣는 게 중요. JavaScript에서는 가능하지만 그렇게 되도록이면 하지않는 게 좋음.
   - 삭제를 원한다면 index로 접근이 가능하기 때문에 삭제 가능
 
+
+
+## Array declaration
+
+- 배열을 어떻게 만들 수 있는지 선언하는 방법
+
+  - ```
+    const arr1 = new Array();
+    const arr2 = [1,2];
+    ```
+
+    - new라는 키워드를 이용해서 object를 만드는 것처럼 
+    - []에 데이터를 넣어 만드는 게 더 흔한 방법
+    - 현재 총 길이가 2개인 배열이 만들어짐
+    - 0번째 index에는 숫자 1이, 1번째 index에는 숫자 2가 들어있음
+    - 배열이 index를 기준으로 데이터가 저장이 되기 때문에 index를 활용해서 어떻게 데이터를 검색하고 삽입, 삭제하는 지 아는 것이 중요
+
+
+
+## Index position
+
+- Index를 통해 배열에 어떻게 접근할 수 있는지 
+
+  - ```
+    // 2. Index position
+    const fruits = ['🍇', '🍎'];
+    console.log(fruits);
+    console.log(fruits.length);
+    console.log(fruits[0]);
+    console.log(fruits[1]);
+    console.log(fruits[2]);
+    console.log(fruits[fruits.length - 1]);
+    ```
+
+    - ![indexposition](md-images/indexposition.PNG)
+    - 배열에서 대괄호를 이용해서 데이터로 접근할 수 있음
+    - object에서는 key라는 string을 이용하게 되면 그에 상응하는 value를 받아올 수 있음
+    - index를 전달하게 되면 index에 해당하는 value를 받아올 수 있음
+    - 그 밖에 있는 index를 접근하게 되면 `undefined` 나옴
+    - 보통 배열의 첫번째 아이템을 찾을 때는 0을 많이 쓰고 제일 마지막에 있는 아이템을 찾을 때는 `fruits.length - 1`로 접근
+
+
+
+## Looping
+
+- 배열 안에 들어있는 전체적인 데이터를 빙글빙글 돌며 출력
+
+  - for loop 사용
+
+    - ```
+      // a. for
+      for (let i = 0; i < fruits.length; i++) {
+          console.log(fruits[i]);
+      }
+      ```
+
+    - ![for](md-images/for.PNG)
+
+  - for of 사용
+
+    - ```
+      // b. for of
+      for (let fruit of fruits) {
+          console.log(fruit);
+      }
+      ```
+
+    - ![for](md-images/forof.PNG)
+
+  - forEach 사용
+
+    - 콜백함수를 받아옴
