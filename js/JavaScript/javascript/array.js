@@ -29,4 +29,9 @@ for (let fruit of fruits) {
 }
 
 // c. forEach
-fruits.forEach()
+fruits.forEach((fruit) => console.log(fruit));
+
+// 4. Addition, deletion, copy
+// push : Add an item to the end
+
+// pop : remove an item from the end

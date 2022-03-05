@@ -87,4 +87,49 @@
 
   - forEach 사용
 
+    - ```
+      forEach(callbackfn: (value: T, index: number, array: T[]) => void, thisArg?: any): void;
+          /**
+           * Calls a defined callback function on each element of an array, and returns an array that contains the results.
+           * @param callbackfn A function that accepts up to three arguments. The map method calls the callbackfn function one time for each element in the array.
+           * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
+           */
+      ```
+    
+      - array에 들어있는 값마다 우리가 전달한 callback함수를 수행
+      - 2가지의 parameter가 전달되는데 첫 번째로 전달되는 곳은 콜백함수 내 전달한 함수를 value하나하나마다 호출, 두번째는 ?로 되어있으면 parameter을 전달해도 전달안해도 됨
+      - 우리가 전달한 callback함수를 value마다 호추랳주고 nclalback함수에는 총 3가지의 인자가 들어옴. 첫 번쨰는 callback함수 호출하는 value, 두 번째는 그 값이 들어있는 index, 세 번째는 전체적인 배열.
+    
     - 콜백함수를 받아옴
+    
+    - ```
+      fruits.forEach(function() {
+          console.log('he');
+      })
+      ```
+    
+      - ![he](md-images/he.PNG)
+      - 데이터가 총 2개 들어있기에 he가 두번 출력
+    
+    - ```
+      fruits.forEach(function(fruit, index, array) {
+          console.log(fruit, index, array);
+      })
+      ```
+    
+      - ![foreach](md-images/foreach.PNG)
+      - for each에서 보통 array는 받아오지 않음
+    
+    - ```
+      // c. forEach
+      fruits.forEach((fruit) => console.log(fruit));
+      ```
+    
+      - 이름이 없는 fuction은 arrow함수를 사용할 수 있음
+      - 한 줄만 있는 경우 괄호도 생략가능
+      - ![foreach2](md-images/foreach2.PNG)
+
+
+
+## Add, delete, copy
+
