@@ -33,7 +33,7 @@ fruits.forEach((fruit) => console.log(fruit));
 
 // 4. Addition, deletion, copy
 // push : Add an item to the end
-fruits.push['🍍','🍒'];
+fruits.push('🍍','🍒');
 console.log(fruits);
 
 // pop : remove an item from the end
@@ -54,7 +54,7 @@ console.log(fruits);
 //splice: remove an item by index position
 fruits.push('🍍','🍇','🍉');
 console.log(fruits);
-fruits.splice(1, 1);
+fruits.splice(1,1);
 console.log(fruits);
 fruits.splice(1, 1, '🍈', '🥥');
 console.log(fruits);
@@ -68,15 +68,15 @@ console.log(newFruits);
 // indexOf: find the index
 console.log(fruits);
 console.log(fruits.indexOf('🍍'));
+console.log(fruits.indexOf('🍇'));
 console.log(fruits.indexOf('🥥'));
 console.log(fruits.indexOf('🍉'));
 
 // includes
 console.log(fruits.includes('🥥'));
-console.log(fruits.includes('🍉'));
+console.log(fruits.includes('🍡'));
 
 // lastIndexOf
-fruits.push('🍍');
 console.log(fruits);
-console.log(fruits.indexOf('🍍'));
-console.log(fruits.lastIndexOf('🍍'));
+console.log(fruits.indexOf('🍇'));
+console.log(fruits.lastIndexOf('🍇'));

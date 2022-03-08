@@ -133,3 +133,153 @@
 
 ## Add, delete, copy
 
+- value를 배열 제일 뒤에 추가
+
+  - ```
+    // push : Add an item to the end
+    fruits.push['🍍','🍒'];
+    console.log(fruits);
+    ```
+
+  - ![push](md-images/push.PNG)
+
+- 배열에서 제일 뒤에서부터 item 지우기
+
+  - ```
+    // pop : remove an item from the end
+    fruits.pop();
+    fruits.pop();
+    console.log(fruits);
+    ```
+
+  - ![pop](md-images/pop.PNG)
+
+- 앞에서부터 item 넣기
+
+  - ```
+    //unshift: add an item to the benigging
+    fruits.unshift('🍍','🍇');
+    console.log(fruits);
+    ```
+
+  - ![unshift](md-images/unshift.PNG)
+
+- 앞에서부터 item 빼기
+
+  - ```
+    // shift: remove an item from the benigging
+    fruits.shift();
+    fruits.shift();
+    console.log(fruits);
+    ```
+
+  - ![unshift](md-images/shift.PNG)
+
+- shift와 unshift는 pop,push보다 정말 느림
+
+  - 배열에 item들이 들어있을 때 뒷에서부터 넣고 빼는 것은 빈 공간에 data를 넣었다 지웠다 하기에 기존에 들어있던 data들은 움직이지 않아도 돼서 한 공간에 index를 이용해서 넣고 빼기가 가능하기에 빠른 operation 진행 가능
+
+  - 앞에서 data를 넣으려면 data들을 다 이동해 텅텅 빈 공간에 data를 집어넣어야 하고 반대로 앞에서부터 data를 삭제하려면 첫 번째있는 item을 지우고 모든 data들을 땡겨야 하는 작업을 반복해서 해야하기에 배열의 길이가 길면길수록 전체적으로 움직여야되는 것들이 많기에 느려짐
+
+  - 제일 뒤에서 item을 접근하는 것은 정말 빠르고 중간에 data를 빼고 넣는것도 index를 활용해서 하기에 빠름. 하지만 무언가 배열의 전체의 data가 움직여야된다 전체의 data들이 shift되는 operation 기능들을 느릴 수 밖에 없음
+
+  - ```
+    // note!! shift, unshift are slower than pop, push
+    ```
+
+    - item을 지정된 position에서 지우는 것 가능
+
+      - ```
+        //splice: remove an item by index position
+        fruits.push('🍍','🍇','🍉');
+        console.log(fruits);
+        fruits.splice(1, 1);
+        console.log(fruits);
+        fruits.splice(1, 1, '🍈', '🥥');  // splice한 다음에 원하는 데이터를 더 추가할 수 있음
+        console.log(fruits);
+        ```
+
+      - splice라는 api를 쓰면 지정된 위치에서  data 삭제 가능
+
+      - ![splice](md-images/splice.PNG)
+
+      - `splice(start: number, deleteCount?:number):string[]`
+
+        - ? : optional
+
+        - 지우려고 하는 갯수를 말하지 않으면? 지정한 index부터 모든 data를 지움
+
+        - ```
+          fruits.push('🍍','🍇','🍉');
+          console.log(fruits);
+          fruits.splice(1);
+          ```
+
+        - ![splice2](md-images/splice2.PNG)
+
+      - `fruits.splice(1, 0, '🍈', '🥥');`: 지우지않고 원하는 부분에 data를 넣을 수 있음
+
+- 두 개의 배열을 묶을 수 있음
+
+  - ```
+    //combine two arrays
+    const fruits2 = ['🍌', '🍑'];
+    const newFruits = fruits.concat(fruits2);
+    console.log(newFruits);
+    ```
+
+  - ![concat](md-images/concat.PNG)
+
+  - ```
+    concat(...items: ConcatArray<T>[]): T[];
+        /**
+         * Combines two or more arrays.
+         * This method returns a new array without modifying any existing arrays.
+         * @param items Additional arrays and/or items to add to the end of the array.
+         */
+    ```
+
+  - 배열 아래 있는 concat이라는 api는 새로운 배열들을 받음
+
+
+
+## Searching
+
+- 검색할 수 있는 api. 배열 안에 어떤 값이 몇 번째 index에 있는 지 알고싶을 때 유용하게 사용
+
+  - ```
+    // indexOf: find the index
+    console.log(fruits);
+    console.log(fruits.indexOf('🍍'));   // 없는 값은 -1 출력
+    console.log(fruits.indexOf('🍇'));
+    console.log(fruits.indexOf('🥥'));
+    console.log(fruits.indexOf('🍉'));
+    ```
+
+    - fruits안에 몇 번째 index에 있는 지 알고싶을 때
+    - ![indexof](md-images/indexof.PNG)
+
+- 배열에 있는지 없는지를 true, false로 return
+
+  - ```
+    // includes
+    console.log(fruits.includes('🥥'));
+    console.log(fruits.includes('🍡'));
+    ```
+
+  - ![includes](md-images/includes.PNG)
+
+- 똑같은 data가 하나 더 있는 경우에
+
+  - ```
+    // lastIndexOf
+    console.log(fruits);
+    console.log(fruits.indexOf('🍇'));
+    console.log(fruits.lastIndexOf('🍇'));
+    ```
+
+  - ![lastindexof](md-images/lastindexof.PNG)
+
+  - indexOf : 제일 첫번째로 해당하는 값을 만나면 그 값이 들어있는 index를 return
+
+  - lastIndexOf : 제일 마지막에 들어있는 값을 return
