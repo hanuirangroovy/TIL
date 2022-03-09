@@ -20,7 +20,7 @@
 | 6    | [클래스와 오브젝트의 차이점(class vs object), 객체지향 언어 클래스 정리(JavaScript ES6)](JavaScript/6강-클래스와-오브젝트의-차이점-객체지향-언어-클래스-정리.md) |      |
 | 7    | [오브젝트 넌 뭐니?(JavaScript ES6)](JavaScript/7강-오브젝트-넌-뭐니.md) |      |
 | 8    | [배열 제대로 알고 쓰자. 자바스크립트 배열 개념과 APIs 총정리(JavaScript ES6)](JavaScript/8강-자바스크립트-배열-개념과-APIs-총정리.md) |      |
-| 9    | 유용한 10가지 배열 함수들. Array APIs 총정리(JavaScript ES6) |      |
+| 9    | [유용한 10가지 배열 함수들. Array APIs 총정리(JavaScript ES6)](JavaScript/9강-유용한-10가지-배열-함수들.md) |      |
 | 10   | JSON 개념 정리와 활용방법 및 유용한 사이트 공유 JavaScript JSON(JavaScript ES6) |      |
 | 11   | 비동기 처리의 시작 콜백 이해하기, 콜백 지옥 체험 JavaScript Callback(JavaScript ES6) |      |
 | 12   | 프로미스 개념부터 활용까지 JavaScript Promise(JavaScript ES6) |      |
