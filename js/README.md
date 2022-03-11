@@ -21,7 +21,7 @@
 | 7    | [오브젝트 넌 뭐니?(JavaScript ES6)](JavaScript/7강-오브젝트-넌-뭐니.md) |      |
 | 8    | [배열 제대로 알고 쓰자. 자바스크립트 배열 개념과 APIs 총정리(JavaScript ES6)](JavaScript/8강-자바스크립트-배열-개념과-APIs-총정리.md) |      |
 | 9    | [유용한 10가지 배열 함수들. Array APIs 총정리(JavaScript ES6)](JavaScript/9강-유용한-10가지-배열-함수들.md) |      |
-| 10   | JSON 개념 정리와 활용방법 및 유용한 사이트 공유 JavaScript JSON(JavaScript ES6) |      |
+| 10   | [JSON 개념 정리와 활용방법 및 유용한 사이트 공유 JavaScript JSON(JavaScript ES6)](JavaScript/10강-JSON-개념정리와-활용방법-및-유용한-사이트-공유.md) |      |
 | 11   | 비동기 처리의 시작 콜백 이해하기, 콜백 지옥 체험 JavaScript Callback(JavaScript ES6) |      |
 | 12   | 프로미스 개념부터 활용까지 JavaScript Promise(JavaScript ES6) |      |
 | 13   | 비동기의 꽃 JavaScript async와 await 그리고 유용한 Promise APIs(JavaScript ES6) |      |
