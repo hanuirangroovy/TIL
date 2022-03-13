@@ -1,6 +1,6 @@
 # JSON 개념 정리와 활용방법 및 유용한 사이트 공유 (JavaScript ES6)
 
-[자바스크립트 기초 강의 10]: https://www.youtube.com/watch?v=FN_D4Ihs3LE
+[자바스크립트 기초 강의 10]: https://www.youtube.com/watch?v=FN_D4Ihs3LE&amp;list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2&amp;index=10
 
 
 
@@ -187,3 +187,109 @@
       - 이름이 ellie로 변환되는 것 확인.
 
 ​	
+
+## parse(json)
+
+- JSON을 object로 변환
+
+- ```
+  // 2. JSON to Object
+  // parse(json)
+  console.clear();
+  json = JSON.stringify(rabbit);
+  const obj = JSON.parse(json);
+  ```
+
+  - ![parse](md-images/parse.PNG)
+  - JSON에 있는 parse라는  API를 이용해서 변환하고싶은 JSON을 전달해주기만 하면 됨
+
+- ```
+  rabbit.jump();
+  obj.jump();
+  ```
+
+  - ![parse함수](md-images/parse%ED%95%A8%EC%88%98.PNG)
+  - rabbit이라는 object에는 jump라는 함수가 있음
+  - 변환한 object는 serialize가 된, string으로 만들어진 JSON으로부터 다시 object를 만들었기 때문에 함수는 serialize될 때 포함이 되어있지 않음
+
+- ```
+  console.log(rabbit.birthDate.getDate());
+  console.log(obj.birthDate);
+  console.log(obj.birthDate.getDate());
+  ```
+
+  - ![getdate](md-images/getdate.PNG)
+  - 토끼에는 birthDate라는 object가 있었는데 이것은 date라는 object.
+  - getdate라는 date안에 존재하는 api를 쓸 수 있음
+  - obj의 birthDate를 출력하면 birthDate는 string이기에 에러 발생
+  - `console.log(obj.birthDate)`를 보면 JSON으로 만든 데이터 자체에 있는 stirng이 object에 할당이 된 것
+
+- 헷가릴면 JSON을 출력해보면 도움이 됨.
+
+  - ```
+    console.log(json);
+    ```
+
+  - ![consolelogjson](md-images/consolelogjson.PNG)
+
+  - rabbit이라는 object를 JSON으로 만들었을 때는 birthDate가 string 형태로 만들어졌기에 JSON을 다시 object로 가져올 때도 string으로 할당
+
+  - rabbit 안에 date는 Date라는 object 자체이기에 세밀하게 다시 Date로 변환하고 싶을 때 callback 함수를 이용할 수 있음
+
+  - parse라는 API를 보면 reviver이라는 callback함수를 전달할 수 있음
+
+    - ```
+      const obj = JSON.parse(json, (key, value) => {
+        console.log(`key: ${key}, value: ${value}`);
+        return value;
+      });
+      ```
+
+      - ![keyvalue](md-images/keyvalue.PNG)
+
+    - ```
+      const obj = JSON.parse(json, (key, value) => {
+        console.log(`key: ${key}, value: ${value}`);
+        return key === "birthDate" ? new Date(value) : value;
+      });
+      ```
+
+      - ![birhdate](md-images/birhdate.PNG)
+
+      - key가 birthDate면 birthDate를 새로운 object로 만들고 key가 birthDate가 아니면 원래있던 value 그대로를 쓰자
+
+      - 여기서 getDate를 쓰게 되면
+
+        - ```
+          console.log(obj.birthDate.getDate());
+          ```
+
+        - ![birthdategetdate](md-images/birthdategetdate.PNG)
+
+
+
+## 정리
+
+- JSON에는 stringify와 parse가 있다
+- 각각 callback 함수를 전달해서 조금 더 세밀하게 무언가를 통제할 수 있다.
+
+
+
+## 유용한 사이트
+
+- JSON Diff checker
+  - http://www.jsondiff.com/
+  - 서버에서 요청했을 때 첫 번째로 받아온 데이터와 두 번째로 받아온 데이터가 어떤 게 다를 지 모를 때 비교할 수 있음
+  - compare버튼을 누르면 문제를 디버깅할 때 유용하게 쓸 수 있음
+- JSON Beatufier/editor
+  - https://jsonbeautifier.org/
+  - 서버에서 받아온 JSON을 복사해서 붙여넣으면 format이 망가지는 경우가 있음
+  - 붙여놓은 다음 beautify 버튼을 누르면 format이 예쁘게 만들어짐
+- JSON Parser
+  - https://jsonparser.org/
+  - JSON 타입를 object로 확인해보고 싶다면 왼쪽에 JSON을 붙여놓고 JSON Parser 버튼을 누르면 됨
+  - JSON으로부터 object가 어떻게 표기되어지는지 눈으로 쉽게 확인가능
+- JSON Validator
+  -  https://tools.learningcontainer.com
+  - JSON을 붙여넣고 Validate를 누르면 유효한 JSON 데이터인지 알려줌
+  - JSON 이상할 때 확인가능
