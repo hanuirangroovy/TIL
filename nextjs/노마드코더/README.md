@@ -113,6 +113,7 @@
 ### 1.2 Static Pre Rendering
 
 - next.js의 가장 좋은 기능 중 하나는 앱에 있는 페이지들이 미리 렌더링 된다는 것. 이것들을 정적(static)으로 생성
+
 - create react app과 next.js의 차이점
   - create react app - client-side render를 하는 앱을 만든다는 것
     - client-side rendering 
@@ -121,8 +122,48 @@
       - 유저가 보는 HTML 소스코드 안에 들어있지 않음
       - 브라우저가 react.js를 다운받고 코드를 다운받았을 때 그때 react.js의 다른 모든 것들을 렌더링하고 유저는 네비게이션 바를 비롯한 나머지를 보게 됨 
       - 브라우저가 자바스크립트를 가져와서 client-side의 자바스크립트가 모든 UI를 만드는 것
-      - 사실상 비어있는 div만을 유저가 봄
+      - 사실상 비어있는 div만을 유저가 봄. 사실 noscript 태그를 가진 것을 보게 됨 -> 모든 사람들은 자바스크립트를 활성화 시켜주기에 흔한 일은 아님
+      - noscript - 유저가 브라우저에서 자바스크립트를 비활성화 했을 때만 나오는 태그
+      - throttling - 느린연결(slow 3G)
+        - 브라우저가 HTML을 가져올 때 비어있는 div로 가져온다는 걸 의미
+        - 그 후에 브라우저가 모든 자바스크립트를 요청해서 브라우저가 자바스크립트와 react.js를 실행시키고 그후에서야 앱이 유저에게 보이게 되는데 느린연결에서는 브라우저가 가져오는 것은 흰 화면인 걸 볼 수 있음
+        - 이 순간에 브라우저는 자바스크립트 코드를 요청하고 있는 것
+        - 브라우저는 자바스크립트 코드가 왔을 때에만 UI를 만들 수 있음
+        - 브라우저가 react.js 코드를 가져오려고 시도하고 있기 때문. react.js 코드가 왔을 때야 비로소 화면을 볼 수 있음
+        - 브라우저가 자바스크립트, react 등 모든 것을 fetch 한 이후에야 UI가 보임
+        - 이처럼 브라우저가 말 그대로 모든 것을 하는 client-side-rendering
+    
   - next.js
+  
+    - 같은 방법으로 동작하나 next.js 웹 사이트의 소스코드를 보면 페이지의 소스코드 어딘가에 실제 HTML이 있는 걸 볼 수 있음
+  
+    - 그래서 유저가 매우 느린 연결을 하고 있거나, 자바스크립트가 완전히 비활성화 되어있어도 API로부터 가져오는 데이터가 로딩되는데이는 오랜 시간이 걸릴 수 있어도 유저는 적어도 어떠한 HTML은 볼 수 있음
+  
+    - ```
+      # index.js
+      import { useState } from "react";
+      
+      export default function Home() {
+        const [counter, setCounter] = useState(0);
+        return (
+          <div>
+            <h1>Hello {counter}</h1>
+            <button onClick={() => setCounter((prev) => prev + 1)}></button>
+          </div>
+        );
+      }
+      
+      ```
+  
+      - 앱의 초기 상태를 활용해서 미리 렌드링 되어서 옴. 이게 pre-rendering
+      - next.js는 초기 상태로 pre-rendering을 하는 것
+      - 여기서 count가 0이기에 HTML도 count에 0의 값을 갖는 초기 상태
+      - 처음에 이 페이지가 정말 많은 스크립트를 같이 요청하는데 좋은 저은 페이지가 로딩됐을 때 react.js가 넘겨받아서 페이지를 딱 열면 보게되는 것이 HTML
+      - 그리고나서 react.js가 클라이언트로 전송됐을 때, 이게 react.js앱이 되는 것
+      - react.js를 프론트엔드 안에서 실행하는 것을 hydration이라고 부름. 이유는 next.js는 react.js를 백엔드에서 동작시켜서 이 페이지를 미리 만드는데 이게 component를 render시킴
+      - 렌더링이 끝났을 때 그건 HTML이 되고 next.js는 그 HTML을 페이지의 소스코드에 넣어줌
+      - 그럼 유저는 자바스크립트와 react.js가 로딩되지 않았떠라도 콘텐츠를 볼 수 있게 됨
+      - 그리고 react.js가 로딩 되었을 때, 기본적으로 이미 존재하는 것들과 연결이 되어서 일반적인 react.js 앱이 되는 것 
 
 
 
