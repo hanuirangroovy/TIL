@@ -50,7 +50,7 @@
 | 1    | 프로그래밍                                        | :white_check_mark: |
 | 2    | 자바스크립트란?                                   | :white_check_mark: |
 | 3    | [자바스크립트 개발 환경과 실행 방법](DeepDive/03) | :white_check_mark: |
-| 4    | 변수                                              |                    |
+| 4    | [변수](DeepDive/04)                               | :white_check_mark: |
 | 5    | 표현식과 문                                       |                    |
 | 6    | 데이터 타입                                       |                    |
 | 7    | 연산자                                            |                    |
