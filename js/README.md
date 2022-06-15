@@ -45,17 +45,22 @@
 
 ## [모던 자바스크립트 Deep Dive](DeepDive)
 
-| No.  | 주제                                              | 진행상황           |
-| ---- | ------------------------------------------------- | ------------------ |
-| 1    | 프로그래밍                                        | :white_check_mark: |
-| 2    | 자바스크립트란?                                   | :white_check_mark: |
-| 3    | [자바스크립트 개발 환경과 실행 방법](DeepDive/03) | :white_check_mark: |
-| 4    | [변수](DeepDive/04)                               | :white_check_mark: |
-| 5    | [표현식과 문](DeepDive/05)                        | :white_check_mark: |
-| 6    | [데이터 타입](DeepDive/06)                        | :white_check_mark: |
-| 7    | [연산자](DeepDive/07)                             | :white_check_mark: |
-| 8    | [제어문](DeepDive/08)                             | :white_check_mark: |
-| 9    | [타입 변환과 단축 평가](DeepDive/09)              | :white_check_mark: |
-| 10   | [객체 리터럴](DeepDive/10)                        | :white_check_mark: |
-| 11   | [원시 값과 객체의 비교](DeepDive/11)              | :white_check_mark: |
+| No.  | 주제                                                | 진행상황           |
+| ---- | --------------------------------------------------- | ------------------ |
+| 1    | 프로그래밍                                          | :white_check_mark: |
+| 2    | 자바스크립트란?                                     | :white_check_mark: |
+| 3    | [자바스크립트 개발 환경과 실행 방법](DeepDive/03)   | :white_check_mark: |
+| 4    | [변수](DeepDive/04)                                 | :white_check_mark: |
+| 5    | [표현식과 문](DeepDive/05)                          | :white_check_mark: |
+| 6    | [데이터 타입](DeepDive/06)                          | :white_check_mark: |
+| 7    | [연산자](DeepDive/07)                               | :white_check_mark: |
+| 8    | [제어문](DeepDive/08)                               | :white_check_mark: |
+| 9    | [타입 변환과 단축 평가](DeepDive/09)                | :white_check_mark: |
+| 10   | [객체 리터럴](DeepDive/10)                          | :white_check_mark: |
+| 11   | [원시 값과 객체의 비교](DeepDive/11)                | :white_check_mark: |
+| 12   | [함수](DeepDive/12)                                 | :white_check_mark: |
+| 13   | [스코프](DeepDive/13)                               | :white_check_mark: |
+| 14   | [전역 변수의 문제점](DeepDive/14)                   | :white_check_mark: |
+| 15   | [let, const 키워드와 블록 레빌 스코프](DeepDive/15) | :white_check_mark: |
+| 16   | [프로퍼티 어트리뷰트](DeepDive/16)                  |                    |
 
