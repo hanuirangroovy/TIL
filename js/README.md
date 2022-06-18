@@ -62,5 +62,5 @@
 | 13   | [스코프](DeepDive/13)                               | :white_check_mark: |
 | 14   | [전역 변수의 문제점](DeepDive/14)                   | :white_check_mark: |
 | 15   | [let, const 키워드와 블록 레빌 스코프](DeepDive/15) | :white_check_mark: |
-| 16   | [프로퍼티 어트리뷰트](DeepDive/16)                  |                    |
+| 16   | [프로퍼티 어트리뷰트](DeepDive/16)                  | :white_check_mark: |
 
