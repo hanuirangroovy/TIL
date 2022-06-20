@@ -241,15 +241,115 @@ foo4();
 new foo4();
 
 // 17.2.6 new 연산자
+// new 연산자와 함께 함수를 호출하면 해당 함수는 생성자 함수로 동작한다.
+// 함수 객체의 내부 매서드 [[Call]]이 호출되는 것이 아니라 [[Construct]]가 호출된다. 단, new 연산자와 함께 호출하는 함수는 non-constructor가 아닌 constructor이어야 한다.
 // 17-17
+// 생성자 함수로서 정의하지 않은 일반 함수
+function add(x, y) {
+  return x + y;
+}
 
+// 생성자 함수로서 정의하지 않은 일반 함수를 new 연산자와 함꼐 호출
+let inst1 = new add();
+
+// 함수가 객체를 반환하지 않았으므로 반환문이 무시된다. 따라서 빈 객체가 생성되어 반환된다.
+console.log(inst1); // add {}
+
+// 객체를 반환하는 일반 함수
+function createUser(name, role) {
+  return { name, role };
+}
+
+// 일반 함수를 new 연산자와 함께 호출
+inst1 = new createUser("Lee", "admin");
+// 함수가 생성한 객체를 반환한다.
+console.log(inst1); // { name: 'Lee', role: 'admin' }
+
+// new 연산자 없이 생성자 함수를 호출하면 일반 함수로 호출되고 함수 객체의 내부 메서드 [[Construct]]가 호출되는 것이 아니라 [[Call]]이 호출된다.
 // 17-18
+// 생성자 함수
+function Circle7(radius) {
+  this.radius = radius;
+  this.getDiameter7 = function () {
+    return 2 * this.radius;
+  };
+}
+
+// new 연산자 없이 생성자 함수 호출하면 일반 함수로서 호출된다.
+const circle10 = Circle7(5);
+console.log(circle10); // undefined
+
+// 일반 함수 내부의 this는 전역 객체 window를 가리킨다.
+console.log(radius); // 5
+console.log(getDiameter7()); // 10
+
+// circle10.getDiameter7(); // TypeError: Cannot read properties of undefined (reading 'getDiameter7')
 
 // 17.2.7 new.target
+// new.target: this와 유사하게 constructor인 모든 함수 내부에서 암묵적인 지역 변수와 같이 사용되며 메타 프로퍼티라고 부름
+// new 연산자와 함꼐 생성자 함수로서 호출되면 함수 내보의 new.target은 함수 자신을 가리킨다.
+// new 연산자 없이 일반 함수로서 호출된 함수 내부의 new.target은 undefined다.
 // 17-19
+// 생성자 함수
+function Circle8(radius) {
+  // 이 함수가 new 연산자와 함꼐 호출되지 않았다면 new.target은 undefined다.
+  if (!new.target) {
+    // new 연산자와 함꼐 생성자 함수를 재귀 호출하여 생성된 인스턴스를 반환한다.
+    return new Circle8(radius);
+  }
+  this.radius = radius;
+  this.getDiameter8 = function () {
+    return 2 * this.radius;
+  };
+}
 
+// new 연산자 없이 생성자 함수를 호출하여도 new.target을 통해 생성자 함수로서 호출된다.
+const circle11 = Circle8(5);
+console.log(circle11.getDiameter8()); // 10
+
+// 스코프 세이프 생성자 패턴
 // 17-20
+// Scope-Safe Constructor Pattern
+function Circle12(radius) {
+  // 생성자 함수가 new 연산자와 함께 호출되면 함수의 선두에서 빈 객체를 생성하고
+  // this에 바인딩한다. 이때 this와 Circle은 프로토타입에 의해 연결된다.
+
+  // 이 함수가 new 연산자와 함께 호출되지 않았다면 이 시점의 this는 전역 객체 window를 가리킨다.
+  // 즉, this와 Circle은 프로토타입에 의해 연결되지 않는다.
+  if (!(this instanceof Circle12)) {
+    // new 연산자와 함께 호출하여 생성된 인스턴스를 반환한다.
+    return new Circle12(radius);
+  }
+
+  this.radius = radius;
+  this.getDiameter9 = function () {
+    return 2 * this.radius;
+  };
+}
+
+// new 연산자 없이 생성자 함수를 호출하여도 생성자 함수로서 호출된다.
+const circle12 = Circle12(5);
+console.log(circle12.getDiameter9()); // 10
 
 // 17-21
+let obj2 = new Object();
+console.log(obj2); // {}
+
+obj2 = Object();
+console.log(obj2); // {}
+
+let f = new Function("x", "return x ** x");
+console.log(f); // [Function: anonymous]
+
+f = Function("x", "return x ** x");
+console.log(f); // [Function: anonymous]
 
 // 17-22
+const str = String(123);
+console.log(str, typeof str); // 123 string
+
+const num = Number("123");
+console.log(num, typeof num); // 123 number
+
+const bool = Boolean("true");
+console.log(bool, typeof bool); // true boolean
