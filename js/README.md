@@ -63,4 +63,7 @@
 | 14   | [전역 변수의 문제점](DeepDive/14)                   | :white_check_mark: |
 | 15   | [let, const 키워드와 블록 레빌 스코프](DeepDive/15) | :white_check_mark: |
 | 16   | [프로퍼티 어트리뷰트](DeepDive/16)                  | :white_check_mark: |
+| 17   | [생성자 함수에 의한 객체 생성](DeepDive/17)         | :white_check_mark: |
+| 18   | [함수와 일급 객체](DeepDive/18)                     | :white_check_mark: |
+| 19   | [프로토타입](DeepDive/19)                           | :white_check_mark: |
 
