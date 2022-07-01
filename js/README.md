@@ -66,4 +66,6 @@
 | 17   | [생성자 함수에 의한 객체 생성](DeepDive/17)         | :white_check_mark: |
 | 18   | [함수와 일급 객체](DeepDive/18)                     | :white_check_mark: |
 | 19   | [프로토타입](DeepDive/19)                           | :white_check_mark: |
+| 20   | [strict mode](DeepDive/20)                          | :white_check_mark: |
+| 21   | [빌트인 객체](DeepDive/21)                          | :white_check_mark: |
 
