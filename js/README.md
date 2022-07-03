@@ -68,4 +68,5 @@
 | 19   | [프로토타입](DeepDive/19)                           | :white_check_mark: |
 | 20   | [strict mode](DeepDive/20)                          | :white_check_mark: |
 | 21   | [빌트인 객체](DeepDive/21)                          | :white_check_mark: |
+| 22   | [this](DeepDive/22)                                 | :white_check_mark: |
 
