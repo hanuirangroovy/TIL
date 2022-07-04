@@ -69,4 +69,5 @@
 | 20   | [strict mode](DeepDive/20)                          | :white_check_mark: |
 | 21   | [빌트인 객체](DeepDive/21)                          | :white_check_mark: |
 | 22   | [this](DeepDive/22)                                 | :white_check_mark: |
+| 23   | [실행 컨텍스트](DeepDive/23)                        | :white_check_mark: |
 
