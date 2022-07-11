@@ -71,4 +71,5 @@
 | 22   | [this](DeepDive/22)                                 | :white_check_mark: |
 | 23   | [실행 컨텍스트](DeepDive/23)                        | :white_check_mark: |
 | 24   | [클로저](DeepDive/24)                               | :white_check_mark: |
+| 25   | [클래스](DeepDive/25)                               | :white_check_mark: |
 

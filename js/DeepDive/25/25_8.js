@@ -363,22 +363,197 @@ console.log(Derived73.sayHi()); // Hi! how are you doing?
 
 // 25.8.6 상속 클래스의 인스턴스 생성 과정
 // 25-74
+class Rectangle74 {
+  constructor(width, height) {
+    this.width = width;
+    this.height = height;
+  }
 
+  getArea() {
+    return this.width * this.height;
+  }
+
+  toString() {
+    return `width = ${this.width}, height = ${this.height}`;
+  }
+}
+
+// 서브클래스
+class ColorRectangle extends Rectangle74 {
+  constructor(width, height, color) {
+    super(width, height);
+    this.color = color;
+  }
+
+  // 메서드 오버라이딩
+  toString() {
+    return super.toString() + `, color = ${this.color}`;
+  }
+}
+
+const colorRectangle = new ColorRectangle(2, 4, "red");
+console.log(colorRectangle.getArea()); // 8
+// 오버라이딩된 toString 메서드를 호출
+console.log(colorRectangle.toString()); // width = 2, height = 4, color = red
+
+// 1. 서브클래스의 super 호출
+// 서브클래스는 자신이 직접 인스턴스를 생성하지 않고 수퍼클래스에게 인스턴스 생성을 위임한다.
+// 이것이 바로 서브클래스의 constructor에서 반드시 super를 호출해야 하는 이유다.
+
+// 2. 수프클래스의 인스턴스 생성과 this 바인딩
 // 25-75
+// 수퍼클래스
+class Rectangle75 {
+  constructor(width, height) {
+    // 암묵적으로 빈 객체, 즉 인스턴스가 생성되고 this에 바인딩된다.
+    console.log(this);
+    // new 연산자와 함께 호출된 함수, 즉 new.target은 ColorRectangle이다.
+    console.log(new.target);
+  }
+}
+
+// 인스턴스는 new.target이 가리키는 서브클래스가 생성한 것으로 처리된다.
 
 // 25-76
+// 서브클래스
+class Rectangle76 {
+  constructor(width, height) {
+    // 암묵적으로 빈 객체, 즉 인스턴스가 생성되고 this에 바인딩된다.
+    console.log(this);
+    // new 연산자와 함께 호출된 함수, 즉 new.target은 ColorRectangle이다.
+    console.log(new.target);
 
+    // 생성된 인스턴스의 프로토타입으로 ColorRectangle.prototype이 설정된다.
+    console.log(Object.getPrototyypeOf(this) === ColorRectangle.prototype);
+    console.log(this instanceof ColorRectangle);
+    console.log(this instanceof Rectangle76);
+  }
+}
+
+// 3. 수퍼클래스의 인스턴스 초기화
+// 수퍼클래스의 constructor가 실행되어 this에 바인딩되어 있는 인스턴스를 초기화한다.
+// 즉, this에 바인딩되어 있는 인스턴스에 프로퍼티를 추가하고 constructor가 인수로 전달받은 초기값으로 인스턴스의 프로퍼티를 초기화한다.
 // 25-77
+// 수퍼클래스
+class Rectangle77 {
+  constructor(width, height) {
+    // 암묵적으로 빈 객체, 즉 인스턴스가 생성되고 this에 바인딩된다.
+    console.log(this);
+    // new 연산자와 함께 호출된 함수, 즉 new.target은 ColorRectangle이다.
+    console.log(new.target);
 
+    // 생성된 인스턴스의 프로토타입으로 ColorRectangle.prototype이 설정된다.
+    console.log(Object.getPrototyypeOf(this) === ColorRectangle.prototype);
+    console.log(this instanceof ColorRectangle);
+    console.log(this instanceof Rectangle76);
+
+    // 인스턴스 초기화
+    this.width = width;
+    this.height = height;
+
+    console.log(this);
+  }
+}
+
+// 4. 서브 클래스 constructor로의 복귀와 this 바인딩
+// super가 반환한 인스턴스가 this에 바인딩된다.
+// 서브클래스는 별도의 인스턴스를 생성하지 않고 super가 반환한 인스턴스를 this에 바인딩하여 그대로 사용한다.
 // 25-78
+// 서브클래스
+class ColorRectangle78 extends Rectangle77 {
+  constructor(width, height, color) {
+    super(width, height);
 
+    // super가 반환한 인스턴스가 this에 바인딩된다.
+    console.log(this);
+  }
+}
+
+// super가 호출되지 앟으면 인스턴스가 생성되지 않으며, this 바인딩도 할 수 없다.
+// 서브클래스의 constructor에서 super를 호출하기 전에는 this를 참조할 수 없는 이유가 바로 이 때문이다.
+
+// 5. 서브클래스의 인스턴스 초기화
+
+// 6. 인스턴스 반환
+// 클래스의 모든 처리가 끝나면 완성된 인스턴스가 바인딩된 this가 암묵적으로 반환한다.
 // 25-79
+class ColorRectangle79 extends Rectangle77 {
+  constructor(width, height, color) {
+    super(width, height);
 
+    // super가 반환한 인스턴스가 this에 바인딩된다.
+    console.log(this);
+
+    // 인스턴스 초기화
+    this.color = color;
+
+    // 완성된 인스턴스가 바인딩된 this가 암묵적으로 반환된다.
+    console.log(this);
+  }
+}
 // 25.8.7 표준 빌트인 생성자 함수 확장
 // 25-80
+// Array 생성자 함수를 상속받아 확장한 MyArray
+class MyArray extends Array {
+  // 중복된 배열 요소를 제거하고 반환한다: [1, 1, 2, 3] => [1, 2, 3]
+  uniq() {
+    return this.filter((v, i, self) => self.indexOf(v) === i);
+  }
+
+  // 모든 배열 요소의 평균을 구한다: [1, 2, 3] => 2
+  average() {
+    return this.reduce((pre, cur) => pre + cur, 0) / this.length;
+  }
+}
+const myArray = new MyArray(1, 1, 2, 3);
+console.log(myArray); // MyArray(4) [ 1, 1, 2, 3 ]
+
+// MyArray.prototype.uniq 호출
+console.log(myArray.uniq()); // MyArray(3) [ 1, 2, 3 ]
+// MyArray.prototype.average 호출
+console.log(myArray.average()); // 1.75
+
+// Array 생성자 함수를 상속받아 확장한 MyArray 클래스가 생성한 인스턴스는 Array.prototype과 MyArray.prototype의 모든 메서드를 사용할 수 있다.
+// 이 때 주의할 것은 Array.prototype의 메서드 중에서 map, filter와 같이 새로운 배열을 반환하는 메서드가 MyArray 클래스의 인스턴스를 방황한다는 것이다.
 
 // 25-81
+console.log(myArray.filter((v) => v % 2) instanceof MyArray); // true
 
+// 만약 새로운 배열을 반환하는 메서드가 MyArray 클래스의 인스턴스를 반환하지 않고 Array의 인스턴스를 반환하면 MyArray 클래스의 메서드와 메서드 체이닝이 불가능하다.
 // 25-82
+// 메서드 체이닝
+// [1, 1, 2, 3] => [1, 1, 3] => [1, 3] => 2
+console.log(
+  myArray
+    .filter((v) => v % 2)
+    .uniq()
+    .average()
+); // 2
 
 // 25-83
+// Array 생성자 함수를 상속받아 확장한 MyArray
+class MyArray83 extends Array {
+  // 모든 메서드가 Array 타입의 인스턴스를 반환하도록 한다.
+  static get [Symbol.species]() {
+    return Array;
+  }
+
+  // 중복된 배열 요소를 제거하고 반환한다.: [1, 1, 2, 3] => [1, 2, 3]
+  uniq() {
+    return this.filter((v, i, self) => self.indexOf(v) === i);
+  }
+
+  // 모든 배열 요소의 평균을 구한다: [1, 2, 3] => 2
+  average() {
+    return this.reduce((pre, cur) => pre + cur, 0) / this.length;
+  }
+}
+
+const myArray83 = new MyArray83();
+
+console.log(myArray83.uniq() instanceof MyArray83); // false
+console.log(myArray83.uniq() instanceof Array); // true
+
+// 메서드 체이닝
+// uniq 메서드는 Array 인스턴스를 반환하므로 average 메서드를 호출할 수 없다.
+console.log(myArray83.uniq().average()); // TypeError: myArray83.uniq(...).average is not a function
