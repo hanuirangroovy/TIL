@@ -4,6 +4,7 @@
 
 1. [자바스크립트 기본 강의](#자바스크립트-기본-강의)
 1. [모던 자바스크립트 Deep Dive](#모던_자바스크립트_Deep_Dive)
+1. [ES2022](#ES2022)
 
 
 
@@ -72,4 +73,12 @@
 | 23   | [실행 컨텍스트](DeepDive/23)                        | :white_check_mark: |
 | 24   | [클로저](DeepDive/24)                               | :white_check_mark: |
 | 25   | [클래스](DeepDive/25)                               | :white_check_mark: |
+
+
+
+
+
+## [ES2022](ES2022)
+
+[자바스크립트 미친 신기능 4개]: https://www.youtube.com/watch?v=m-R7s7fnwvU
 
