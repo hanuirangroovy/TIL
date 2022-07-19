@@ -74,6 +74,7 @@
 | 24   | [클로저](DeepDive/24)                               | :white_check_mark: |
 | 25   | [클래스](DeepDive/25)                               | :white_check_mark: |
 | 26   | [ES6 함수의 추가 기능](DeepDive/26)                 | :white_check_mark: |
+| 27   | [배열](DeepDive/27)                                 |                    |
 
 
 
