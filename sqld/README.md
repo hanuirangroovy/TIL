@@ -15,7 +15,7 @@
 
 
 
-## [2. SQLD 풀이](SQLD-풀이)
+## [2. SQLD 풀이](SQLD풀이)
 
 [SQLD 문제 풀이 5시간 강의]: https://www.youtube.com/watch?v=8uP_E6SyiuM&amp;amp;t=6440s
 
