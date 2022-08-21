@@ -2,10 +2,10 @@
 
 ## 목차
 
-1. [OBJECT의 종류](#1. OBJECT의 종류)
-2. [OBJECT 관련 DDL](#2. OBJECT 관련 DDL)
-3. [제약 조건](#3. 제약 조건)
-4. [VIEW, SEQUENCE, SYNONYM, INDEX](#4. VIEW, SEQUENCE, SYNONYM, INDEX)
+1. [OBJECT의 종류](#1-OBJECT의-종류)
+2. [OBJECT 관련 DDL](#2-OBJECT-관련-DDL)
+3. [제약 조건](#3-제약-조건)
+4. [VIEW, SEQUENCE, SYNONYM, INDEX](#4-VIEW-SEQUENCE-SYNONYM-INDEX)
 
 
 
