@@ -9,7 +9,7 @@
 | 번호 | 제목                                                         | 진행상황           |
 | ---- | ------------------------------------------------------------ | ------------------ |
 | 1    | 데이터 언어 -DDL문                                           | :white_check_mark: |
-| 2    | 데이터 언어 - DML, TCL                                       |                    |
+| 2    | 데이터 언어 - DML, TCL                                       | :white_check_mark: |
 | 3    | [SQL 검정] DML WHERE 절                                      |                    |
 | 4    | 변환 함수, 날짜 함수, 기본 함수                              |                    |
 | 5    | GROUP 함수와 GROUP BY를 위한 ROLLUP, CUBE, 그리고 GROUPING SET |                    |
