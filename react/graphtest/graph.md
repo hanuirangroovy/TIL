@@ -8,6 +8,9 @@
 - 색칠하기 
   - https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/fillRect
   - https://developer.mozilla.org/ko/docs/Web/API/Canvas_API/Tutorial/Applying_styles_and_colors
+- 문제해결
+  - https://velog.io/@cjswoqkrwls/Canvas
+
 
 
 
