@@ -5,7 +5,7 @@ import ReactDOM from "react-dom";
 import "./css/maincontainer.css";
 
 // component
-import List from "./component/list";
+import Chart from "./component/chart";
 import Template from "./component/template";
 import Head from "./component/head";
 
@@ -14,8 +14,8 @@ function Mainpage() {
   return (
     <div className="MainContainer">
       <Head score={score} />
-      <List score={score} setScore={setScore} />
-      <Template score={score} />
+      <Chart score={score} setScore={setScore} />
+      {/* <Template score={score} /> */}
     </div>
   );
 }
