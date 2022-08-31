@@ -1,0 +1,22 @@
+.HeadContainer{
+    padding: 30px;
+    border-bottom: 1px solid #373d44;
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #343a40;    
+}
+
+.day {
+    margin-top: 5px;
+    color: black;
+    font-size: 20px;
+}
+.scorepoint {
+    color: rgb(151, 27, 47);
+    font-size: 18px;
+    margin-top: 40px;
+    font-weight: bold;
+}

@@ -1,0 +1,17 @@
+.TemplateContainer{
+    width: 80%;
+    height: 350px;
+
+    position: relative;
+    background: rgb(162, 170, 173);
+    border-radius: 16px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.04);
+    font-weight: bolder;
+    margin: 0 auto;
+
+    margin-top: 10px;
+    padding-top: 10px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
