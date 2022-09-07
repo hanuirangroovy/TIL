@@ -67,7 +67,7 @@
   - 필요한 경우, 간접주소로 데이터 지정
   - ![Demonstrationofdirect_indirect_address](md-images/Demonstrationofdirect_indirect_address.PNG)
 
-## 
+
 
 ## 2. 컴퓨터 레지스터
 
@@ -137,7 +137,7 @@
 - 명령어 포맷
   - ![명령어포맷](md-images/명령어포맷.PNG)
 
-## 
+
 
 ## 4. 타이밍과 제어
 
@@ -146,7 +146,7 @@
   - ![controltimingsignals](md-images/controltimingsignals.PNG)
   - ![controlunitofBasiccomputer](md-images/controlunitofBasiccomputer.PNG)
 
-## 
+
 
 ## 5. 명령어 사이클
 
