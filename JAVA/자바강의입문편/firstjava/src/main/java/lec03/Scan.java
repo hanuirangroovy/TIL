@@ -13,8 +13,14 @@ public class Scan {
         // scanner.nextLine() : 한 줄을 입력받는다.
         String str = scan.nextLine();
 
+        // 숫자 2개를 입력 받아 순서를 바꿔 출력해보자
+        // int number1 = scan.nextLine();
+        // int number2 = scan.nextLine();
+
         // str에 있는 문장을 출력해라
         System.out.println(str);
+        // System.out.println(number2);
+        // System.out.println(number1);
     }
 
     /**
