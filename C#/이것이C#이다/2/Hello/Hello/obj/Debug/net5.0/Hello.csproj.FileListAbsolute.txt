@@ -1,0 +1,5 @@
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\2\Hello\Hello\obj\Debug\net5.0\Hello.csproj.AssemblyReference.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\2\Hello\Hello\obj\Debug\net5.0\Hello.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\2\Hello\Hello\obj\Debug\net5.0\Hello.AssemblyInfoInputs.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\2\Hello\Hello\obj\Debug\net5.0\Hello.AssemblyInfo.cs
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\2\Hello\Hello\obj\Debug\net5.0\Hello.csproj.CoreCompileInputs.cache
