@@ -1,0 +1,15 @@
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\integralTypes\Decimal\Decimal\bin\Debug\net6.0\Decimal.exe
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\integralTypes\Decimal\Decimal\bin\Debug\net6.0\Decimal.deps.json
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\integralTypes\Decimal\Decimal\bin\Debug\net6.0\Decimal.runtimeconfig.json
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\integralTypes\Decimal\Decimal\bin\Debug\net6.0\Decimal.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\integralTypes\Decimal\Decimal\bin\Debug\net6.0\Decimal.pdb
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\integralTypes\Decimal\Decimal\obj\Debug\net6.0\Decimal.csproj.AssemblyReference.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\integralTypes\Decimal\Decimal\obj\Debug\net6.0\Decimal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\integralTypes\Decimal\Decimal\obj\Debug\net6.0\Decimal.AssemblyInfoInputs.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\integralTypes\Decimal\Decimal\obj\Debug\net6.0\Decimal.AssemblyInfo.cs
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\integralTypes\Decimal\Decimal\obj\Debug\net6.0\Decimal.csproj.CoreCompileInputs.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\integralTypes\Decimal\Decimal\obj\Debug\net6.0\Decimal.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\integralTypes\Decimal\Decimal\obj\Debug\net6.0\refint\Decimal.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\integralTypes\Decimal\Decimal\obj\Debug\net6.0\Decimal.pdb
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\integralTypes\Decimal\Decimal\obj\Debug\net6.0\Decimal.genruntimeconfig.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\integralTypes\Decimal\Decimal\obj\Debug\net6.0\ref\Decimal.dll

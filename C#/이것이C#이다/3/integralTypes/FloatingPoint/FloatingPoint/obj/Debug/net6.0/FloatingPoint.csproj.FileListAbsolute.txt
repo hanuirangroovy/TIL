@@ -1,0 +1,15 @@
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\integralTypes\FloatingPoint\FloatingPoint\bin\Debug\net6.0\FloatingPoint.exe
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\integralTypes\FloatingPoint\FloatingPoint\bin\Debug\net6.0\FloatingPoint.deps.json
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\integralTypes\FloatingPoint\FloatingPoint\bin\Debug\net6.0\FloatingPoint.runtimeconfig.json
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\integralTypes\FloatingPoint\FloatingPoint\bin\Debug\net6.0\FloatingPoint.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\integralTypes\FloatingPoint\FloatingPoint\bin\Debug\net6.0\FloatingPoint.pdb
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\integralTypes\FloatingPoint\FloatingPoint\obj\Debug\net6.0\FloatingPoint.csproj.AssemblyReference.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\integralTypes\FloatingPoint\FloatingPoint\obj\Debug\net6.0\FloatingPoint.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\integralTypes\FloatingPoint\FloatingPoint\obj\Debug\net6.0\FloatingPoint.AssemblyInfoInputs.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\integralTypes\FloatingPoint\FloatingPoint\obj\Debug\net6.0\FloatingPoint.AssemblyInfo.cs
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\integralTypes\FloatingPoint\FloatingPoint\obj\Debug\net6.0\FloatingPoint.csproj.CoreCompileInputs.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\integralTypes\FloatingPoint\FloatingPoint\obj\Debug\net6.0\FloatingPoint.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\integralTypes\FloatingPoint\FloatingPoint\obj\Debug\net6.0\refint\FloatingPoint.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\integralTypes\FloatingPoint\FloatingPoint\obj\Debug\net6.0\FloatingPoint.pdb
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\integralTypes\FloatingPoint\FloatingPoint\obj\Debug\net6.0\FloatingPoint.genruntimeconfig.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\integralTypes\FloatingPoint\FloatingPoint\obj\Debug\net6.0\ref\FloatingPoint.dll
