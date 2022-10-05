@@ -1,0 +1,15 @@
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringNumberConversion\StringNumberConversion\bin\Debug\net6.0\StringNumberConversion.exe
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringNumberConversion\StringNumberConversion\bin\Debug\net6.0\StringNumberConversion.deps.json
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringNumberConversion\StringNumberConversion\bin\Debug\net6.0\StringNumberConversion.runtimeconfig.json
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringNumberConversion\StringNumberConversion\bin\Debug\net6.0\StringNumberConversion.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringNumberConversion\StringNumberConversion\bin\Debug\net6.0\StringNumberConversion.pdb
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringNumberConversion\StringNumberConversion\obj\Debug\net6.0\StringNumberConversion.csproj.AssemblyReference.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringNumberConversion\StringNumberConversion\obj\Debug\net6.0\StringNumberConversion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringNumberConversion\StringNumberConversion\obj\Debug\net6.0\StringNumberConversion.AssemblyInfoInputs.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringNumberConversion\StringNumberConversion\obj\Debug\net6.0\StringNumberConversion.AssemblyInfo.cs
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringNumberConversion\StringNumberConversion\obj\Debug\net6.0\StringNumberConversion.csproj.CoreCompileInputs.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringNumberConversion\StringNumberConversion\obj\Debug\net6.0\StringNumberConversion.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringNumberConversion\StringNumberConversion\obj\Debug\net6.0\refint\StringNumberConversion.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringNumberConversion\StringNumberConversion\obj\Debug\net6.0\StringNumberConversion.pdb
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringNumberConversion\StringNumberConversion\obj\Debug\net6.0\StringNumberConversion.genruntimeconfig.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringNumberConversion\StringNumberConversion\obj\Debug\net6.0\ref\StringNumberConversion.dll

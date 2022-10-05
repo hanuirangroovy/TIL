@@ -1,0 +1,15 @@
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\Enum2\Enum2\bin\Debug\net6.0\Enum2.exe
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\Enum2\Enum2\bin\Debug\net6.0\Enum2.deps.json
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\Enum2\Enum2\bin\Debug\net6.0\Enum2.runtimeconfig.json
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\Enum2\Enum2\bin\Debug\net6.0\Enum2.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\Enum2\Enum2\bin\Debug\net6.0\Enum2.pdb
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\Enum2\Enum2\obj\Debug\net6.0\Enum2.csproj.AssemblyReference.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\Enum2\Enum2\obj\Debug\net6.0\Enum2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\Enum2\Enum2\obj\Debug\net6.0\Enum2.AssemblyInfoInputs.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\Enum2\Enum2\obj\Debug\net6.0\Enum2.AssemblyInfo.cs
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\Enum2\Enum2\obj\Debug\net6.0\Enum2.csproj.CoreCompileInputs.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\Enum2\Enum2\obj\Debug\net6.0\Enum2.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\Enum2\Enum2\obj\Debug\net6.0\refint\Enum2.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\Enum2\Enum2\obj\Debug\net6.0\Enum2.pdb
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\Enum2\Enum2\obj\Debug\net6.0\Enum2.genruntimeconfig.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\Enum2\Enum2\obj\Debug\net6.0\ref\Enum2.dll

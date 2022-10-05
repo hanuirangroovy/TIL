@@ -1,0 +1,15 @@
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\Bool\Bool\bin\Debug\net6.0\Bool.exe
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\Bool\Bool\bin\Debug\net6.0\Bool.deps.json
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\Bool\Bool\bin\Debug\net6.0\Bool.runtimeconfig.json
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\Bool\Bool\bin\Debug\net6.0\Bool.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\Bool\Bool\bin\Debug\net6.0\Bool.pdb
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\Bool\Bool\obj\Debug\net6.0\Bool.csproj.AssemblyReference.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\Bool\Bool\obj\Debug\net6.0\Bool.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\Bool\Bool\obj\Debug\net6.0\Bool.AssemblyInfoInputs.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\Bool\Bool\obj\Debug\net6.0\Bool.AssemblyInfo.cs
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\Bool\Bool\obj\Debug\net6.0\Bool.csproj.CoreCompileInputs.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\Bool\Bool\obj\Debug\net6.0\Bool.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\Bool\Bool\obj\Debug\net6.0\refint\Bool.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\Bool\Bool\obj\Debug\net6.0\Bool.pdb
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\Bool\Bool\obj\Debug\net6.0\Bool.genruntimeconfig.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\Bool\Bool\obj\Debug\net6.0\ref\Bool.dll

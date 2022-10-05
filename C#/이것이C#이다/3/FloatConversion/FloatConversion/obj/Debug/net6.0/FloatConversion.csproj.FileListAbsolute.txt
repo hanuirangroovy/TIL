@@ -1,0 +1,15 @@
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\FloatConversion\FloatConversion\bin\Debug\net6.0\FloatConversion.exe
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\FloatConversion\FloatConversion\bin\Debug\net6.0\FloatConversion.deps.json
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\FloatConversion\FloatConversion\bin\Debug\net6.0\FloatConversion.runtimeconfig.json
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\FloatConversion\FloatConversion\bin\Debug\net6.0\FloatConversion.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\FloatConversion\FloatConversion\bin\Debug\net6.0\FloatConversion.pdb
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\FloatConversion\FloatConversion\obj\Debug\net6.0\FloatConversion.csproj.AssemblyReference.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\FloatConversion\FloatConversion\obj\Debug\net6.0\FloatConversion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\FloatConversion\FloatConversion\obj\Debug\net6.0\FloatConversion.AssemblyInfoInputs.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\FloatConversion\FloatConversion\obj\Debug\net6.0\FloatConversion.AssemblyInfo.cs
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\FloatConversion\FloatConversion\obj\Debug\net6.0\FloatConversion.csproj.CoreCompileInputs.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\FloatConversion\FloatConversion\obj\Debug\net6.0\FloatConversion.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\FloatConversion\FloatConversion\obj\Debug\net6.0\refint\FloatConversion.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\FloatConversion\FloatConversion\obj\Debug\net6.0\FloatConversion.pdb
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\FloatConversion\FloatConversion\obj\Debug\net6.0\FloatConversion.genruntimeconfig.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\FloatConversion\FloatConversion\obj\Debug\net6.0\ref\FloatConversion.dll

@@ -1,0 +1,15 @@
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\IntegralConversion\IntegralConversion\bin\Debug\net6.0\IntegralConversion.exe
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\IntegralConversion\IntegralConversion\bin\Debug\net6.0\IntegralConversion.deps.json
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\IntegralConversion\IntegralConversion\bin\Debug\net6.0\IntegralConversion.runtimeconfig.json
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\IntegralConversion\IntegralConversion\bin\Debug\net6.0\IntegralConversion.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\IntegralConversion\IntegralConversion\bin\Debug\net6.0\IntegralConversion.pdb
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\IntegralConversion\IntegralConversion\obj\Debug\net6.0\IntegralConversion.csproj.AssemblyReference.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\IntegralConversion\IntegralConversion\obj\Debug\net6.0\IntegralConversion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\IntegralConversion\IntegralConversion\obj\Debug\net6.0\IntegralConversion.AssemblyInfoInputs.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\IntegralConversion\IntegralConversion\obj\Debug\net6.0\IntegralConversion.AssemblyInfo.cs
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\IntegralConversion\IntegralConversion\obj\Debug\net6.0\IntegralConversion.csproj.CoreCompileInputs.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\IntegralConversion\IntegralConversion\obj\Debug\net6.0\IntegralConversion.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\IntegralConversion\IntegralConversion\obj\Debug\net6.0\refint\IntegralConversion.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\IntegralConversion\IntegralConversion\obj\Debug\net6.0\IntegralConversion.pdb
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\IntegralConversion\IntegralConversion\obj\Debug\net6.0\IntegralConversion.genruntimeconfig.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\IntegralConversion\IntegralConversion\obj\Debug\net6.0\ref\IntegralConversion.dll
