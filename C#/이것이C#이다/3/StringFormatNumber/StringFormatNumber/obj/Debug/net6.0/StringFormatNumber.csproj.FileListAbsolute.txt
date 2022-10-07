@@ -1,0 +1,15 @@
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringFormatNumber\StringFormatNumber\bin\Debug\net6.0\StringFormatNumber.exe
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringFormatNumber\StringFormatNumber\bin\Debug\net6.0\StringFormatNumber.deps.json
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringFormatNumber\StringFormatNumber\bin\Debug\net6.0\StringFormatNumber.runtimeconfig.json
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringFormatNumber\StringFormatNumber\bin\Debug\net6.0\StringFormatNumber.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringFormatNumber\StringFormatNumber\bin\Debug\net6.0\StringFormatNumber.pdb
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringFormatNumber\StringFormatNumber\obj\Debug\net6.0\StringFormatNumber.csproj.AssemblyReference.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringFormatNumber\StringFormatNumber\obj\Debug\net6.0\StringFormatNumber.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringFormatNumber\StringFormatNumber\obj\Debug\net6.0\StringFormatNumber.AssemblyInfoInputs.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringFormatNumber\StringFormatNumber\obj\Debug\net6.0\StringFormatNumber.AssemblyInfo.cs
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringFormatNumber\StringFormatNumber\obj\Debug\net6.0\StringFormatNumber.csproj.CoreCompileInputs.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringFormatNumber\StringFormatNumber\obj\Debug\net6.0\StringFormatNumber.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringFormatNumber\StringFormatNumber\obj\Debug\net6.0\refint\StringFormatNumber.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringFormatNumber\StringFormatNumber\obj\Debug\net6.0\StringFormatNumber.pdb
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringFormatNumber\StringFormatNumber\obj\Debug\net6.0\StringFormatNumber.genruntimeconfig.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringFormatNumber\StringFormatNumber\obj\Debug\net6.0\ref\StringFormatNumber.dll

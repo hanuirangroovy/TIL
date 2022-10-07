@@ -1,0 +1,15 @@
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringSlice\StringSlice\bin\Debug\net6.0\StringSlice.exe
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringSlice\StringSlice\bin\Debug\net6.0\StringSlice.deps.json
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringSlice\StringSlice\bin\Debug\net6.0\StringSlice.runtimeconfig.json
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringSlice\StringSlice\bin\Debug\net6.0\StringSlice.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringSlice\StringSlice\bin\Debug\net6.0\StringSlice.pdb
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringSlice\StringSlice\obj\Debug\net6.0\StringSlice.csproj.AssemblyReference.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringSlice\StringSlice\obj\Debug\net6.0\StringSlice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringSlice\StringSlice\obj\Debug\net6.0\StringSlice.AssemblyInfoInputs.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringSlice\StringSlice\obj\Debug\net6.0\StringSlice.AssemblyInfo.cs
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringSlice\StringSlice\obj\Debug\net6.0\StringSlice.csproj.CoreCompileInputs.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringSlice\StringSlice\obj\Debug\net6.0\StringSlice.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringSlice\StringSlice\obj\Debug\net6.0\refint\StringSlice.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringSlice\StringSlice\obj\Debug\net6.0\StringSlice.pdb
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringSlice\StringSlice\obj\Debug\net6.0\StringSlice.genruntimeconfig.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringSlice\StringSlice\obj\Debug\net6.0\ref\StringSlice.dll

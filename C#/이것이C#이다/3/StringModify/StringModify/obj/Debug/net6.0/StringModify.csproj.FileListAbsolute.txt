@@ -1,0 +1,15 @@
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringModify\StringModify\bin\Debug\net6.0\StringModify.exe
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringModify\StringModify\bin\Debug\net6.0\StringModify.deps.json
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringModify\StringModify\bin\Debug\net6.0\StringModify.runtimeconfig.json
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringModify\StringModify\bin\Debug\net6.0\StringModify.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringModify\StringModify\bin\Debug\net6.0\StringModify.pdb
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringModify\StringModify\obj\Debug\net6.0\StringModify.csproj.AssemblyReference.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringModify\StringModify\obj\Debug\net6.0\StringModify.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringModify\StringModify\obj\Debug\net6.0\StringModify.AssemblyInfoInputs.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringModify\StringModify\obj\Debug\net6.0\StringModify.AssemblyInfo.cs
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringModify\StringModify\obj\Debug\net6.0\StringModify.csproj.CoreCompileInputs.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringModify\StringModify\obj\Debug\net6.0\StringModify.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringModify\StringModify\obj\Debug\net6.0\refint\StringModify.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringModify\StringModify\obj\Debug\net6.0\StringModify.pdb
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringModify\StringModify\obj\Debug\net6.0\StringModify.genruntimeconfig.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\3\StringModify\StringModify\obj\Debug\net6.0\ref\StringModify.dll
