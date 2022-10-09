@@ -1,0 +1,15 @@
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\4\LogicalOperator\LogicalOperator\bin\Debug\net6.0\LogicalOperator.exe
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\4\LogicalOperator\LogicalOperator\bin\Debug\net6.0\LogicalOperator.deps.json
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\4\LogicalOperator\LogicalOperator\bin\Debug\net6.0\LogicalOperator.runtimeconfig.json
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\4\LogicalOperator\LogicalOperator\bin\Debug\net6.0\LogicalOperator.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\4\LogicalOperator\LogicalOperator\bin\Debug\net6.0\LogicalOperator.pdb
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\4\LogicalOperator\LogicalOperator\obj\Debug\net6.0\LogicalOperator.csproj.AssemblyReference.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\4\LogicalOperator\LogicalOperator\obj\Debug\net6.0\LogicalOperator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\4\LogicalOperator\LogicalOperator\obj\Debug\net6.0\LogicalOperator.AssemblyInfoInputs.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\4\LogicalOperator\LogicalOperator\obj\Debug\net6.0\LogicalOperator.AssemblyInfo.cs
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\4\LogicalOperator\LogicalOperator\obj\Debug\net6.0\LogicalOperator.csproj.CoreCompileInputs.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\4\LogicalOperator\LogicalOperator\obj\Debug\net6.0\LogicalOperator.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\4\LogicalOperator\LogicalOperator\obj\Debug\net6.0\refint\LogicalOperator.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\4\LogicalOperator\LogicalOperator\obj\Debug\net6.0\LogicalOperator.pdb
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\4\LogicalOperator\LogicalOperator\obj\Debug\net6.0\LogicalOperator.genruntimeconfig.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\4\LogicalOperator\LogicalOperator\obj\Debug\net6.0\ref\LogicalOperator.dll
