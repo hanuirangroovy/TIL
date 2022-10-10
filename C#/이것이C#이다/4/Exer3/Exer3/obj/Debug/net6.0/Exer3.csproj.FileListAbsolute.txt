@@ -1,0 +1,15 @@
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\4\Exer3\Exer3\bin\Debug\net6.0\Exer3.exe
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\4\Exer3\Exer3\bin\Debug\net6.0\Exer3.deps.json
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\4\Exer3\Exer3\bin\Debug\net6.0\Exer3.runtimeconfig.json
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\4\Exer3\Exer3\bin\Debug\net6.0\Exer3.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\4\Exer3\Exer3\bin\Debug\net6.0\Exer3.pdb
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\4\Exer3\Exer3\obj\Debug\net6.0\Exer3.csproj.AssemblyReference.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\4\Exer3\Exer3\obj\Debug\net6.0\Exer3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\4\Exer3\Exer3\obj\Debug\net6.0\Exer3.AssemblyInfoInputs.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\4\Exer3\Exer3\obj\Debug\net6.0\Exer3.AssemblyInfo.cs
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\4\Exer3\Exer3\obj\Debug\net6.0\Exer3.csproj.CoreCompileInputs.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\4\Exer3\Exer3\obj\Debug\net6.0\Exer3.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\4\Exer3\Exer3\obj\Debug\net6.0\refint\Exer3.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\4\Exer3\Exer3\obj\Debug\net6.0\Exer3.pdb
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\4\Exer3\Exer3\obj\Debug\net6.0\Exer3.genruntimeconfig.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\4\Exer3\Exer3\obj\Debug\net6.0\ref\Exer3.dll
