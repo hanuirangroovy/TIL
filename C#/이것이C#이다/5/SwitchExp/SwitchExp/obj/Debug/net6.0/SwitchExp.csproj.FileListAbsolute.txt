@@ -1,0 +1,15 @@
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\5\SwitchExp\SwitchExp\bin\Debug\net6.0\SwitchExp.exe
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\5\SwitchExp\SwitchExp\bin\Debug\net6.0\SwitchExp.deps.json
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\5\SwitchExp\SwitchExp\bin\Debug\net6.0\SwitchExp.runtimeconfig.json
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\5\SwitchExp\SwitchExp\bin\Debug\net6.0\SwitchExp.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\5\SwitchExp\SwitchExp\bin\Debug\net6.0\SwitchExp.pdb
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\5\SwitchExp\SwitchExp\obj\Debug\net6.0\SwitchExp.csproj.AssemblyReference.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\5\SwitchExp\SwitchExp\obj\Debug\net6.0\SwitchExp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\5\SwitchExp\SwitchExp\obj\Debug\net6.0\SwitchExp.AssemblyInfoInputs.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\5\SwitchExp\SwitchExp\obj\Debug\net6.0\SwitchExp.AssemblyInfo.cs
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\5\SwitchExp\SwitchExp\obj\Debug\net6.0\SwitchExp.csproj.CoreCompileInputs.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\5\SwitchExp\SwitchExp\obj\Debug\net6.0\SwitchExp.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\5\SwitchExp\SwitchExp\obj\Debug\net6.0\refint\SwitchExp.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\5\SwitchExp\SwitchExp\obj\Debug\net6.0\SwitchExp.pdb
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\5\SwitchExp\SwitchExp\obj\Debug\net6.0\SwitchExp.genruntimeconfig.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\5\SwitchExp\SwitchExp\obj\Debug\net6.0\ref\SwitchExp.dll

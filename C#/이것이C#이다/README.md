@@ -7,6 +7,7 @@
    2. [2장. 처음 만드는 C# 프로그램](#2장-처음-만드는-C-프로그램)
    3. [3장. 데이터 보관하기](#3장-데이터-보관하기)
    4. [4장. 데이터를 가공하는 연산자](#3장-데이터를-가공하는-연산자)
+   5. [5장. 코드의 흐름 제어하기](#5장-코드의-흐름-제어하기)
 
 
 
@@ -947,6 +948,370 @@
    int a = 10;
    string b = a == 0 ? "가나다" : "ABC"; // ABC
    ```
+
+
+
+### 5장. 코드의 흐름 제어하기
+
+- 이 장의 핵심 개념
+  - 프로그래밍에서 흐름 제어의 역할을 이해합니다.
+  - 분기문을 이해하고 사용 방법을 익힙니다.
+  - 반복문을 이해하고 사용 방법을 익힙니다.
+  - 점프문을 이해하고 사용 방법을 익힙니다.
+
+
+
+#### 5.1 분기문
+
+- 분기문은 프로그램의 흐름을 조건에 따라 여러 갈래로 나누는 흐름 제어 구문입니다.
+- C#에서는 한 번에 단 하나의 조건만 평가할 수 있는 if문과 한 번에 여러 개의 조건을 평가할 수 있는 switch 문, 이렇게 두 가지의 분기문을 제공합니다.
+
+
+
+##### 5.1.1 if, else 그리고 else if
+
+- if 문에서 사용하는 조건식은 true 또는 false의 값을 가지는 bool 형식이어야 함.
+
+- ```
+  if (조건식)
+  	{
+  		참인_경우에_실행할_코드;
+  	}
+  ```
+
+- ```
+  int a = 10;
+  if ((a % 2) == 0)
+  	Console.WriteLine("짝수");
+  ```
+
+- ```
+  if ((a % 2) == 0)
+  	Console.WriteLine("짝수");
+  else
+  	Console.WriteLine("홀수");
+  ```
+
+- ```
+  int a = -10;
+  
+  if (a < 0)
+  	Console.WriteLine("음수");
+  else if (a > 0)
+  	Console.WriteLine("양수");
+  else
+  	Console.WriteLine("0");
+  	
+  ```
+
+
+
+##### 5.1.2 if문 중첩해서 사용하기
+
+- ```
+  if (number > 0)
+  {
+  	if (number % 2 == 0)
+  		Console.WriteLine("0보다 큰 짝수");
+  	else
+      	Console.WriteLine("0보다 큰 홀수");
+  }
+  else
+  {
+  	Console.WriteLine("0보다 작거나 같은 수");
+  }
+  ```
+
+
+
+##### 5.1.3 switch 문
+
+- switch 문은 조건식의 결과가 가질 수 있는 다양한 경우를 한번에 평가하고 프로그램을 가를 때 사용
+
+- ```
+  switch (조건식)
+  {
+  	case 상수1:
+  		// 실행할 코드
+  		break;
+  	case 상수2:
+  		// 실행할 코드
+  		break;
+  	case 상수N:
+  		// 실행할 코드
+  		break;
+  	default:
+  		// 실행할 코드
+  		breal;
+  }
+  ```
+
+- 부동소수형 값의 일치 여부 판단용으로 switch 문을 사용하는 일은 자제. 반올림 오차로 인해 의도한 결과와 다르게 동작할 수 있기에
+
+- break : 프로그램의 흐름을 멈추고 현재 실행 중인 코드의 바깥으로 실행 위치를 옮기는 역할
+
+- ```
+  int number = 1;
+  switch (number)
+  {
+  	case 1:
+  		Console.WriteLine("하나");
+  		break;
+  	case 2:
+  		Console.WriteLine("둘");
+  		break;
+  	case 3:
+  		Console.WriteLine("셋");
+  		break;
+  	default:
+  		Console.WriteLine("제가 아는 숫자는 1, 2, 3 뿐입니다.");
+  		break;		
+  	
+  }
+  ```
+
+- ```
+  object obj = 123; // C# 컴파일러는 123 리터럴을 평가하여 int 형식임을 유추합니다. 그리고 obj 안에 박싱해 넣습니다.
+  
+  switch(obj)
+  {
+  	case int i: // obj에 담겨 있는 데이터의 형식이 int 이므로 프로그램은 이 case 절을 따라 분기합니다.
+  		...
+  		break;
+  	case float f:
+  		...
+  		break;
+  	default:
+  		...
+  		break;
+  }
+  ```
+
+- TryParse() vs Parse()
+
+  - 두 메소드는 문자열을 숫자로 변환하는 같은 기능을 함.
+  - Parse() 메소드는 변환이 실패하면 예외를 던짐
+  - TryParse() 메소드는 변환의 성공여부를 반환하기 때문에 현재의 코드 흐름을 유지할 수 있음
+  - TryParse()가 변환한 데이터는 두 번째 매개변수에 저장됨. 이 매개변수는 특이하게 out이라는 키워드로 수식되어 있는데 out키워드는 출력 전용 매개변수임을 나타내는 요도로 쓰임 
+
+- 데이터 형식에 따라 분기하는 경우, switch 문의 when절을 이용하여 추가적인 조건 검사를 수행할 수 있음
+
+  - ```
+    switch (obj)
+    {
+    	case int i:
+    		Console.WriteLine($"{i}는 int 형식입니다.");
+    		break;
+    	case float f when f >= 0: // obj가 float 형식이며 0보다 크거나 같을 경우
+    		Console.WriteLine($"{f}는 양의 float 형식입니다.");
+    		break;
+    	case float f:
+    		Console.WriteLine($"{f}는 음의 float 형식입니다.");
+    		break;
+    	default:
+    		Console.WriteLine($"{obj}은(는) 모르는 형식입니다.");
+    		break;		
+    }
+    ```
+
+
+
+##### 5.1.4 switch 식
+
+- 식은 어떤 계산을 해서 결과를 내놓고 문은 어떤 일을 하는 것
+
+- ```
+  int input = Convert.ToInt32(Console.ReadLine());
+  
+  // 1의 자리를 버림. ex) 92 -> 90. 87 -> 80
+  int score = (int)(Math.Truncate(input/10.0) * 10);
+  string grade = "";
+  
+  switch(score)
+  {
+  	case 90:
+  		grade = "A";
+  		break;
+  	case 80:
+  		grade = "B";
+  		break;
+  	case 70:
+  		grade = "C";
+  		break;
+  	case 60:
+  		grade = "D";
+  		break;
+  	default:
+  		grade = "F";
+  		break;
+  }
+  ```
+
+- ```
+  int input = Convert.ToInt32(Console.ReadLine());
+  
+  // 1의 자리를 버림. ex) 92 -> 90. 87 -> 80
+  int score = (int)(Math.Truncate(input/10.0) * 10);
+  string grade = score switch
+  {
+  	90 => "A",
+  	80 => "B",
+      70 => "C",
+      60 => "D",
+      _ => "F"
+  }
+  ```
+
+- ```
+  bool reapeated = true;
+  
+  string grade = score switch
+  {
+  	90 when reapeated == true => "B+", // score가 90이어도 repeated가 true이면 "B+" 
+  	90 => "A",
+  	80 => "B",
+      70 => "C",
+      60 => "D",
+      _ => "F"
+  }
+  ```
+
+
+
+#### 5.2 반복문
+
+- 특정 조건을 만족하는 동안 코드 또는 코드 블록을 반복해서 실행하도록 하는 문장
+  - while
+  - do while
+  - for
+  - for each
+
+
+
+##### 5.2.1 while
+
+- ```
+  while (조건식)
+  	반복실행할_코드
+  ```
+
+- while 키워드 옆의 조건식은 if문에서의 조건식과 마찬가지로 논리 형식
+
+- while 문은 조건식이 참인 동안 코드를 반복 실행
+
+- 조건식이 false 값을 갖지 못한다면 프로그램은 while 문에서 영원히 헤어나오지 못하는데 이걸 무한반복이라함.
+
+##### 5.2.2 do while
+
+- while 문과 유사한 반복문이지만, while문이 조건식을 평가한 후 그 결과가 참이면 코드를 실행하는 데 반해, do while 문은 조건식을 평가하기 전에 무조건 처음 한 번은 코드를 실행함
+
+- ```
+  do
+  {
+  	반복실행할_코드_블록 // 이 코드블록은 최초 한번은 무조건 실행됩니다.
+  }
+  while(조건식); // do while 문과 while문의 또 다른 차이점은 ;
+  ```
+
+
+
+#### 5.2.3 for
+
+- ```
+  for(초기화식; 조건식; 반복식;)
+  	반복실행할_코드;
+  ```
+
+- for문 구성하는 요소
+
+  - 초기화식 : 반복을 실행하기 전에 가장 먼저, 딱 한번만 실행되는 코드. for 반복문에서 사용할 변수 등을 이곳에서 초기화합니다.
+  - 조건식 : 반복을 계속 수행할지를 결정하는 식. 조건식의 결과가 false가 되면 반복을 중단.
+  - 반복식 : 반복이 끝낼때마다 실행. 주로 여기서 조건식에서 사용하는 변수의 값을 조정. 반복식이 실행된 후에는 조건식이 실행되어 반복을 계속 진행할지 판단.
+
+- ```
+  for (int i=0; i < 5; i++)
+  	ConsoleWriteLine(i);
+  ```
+
+
+
+#### 5.2.4 중첩 for
+
+- ```
+  for (int i=0; i<5; i++)
+  	for (int j=0; j<10; j++)
+  ```
+
+
+
+##### 5.2.5 foreach
+
+- ```
+  foreach(데이터형식 변수명 in 배열_또는_컬렉션)
+  	코드_또는_코드블록
+  ```
+
+- foreach문은 in 키워드와 함께 사용하는데 foreach문이 한 번 반복을 수행할 때마다 배열 또는 컬렉션의 요소를 차례때로 순회하면서 in 키워드 앞에 있는 변수에 담아줌.
+
+  - ```
+    int[] arr = new int[]{0, 1, 2, 3, 4}; // 배열은 이렇게 선언
+    
+    for each (int a in arr)
+    {
+    	Console.WriteLine(a);
+    }
+    ```
+
+
+
+##### 5.2.6 for 또는 while을 이용한 무한 반복 코드
+
+- ```
+  for(;;)
+  	// 반복 실행할 코드 블록
+  ```
+
+- ```
+  while(true)
+  	// 반복 실행할 코드 블록
+  ```
+
+
+
+#### 5.3 점프문
+
+- 점프문은 흐름을 끊고 프로그램의 실행 위치를 원하는 곳으로 단숨에 도약시킬 수 있음
+  - break
+  - continue
+  - goto
+  - return
+  - throw
+
+
+
+##### 5.3.1 break
+
+- 현재 실행 중인 반복문이나 switch 문의 실행을 중단하고자 할 때 사용
+- 프로그램의 실행 위치는 while 블록 다음으로 옮겨짐
+
+
+
+##### 5.3.2 continue
+
+- 한 회 건너 뛰어 반복을 계속 수행하게 하는 기능
+
+
+
+##### 5.3.3 goto
+
+- ```
+  goto 레이블;
+  
+  레이블: // 레이블을 선언할 때는 콜론(:)을 붙입니다.
+  	// 이어지는 코드
+  ```
+
+- 레이블은 코드 안의 위치를 나타내는 표지판 같은 존재. goto문은 레이블이 가리키는 곳으로 바로 뛰어넘어감
 
 
 
