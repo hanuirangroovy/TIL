@@ -1,0 +1,15 @@
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\6\Return\Return\bin\Debug\net6.0\Return.exe
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\6\Return\Return\bin\Debug\net6.0\Return.deps.json
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\6\Return\Return\bin\Debug\net6.0\Return.runtimeconfig.json
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\6\Return\Return\bin\Debug\net6.0\Return.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\6\Return\Return\bin\Debug\net6.0\Return.pdb
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\6\Return\Return\obj\Debug\net6.0\Return.csproj.AssemblyReference.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\6\Return\Return\obj\Debug\net6.0\Return.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\6\Return\Return\obj\Debug\net6.0\Return.AssemblyInfoInputs.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\6\Return\Return\obj\Debug\net6.0\Return.AssemblyInfo.cs
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\6\Return\Return\obj\Debug\net6.0\Return.csproj.CoreCompileInputs.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\6\Return\Return\obj\Debug\net6.0\Return.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\6\Return\Return\obj\Debug\net6.0\refint\Return.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\6\Return\Return\obj\Debug\net6.0\Return.pdb
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\6\Return\Return\obj\Debug\net6.0\Return.genruntimeconfig.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\6\Return\Return\obj\Debug\net6.0\ref\Return.dll
