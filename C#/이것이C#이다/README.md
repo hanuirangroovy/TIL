@@ -1452,3 +1452,166 @@
     ref int result = ref obj.SomeMethod(); // result는 참조 지역 변수입니다.
     ````
 
+
+
+#### 6.6 출력 전용 매개변수
+
+- ref 키워드를 이용해서 메소드를 구현하면 몫과 나머지를 한 번에 반환할 수 있음
+
+  - ```
+    void Divide(int a, int b, ref int quotient, ref int remainder)
+    {
+    	quotient = a/ b;
+    	remainder = a % b;
+    }
+    ```
+
+- out 키워드를 이용한 출력 전용 매개변수
+
+  - 메소드의 선언부와 호출부에 ref 키워드 대신 out 키워드를 사용하면 됨
+
+  - ```
+    void Divide( int a, int b, out int uotient, out int remainder)
+    {
+    	quotient = a / b;
+    	remainder = a % b;
+    }
+    ```
+
+  - ```
+    int a = 20;
+    int b = 3;
+    int c;
+    int d;
+    
+    Divide(a, b, out c, out d);
+    
+    Console.WriteLine("Quotient:{0}, Remainder {1}", c, d);
+    ```
+
+- ref 키워드를 이용해서 매개변수를 넘기는 경우 메소드가 해당 매개변수에 결과를 저장하지 않아도 컴파일러는 아무런 경고를 하지 않음
+
+- out 키워드를 이용해서 매개변수를 넘길 때는 메소드가 해당 매개변수에 결과를 저장하지 않으면 컴파일러가 에러 메시지를 출력
+
+- 컴파일러가 호출당하는 메소드에서 그 지역 변수를 할당할 것을 보장하기 때문에 메소드를 호출하는 쪽에서는 초기화하지 않은 지역 변수를 메소드의 out 매개변수로 넘길 수 있음
+
+- 런타임에 발생하는 버그는 컴파일 타임에 발생하는 버그보다 훨씬 잡기가 어렵기 때문에 컴파일러를 통해 결과를 할당하지 않는 버그가 만들어질 가능성을 제거할 수 있다면 그 방법을 사용해야 함.
+
+- 출력 전용 매개변수는 메소드를 호출하기 전에 미리 선언할 필요가 없음. 호출할 때 매개변수 목록 안에서 즉석으로 선언하면 됨
+
+  - ```
+    int a = 20;
+    int b = 3;
+    // int c;
+    // int d;
+    
+    Divide(a, b, out c, out d);
+    
+    Console.WriteLine("Quotient:{0}, Remainder {1}", c, d);
+    ```
+
+
+
+#### 6.7 메소드 오버로딩
+
+- 메소드 오버로딩 : 하나의 메소드 이름에 여러 개의 구현을 올리는 것
+
+  - ```
+    int Plus(int a, int b)
+    {
+    	return a + b;
+    }
+    
+    double Plus(double a, double b)
+    {
+    	return a + b;
+    }
+    ```
+
+  - ```
+    int result1 = Plus(1, 2); // int Plus(int, int)를 호출합니다.
+    double result2 = Plus(3.1, 2.4); // double Plus(double, double)를 호출합니다.
+    ```
+
+- 메소드 오버로딩은 이름에 대한 고민을 줄여주는 동시에 코드를 일관성있게 유지해줌.
+
+
+
+#### 6.8 가변 개수의 인수
+
+- 가변 개수의 인수란 그 개수가 유연하게 변할 수있는 인수
+
+- 가변 개수의 인수는 params 키워드와 배열을 이용해서 선언
+
+- ```
+  int Sum(params int[] args)
+  {
+  	int sum = 0;
+  	for(int i=0; i<args.Length; i++)
+  	{
+  		sum += args[i];
+  	}
+  	
+  	return sum;
+  }
+  ```
+
+
+
+#### 6.9 명명된 인수
+
+- 명명된 인수 : 메소드를 호출할 때 인수의 이름에 근거해서 데이터를 할당할 수 있는 기능
+- 메소드를 호출할 때만 인수의 이름 뒤에 콜론(:)을 붙인 뒤 그 뒤에 할당할 데이터를 넣어주면 됨.
+
+
+
+#### 6.10 선택적 인수
+
+- 메소드의 매개변수는 기본값을 가질 수 있음
+
+- 매개변수를 특정 값으로 초기화하듯 메소드를 선언할 수 있음
+
+- ```
+  void MyMethod(int a, int b = 0)
+  {
+  	Console.WriteLine("{0},{1}",a,b);
+  }
+  ```
+
+- 기본값을 가진 매개변수는 필요에 따라 인수를 할당하거나 할당하지 않을 수 있기 때문에 선택적 인수라고 부름
+
+- 선택적 인수는 항상 필수 인수 뒤에 와야 함.
+
+
+
+#### 6.11 로컬 함수
+
+- 로컬함수는 메소드 안에서 선언되고, 선언된 메소드 안에서만 사용되는 특별한 함수
+
+- 로컬함수는 자신이 존재하는 지역에 선언되어 있는 변수를 사용할 수 있음
+
+- ```
+  class SomeClass
+  {
+  	public void SomeMethod() // 메소드 선언
+  	{
+  		int count = 0;
+          SomeLocalFunction(1, 2); // 로컬 함수 호출
+          SomeLocalFunction(3, 4);
+          
+          void SomeLocalFunction(int a, int b) // 로컬 함수 선언
+          {
+          	// Do Some Work
+          	Console.WriteLine($"count : {++count}"); // 로컬 함수는 자신이 속한 메소드의 지역 변수를 사용할 수 있습니다.
+          
+          }
+  	}
+  
+  }
+  ```
+
+- 
+
+  
+
+- 
