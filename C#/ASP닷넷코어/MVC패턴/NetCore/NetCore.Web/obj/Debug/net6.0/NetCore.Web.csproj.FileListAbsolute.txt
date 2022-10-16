@@ -239,3 +239,4 @@ C:\Users\하루\Desktop\TIL\C#\ASP닷넷코어\MVC패턴\NetCore\NetCore.Web\obj
 C:\Users\하루\Desktop\TIL\C#\ASP닷넷코어\MVC패턴\NetCore\NetCore.Web\obj\Debug\net6.0\NetCore.Web.pdb
 C:\Users\하루\Desktop\TIL\C#\ASP닷넷코어\MVC패턴\NetCore\NetCore.Web\obj\Debug\net6.0\NetCore.Web.genruntimeconfig.cache
 C:\Users\하루\Desktop\TIL\C#\ASP닷넷코어\MVC패턴\NetCore\NetCore.Web\obj\Debug\net6.0\ref\NetCore.Web.dll
+C:\Users\하루\Desktop\TIL\C#\ASP닷넷코어\MVC패턴\NetCore\NetCore.Web\bin\Debug\net6.0\bundleconfig.json
