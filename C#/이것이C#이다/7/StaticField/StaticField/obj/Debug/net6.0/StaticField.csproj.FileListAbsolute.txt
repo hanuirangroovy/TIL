@@ -1,0 +1,15 @@
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\7\StaticField\StaticField\bin\Debug\net6.0\StaticField.exe
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\7\StaticField\StaticField\bin\Debug\net6.0\StaticField.deps.json
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\7\StaticField\StaticField\bin\Debug\net6.0\StaticField.runtimeconfig.json
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\7\StaticField\StaticField\bin\Debug\net6.0\StaticField.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\7\StaticField\StaticField\bin\Debug\net6.0\StaticField.pdb
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\7\StaticField\StaticField\obj\Debug\net6.0\StaticField.csproj.AssemblyReference.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\7\StaticField\StaticField\obj\Debug\net6.0\StaticField.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\7\StaticField\StaticField\obj\Debug\net6.0\StaticField.AssemblyInfoInputs.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\7\StaticField\StaticField\obj\Debug\net6.0\StaticField.AssemblyInfo.cs
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\7\StaticField\StaticField\obj\Debug\net6.0\StaticField.csproj.CoreCompileInputs.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\7\StaticField\StaticField\obj\Debug\net6.0\StaticField.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\7\StaticField\StaticField\obj\Debug\net6.0\refint\StaticField.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\7\StaticField\StaticField\obj\Debug\net6.0\StaticField.pdb
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\7\StaticField\StaticField\obj\Debug\net6.0\StaticField.genruntimeconfig.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\7\StaticField\StaticField\obj\Debug\net6.0\ref\StaticField.dll
