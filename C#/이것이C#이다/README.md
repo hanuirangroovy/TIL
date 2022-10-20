@@ -1749,3 +1749,28 @@
 - 정적 메소드는 클래스의 인스턴스를 생성하지 않아도 호출이 가능한 메소드
 - 인스턴스 메소드 : 클래스의 인스턴스를 생성해야만 호출할 수 있는 메소드
 - 보통 객체 내부의 데이터를 이용해야 하는 경우에는 인스턴스 메소드를 선언하고, 내부 데이터를 이용할 일이 없는 경우에는 별도의 인스턴스 생성없이 호출할 수 있도록 메소드를 정적으로 선언
+
+
+
+#### 7.5 객체 복사하기: 얕은 복사와 깊은 복사
+
+- 객체를 복사할 때 참조만 살짝 복사하는 것을 얕은 복사
+
+- target이 힙에 보관되어 있는 내용을 source로부터 복사해서 받아 별도의 힙 공간에 객체를 보관하는 것이 깊은 복사
+
+- ```
+  class MyClass
+  {
+  	public int MyField1;
+  	public int MyField2;
+  	public MyClass DeepCopy()
+  	{
+  		MyClass newCopy = new MyClass();
+  		newCopy.MyField1 = this.MyField1;
+  		newCopy.MyField2 = this.MyField2;
+  		return newCopy;
+  	}
+  }
+  ```
+
+- ICloneable.Clone() 메소드 -Clone() 메소드 하나만 갖고 있으며 객체를 힙에 새로 할당해서 그곳에 자신의 멤버를 일일이 복사해 넣음.
