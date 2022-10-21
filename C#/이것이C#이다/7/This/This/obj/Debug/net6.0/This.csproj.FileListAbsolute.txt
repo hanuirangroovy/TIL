@@ -1,0 +1,15 @@
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\7\This\This\bin\Debug\net6.0\This.exe
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\7\This\This\bin\Debug\net6.0\This.deps.json
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\7\This\This\bin\Debug\net6.0\This.runtimeconfig.json
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\7\This\This\bin\Debug\net6.0\This.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\7\This\This\bin\Debug\net6.0\This.pdb
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\7\This\This\obj\Debug\net6.0\This.csproj.AssemblyReference.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\7\This\This\obj\Debug\net6.0\This.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\7\This\This\obj\Debug\net6.0\This.AssemblyInfoInputs.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\7\This\This\obj\Debug\net6.0\This.AssemblyInfo.cs
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\7\This\This\obj\Debug\net6.0\This.csproj.CoreCompileInputs.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\7\This\This\obj\Debug\net6.0\This.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\7\This\This\obj\Debug\net6.0\refint\This.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\7\This\This\obj\Debug\net6.0\This.pdb
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\7\This\This\obj\Debug\net6.0\This.genruntimeconfig.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\7\This\This\obj\Debug\net6.0\ref\This.dll
