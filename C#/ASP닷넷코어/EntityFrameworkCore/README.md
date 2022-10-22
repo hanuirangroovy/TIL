@@ -14,3 +14,6 @@
   - 사용자 이름, 이메일, 비밀번호 : Not null 지정, 컬럼길이 지정, 컬럼유형 지정
 - 복합키 지정. Data annotations에서 각각 Primary Key 지정하는 것만으로는 복합키로 사용불가
   - 예를 들기 위해 UserRole과 UserRolesByUser 테이블 추가
+- Database 연결사용자 및 비밀번호 추가 후에 Database와 사용자 매핑
+- Database 접속정보를 JSON으로 구성
+- Database 접속정보와 Migrations 프로젝트 지정

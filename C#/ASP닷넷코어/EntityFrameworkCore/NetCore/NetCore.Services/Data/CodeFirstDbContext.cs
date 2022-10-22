@@ -15,8 +15,7 @@ namespace NetCore.Services.Data
     public class CodeFirstDbContext : DbContext // DbContext 상속
     {
         public CodeFirstDbContext(DbContextOptions<CodeFirstDbContext> options) : base(options) // 생성자 상속
-        { 
-        
+        {  
         }
 
         // DB 테이블 리스트 지정

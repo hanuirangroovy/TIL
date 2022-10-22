@@ -1095,6 +1095,24 @@
           }
         }
       },
+      "Microsoft.Extensions.Caching.SqlServer/6.0.10": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Data.SqlClient": "1.0.19249.1",
+          "Microsoft.Extensions.Caching.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Options": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.Extensions.Caching.SqlServer.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.Caching.SqlServer.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration.Abstractions/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -3442,6 +3460,20 @@
           "bin/placeholder/NetCore.Data.dll": {}
         }
       },
+      "NetCore.Migrations/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.Extensions.Caching.SqlServer": "6.0.10",
+          "NetCore.Services": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NetCore.Migrations.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NetCore.Migrations.dll": {}
+        }
+      },
       "NetCore.Services/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -4567,6 +4599,25 @@
         "microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",
         "microsoft.extensions.caching.memory.nuspec",
         "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.Caching.SqlServer/6.0.10": {
+      "sha512": "1Cpm3mLwS2eyEirT1QIw+gPYF0lyDTk2j08yUhE+xPS7sV/9792ZKzsGgOmIEwzq7hp9UoUcU5TUSkWNYHxVIA==",
+      "type": "package",
+      "path": "microsoft.extensions.caching.sqlserver/6.0.10",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Caching.SqlServer.dll",
+        "lib/net461/Microsoft.Extensions.Caching.SqlServer.xml",
+        "lib/net6.0/Microsoft.Extensions.Caching.SqlServer.dll",
+        "lib/net6.0/Microsoft.Extensions.Caching.SqlServer.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Caching.SqlServer.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Caching.SqlServer.xml",
+        "microsoft.extensions.caching.sqlserver.6.0.10.nupkg.sha512",
+        "microsoft.extensions.caching.sqlserver.nuspec"
       ]
     },
     "Microsoft.Extensions.Configuration.Abstractions/6.0.0": {
@@ -9793,6 +9844,11 @@
       "path": "../NetCore.Data/NetCore.Data.csproj",
       "msbuildProject": "../NetCore.Data/NetCore.Data.csproj"
     },
+    "NetCore.Migrations/1.0.0": {
+      "type": "project",
+      "path": "../NetCore.Migrations/NetCore.Migrations.csproj",
+      "msbuildProject": "../NetCore.Migrations/NetCore.Migrations.csproj"
+    },
     "NetCore.Services/1.0.0": {
       "type": "project",
       "path": "../NetCore.Services/NetCore.Services.csproj",
@@ -9802,6 +9858,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.10",
+      "NetCore.Migrations >= 1.0.0",
       "NetCore.Services >= 1.0.0"
     ]
   },
@@ -9832,6 +9889,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Users\\하루\\Desktop\\TIL\\C#\\ASP닷넷코어\\EntityFrameworkCore\\NetCore\\NetCore.Migrations\\NetCore.Migrations.csproj": {
+              "projectPath": "C:\\Users\\하루\\Desktop\\TIL\\C#\\ASP닷넷코어\\EntityFrameworkCore\\NetCore\\NetCore.Migrations\\NetCore.Migrations.csproj"
+            },
             "C:\\Users\\하루\\Desktop\\TIL\\C#\\ASP닷넷코어\\EntityFrameworkCore\\NetCore\\NetCore.Services\\NetCore.Services.csproj": {
               "projectPath": "C:\\Users\\하루\\Desktop\\TIL\\C#\\ASP닷넷코어\\EntityFrameworkCore\\NetCore\\NetCore.Services\\NetCore.Services.csproj"
             }
