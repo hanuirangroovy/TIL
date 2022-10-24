@@ -2,18 +2,16 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace NetCore.Data.DataModels
 {
-    internal class UserRole
+    public class UserRole
     {
-        [Key, StringLength(50), Column(TypeName ="varchar(50)")]
+        [Key, StringLength(50), Column(TypeName = "varchar(50)")]
         public string RoleId { get; set; }
 
-        [Required, StringLength(100), Column(TypeName ="nvarchar(100)")]
+        [Required, StringLength(100), Column(TypeName = "nvarchar(100)")]
         public string RoleName { get; set; }
 
         [Required]
@@ -21,5 +19,8 @@ namespace NetCore.Data.DataModels
 
         [Required]
         public DateTime ModifiedUtcDate { get; set; }
+
+        [ForeignKey("RoleId")]
+        public virtual ICollection<UserRolesByUser> UserRolesByUsers { get; set; }
     }
 }

@@ -27,7 +27,7 @@ builder.Services.AddHttpContextAccessor();
 //DB접속정보, Migrations 프로젝트 지정
 builder.Services.AddDbContext<CodeFirstDbContext>(options =>
             options.UseSqlServer(connectionString: builder.Configuration.GetConnectionString(name: "DefaultConnection"),
-                                 sqlServerOptionsAction: mig => mig.MigrationsAssembly(assemblyName: "NetCore.V5.Services")));
+                                 sqlServerOptionsAction: mig => mig.MigrationsAssembly(assemblyName: "NetCore.Services")));
 
 //DB접속정보만
 //builder.Services.AddDbContext<DBFirstDbContext>(options =>

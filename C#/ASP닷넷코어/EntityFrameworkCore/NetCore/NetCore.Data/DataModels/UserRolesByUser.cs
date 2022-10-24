@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace NetCore.Data.DataModels
 {
+    /// <summary>
+    /// 사용자 소유권한
+    /// </summary>
     public class UserRolesByUser
     {
         [Key, StringLength(50), Column(TypeName ="varchar(50)")]
@@ -18,5 +21,9 @@ namespace NetCore.Data.DataModels
 
         [Required]
         public DateTime OwnedUtcDate { get; set; }
+
+        public virtual User User { get; set; }
+
+        public virtual UserRole UserRole { get; set; }
     }
 }

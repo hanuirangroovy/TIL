@@ -30,5 +30,9 @@ namespace NetCore.Data.DataModels
 
         [Required]
         public DateTime JoinedUtcDate { get; set; }
+
+        // FK 지정
+        [ForeignKey("UserId")]
+        public virtual ICollection<UserRolesByUser> UserRolesByUsers { get; set; } 
     }
 }
