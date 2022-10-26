@@ -28,7 +28,7 @@ namespace MvcMovie.Controllers
         // GET: Movies/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null)
+            if (id == null || _context.Movie == null)
             {
                 return NotFound();
             }
@@ -102,7 +102,7 @@ namespace MvcMovie.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!MoviesExists(movie.Id))
+                    if (!MovieExists(movie.Id))
                     {
                         return NotFound();
                     }
@@ -141,7 +141,7 @@ namespace MvcMovie.Controllers
         {
             if (_context.Movie == null)
             {
-                return Problem("Entity set 'MvcMovieContext.Movies'  is null.");
+                return Problem("Entity set 'MvcMovieContext.Movie'  is null.");
             }
             var movie = await _context.Movie.FindAsync(id);
             if (movie != null)
@@ -153,8 +153,7 @@ namespace MvcMovie.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-
-        private bool MoviesExists(int id)
+        private bool MovieExists(int id)
         {
           return _context.Movie.Any(e => e.Id == id);
         }
