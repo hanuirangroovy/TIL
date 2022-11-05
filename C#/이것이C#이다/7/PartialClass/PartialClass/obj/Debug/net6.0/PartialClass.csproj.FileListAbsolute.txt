@@ -1,0 +1,15 @@
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\7\PartialClass\PartialClass\bin\Debug\net6.0\PartialClass.exe
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\7\PartialClass\PartialClass\bin\Debug\net6.0\PartialClass.deps.json
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\7\PartialClass\PartialClass\bin\Debug\net6.0\PartialClass.runtimeconfig.json
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\7\PartialClass\PartialClass\bin\Debug\net6.0\PartialClass.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\7\PartialClass\PartialClass\bin\Debug\net6.0\PartialClass.pdb
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\7\PartialClass\PartialClass\obj\Debug\net6.0\PartialClass.csproj.AssemblyReference.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\7\PartialClass\PartialClass\obj\Debug\net6.0\PartialClass.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\7\PartialClass\PartialClass\obj\Debug\net6.0\PartialClass.AssemblyInfoInputs.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\7\PartialClass\PartialClass\obj\Debug\net6.0\PartialClass.AssemblyInfo.cs
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\7\PartialClass\PartialClass\obj\Debug\net6.0\PartialClass.csproj.CoreCompileInputs.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\7\PartialClass\PartialClass\obj\Debug\net6.0\PartialClass.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\7\PartialClass\PartialClass\obj\Debug\net6.0\refint\PartialClass.dll
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\7\PartialClass\PartialClass\obj\Debug\net6.0\PartialClass.pdb
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\7\PartialClass\PartialClass\obj\Debug\net6.0\PartialClass.genruntimeconfig.cache
+C:\Users\하루\Desktop\TIL\C#\이것이C#이다\7\PartialClass\PartialClass\obj\Debug\net6.0\ref\PartialClass.dll
