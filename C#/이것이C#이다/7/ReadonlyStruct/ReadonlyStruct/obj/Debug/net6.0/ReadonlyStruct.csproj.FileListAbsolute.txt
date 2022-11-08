@@ -1,0 +1,5 @@
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\7\ReadonlyStruct\ReadonlyStruct\obj\Debug\net6.0\ReadonlyStruct.csproj.AssemblyReference.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\7\ReadonlyStruct\ReadonlyStruct\obj\Debug\net6.0\ReadonlyStruct.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\7\ReadonlyStruct\ReadonlyStruct\obj\Debug\net6.0\ReadonlyStruct.AssemblyInfoInputs.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\7\ReadonlyStruct\ReadonlyStruct\obj\Debug\net6.0\ReadonlyStruct.AssemblyInfo.cs
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\7\ReadonlyStruct\ReadonlyStruct\obj\Debug\net6.0\ReadonlyStruct.csproj.CoreCompileInputs.cache
