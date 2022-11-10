@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class = "list">
+        <li class="item" draggable="ture">P</li>
+        <li class="item" draggable="ture">P</li>
+        <li class="item" draggable="ture">A</li>
+        <li class="item" draggable="ture">E</li>
+        <li class="item" draggable="ture">L</li>
+    </ul>
+    <script>
+        const list = document.querySelector(".list");
+        
+        // dragstart, dragover, drop
+        let picked = null;
+        list.addEventListner("dragstart",(e) => {
+            const obj = e.target;
+
+            let puckedIndex = null;
+
+            picked = obj
+            pickedIndex = [...obj.parentNode.children.indexOf(obj)]
+            console.log({obj})
+            picked = e.target
+        })
+        list.addEventListener("dragover",() => {
+            e.preventDefault()
+            // console.log(e)
+
+        })
+        list.addEventListener("dragdrop",() => {
+            const obj = e.target;
+            const index = [...obj.parentNode.children.indexOf(obj)]
+
+            // if (index > pickedIndex){
+            //     obj.after(picked);
+            // }else{
+            //     obj.before(picked);
+            // }
+
+            index > pickedIndex? obj.after(ppicked) : obj.before
+
+        })
+
+    </script>
+</body>
+</html>
