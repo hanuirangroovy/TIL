@@ -83,12 +83,12 @@ class App extends React.Component {
       console.log(response);
 
       this.setState({
-        city: response.name,
-        country: response.sys.country,
+        city: `${response.name}, ${response.sys.country}`,
         celsius: this.calCelsius(response.main.temp),
         temp_max: this.calCelsius(response.main.temp_max),
         temp_min: this.calCelsius(response.main.temp_min),
         description: response.weather[0].description,
+        error: false,
       });
 
       this.get_WeatherIcon(this.weatherIcon, response.weather[0].id);
@@ -100,7 +100,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Form loadweather={this.getWeather} />
+        <Form loadweather={this.getWeather} error={this.state.error} />
         <Weather
           city={this.state.city}
           coutry={this.state.country}
