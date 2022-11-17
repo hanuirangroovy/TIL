@@ -484,3 +484,80 @@
 
 - strictFunctionTypes 옵션을 켜면 함수를 할당할 시에 함수의 매개변수 타입이 같거나 슈퍼타입인 경우가 아닌 경우, 에러를 통해 경고한다.
 
+
+
+### 04. 타입 별칭 (Types Alias)
+
+- 타입 별칭(별명)
+
+  - Interface랑 비슷해 보입니다.
+  - Primitive, Union Type, Tuple, Function
+  - 기타 직접 작성해야하는 타입을 다른 이름을 지정할 수 있습니다.
+  - 만들어진 타입의 refer로 사용하는 것이지 타입을 만드는 것은 아닙니다.
+
+- Aliasing Primitive
+
+  - ```
+    type MyStringType = string;
+    
+    const str = 'world';
+    
+    let myStr: MyStringType = 'hello';
+    myStr = str;
+    ```
+
+- Aliasing Union Type
+
+  - ```
+    let person: string | number = 0;
+    person = 'Mark';
+    
+    type StringOrNumber = string | number;
+    
+    let another: StringOrNumber = 0;
+    another = 'Anna';
+    
+    /*
+    1. 유니온 타입은 A도 가능하고 B도 가능한 타입
+    2. 길게 쓰는 걸 짧게
+    */
+    ```
+
+- Aliasing Function
+
+  - ```
+    type EatType = (food:string) => void;
+    ```
+
+    
+
+## Ch4. TypeScirpt Complier
+
+### 01. Compilation Context
+
+- 타입스크립트 파일들을 그룹으로 만들고 그룹화된 타입스크립트 파일들을 자바스크립트로 변환하는데 이 과정에서 타입스크립트의 설정을 더하는 것.
+- 어떤 파일을 컴파일 할 건지 어떤 파일을 컴파일하지 않을 건지나 타입스크립트를 자바스크립트로 변환해줄 때 어떤 타입스크립트 옵션을 사용할 지 등의 맥락을 일컫음
+- 일종의 논리적인 grouping과 어떠한 방식을 사용할 건지가 적혀있는 맥락을 의미
+- 이러한 부분은 tsconfig.jsonfile에 적혀있음
+
+
+
+### 02. tsconfig schema
+
+- http://json.schemastore.org/tsconfig - tsconfig.json 파일의 전체적인 schema를 알아볼 수 있음
+- 최상위 프로퍼티
+  - compileOnSave
+  - extends
+  - compileOptions - 어떤 설정으로 컴파일 할 건지 여러가지 맥락으로 들어있음
+  - files
+  - include
+  - exclude
+  - references
+- files, include, exclude 세 개를 묶어서 어떤 파일을 컴파일할건지 결정
+- 실습
+  - `mkdir compilation-context`
+  - `cd compilation-context`
+  - ` npm init -y`
+  - `npm i typescript -D`
+  - `npx tsc --init`
+  - `cat tsconfig.json`
