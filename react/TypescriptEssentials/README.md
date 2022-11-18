@@ -561,3 +561,31 @@
   - `npm i typescript -D`
   - `npx tsc --init`
   - `cat tsconfig.json`
+
+
+
+### 03.complileOnSave
+
+- ```
+  {
+    "compileOnSave": true,  // 파일 save하면 컴파일하겠다는 설정이 된 것
+    "compilerOptions": {
+  	}
+  }
+  ```
+
+-  true / false (default false)
+
+- 설정했을 때 누가 컴파일 시켜주느냐
+
+  - Visual Studio 2015 with TypeScript 1.8.4 이상
+  - atom-typescript 플러그인
+
+
+
+### 04. extends
+
+- 상속을 받아올 부모 설정의  path를 적어주면 됨
+- TypeScript version 2.1 이상이면 됨
+- 파일(상대) 경로명 type : string
+- `npm install --save-dev @tsconfig/deno`
