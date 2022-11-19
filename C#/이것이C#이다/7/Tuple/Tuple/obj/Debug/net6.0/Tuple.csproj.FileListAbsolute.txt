@@ -1,0 +1,15 @@
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\7\Tuple\Tuple\bin\Debug\net6.0\Tuple.exe
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\7\Tuple\Tuple\bin\Debug\net6.0\Tuple.deps.json
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\7\Tuple\Tuple\bin\Debug\net6.0\Tuple.runtimeconfig.json
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\7\Tuple\Tuple\bin\Debug\net6.0\Tuple.dll
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\7\Tuple\Tuple\bin\Debug\net6.0\Tuple.pdb
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\7\Tuple\Tuple\obj\Debug\net6.0\Tuple.csproj.AssemblyReference.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\7\Tuple\Tuple\obj\Debug\net6.0\Tuple.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\7\Tuple\Tuple\obj\Debug\net6.0\Tuple.AssemblyInfoInputs.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\7\Tuple\Tuple\obj\Debug\net6.0\Tuple.AssemblyInfo.cs
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\7\Tuple\Tuple\obj\Debug\net6.0\Tuple.csproj.CoreCompileInputs.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\7\Tuple\Tuple\obj\Debug\net6.0\Tuple.dll
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\7\Tuple\Tuple\obj\Debug\net6.0\refint\Tuple.dll
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\7\Tuple\Tuple\obj\Debug\net6.0\Tuple.pdb
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\7\Tuple\Tuple\obj\Debug\net6.0\Tuple.genruntimeconfig.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\7\Tuple\Tuple\obj\Debug\net6.0\ref\Tuple.dll

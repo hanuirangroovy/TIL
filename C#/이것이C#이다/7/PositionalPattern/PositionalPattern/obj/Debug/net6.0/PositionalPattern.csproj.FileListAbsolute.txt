@@ -1,0 +1,15 @@
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\7\PositionalPattern\PositionalPattern\bin\Debug\net6.0\PositionalPattern.exe
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\7\PositionalPattern\PositionalPattern\bin\Debug\net6.0\PositionalPattern.deps.json
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\7\PositionalPattern\PositionalPattern\bin\Debug\net6.0\PositionalPattern.runtimeconfig.json
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\7\PositionalPattern\PositionalPattern\bin\Debug\net6.0\PositionalPattern.dll
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\7\PositionalPattern\PositionalPattern\bin\Debug\net6.0\PositionalPattern.pdb
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\7\PositionalPattern\PositionalPattern\obj\Debug\net6.0\PositionalPattern.csproj.AssemblyReference.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\7\PositionalPattern\PositionalPattern\obj\Debug\net6.0\PositionalPattern.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\7\PositionalPattern\PositionalPattern\obj\Debug\net6.0\PositionalPattern.AssemblyInfoInputs.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\7\PositionalPattern\PositionalPattern\obj\Debug\net6.0\PositionalPattern.AssemblyInfo.cs
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\7\PositionalPattern\PositionalPattern\obj\Debug\net6.0\PositionalPattern.csproj.CoreCompileInputs.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\7\PositionalPattern\PositionalPattern\obj\Debug\net6.0\PositionalPattern.dll
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\7\PositionalPattern\PositionalPattern\obj\Debug\net6.0\refint\PositionalPattern.dll
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\7\PositionalPattern\PositionalPattern\obj\Debug\net6.0\PositionalPattern.pdb
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\7\PositionalPattern\PositionalPattern\obj\Debug\net6.0\PositionalPattern.genruntimeconfig.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\7\PositionalPattern\PositionalPattern\obj\Debug\net6.0\ref\PositionalPattern.dll
