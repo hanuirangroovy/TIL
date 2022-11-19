@@ -7,7 +7,7 @@ import React from "react";
 import Form from "./app_component/form.component";
 
 // api call https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid={API key}
-const API_key = "15ead4225fc7c792234304db576dde5e";
+const API_key = "";
 
 class App extends React.Component {
   constructor() {
