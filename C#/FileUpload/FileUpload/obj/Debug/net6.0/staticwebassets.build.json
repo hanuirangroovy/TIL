@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "yx5ZpR213aSZNmHXEgmF6ccuJFwu53IpHPq32h+66dQ=",
+  "Source": "FileUpload",
+  "BasePath": "_content/FileUpload",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "FileUpload\\wwwroot",
+      "Source": "FileUpload",
+      "ContentRoot": "C:\\Users\\하루\\Desktop\\공부\\TIL\\C#\\FileUpload\\FileUpload\\wwwroot\\",
+      "BasePath": "_content/FileUpload",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

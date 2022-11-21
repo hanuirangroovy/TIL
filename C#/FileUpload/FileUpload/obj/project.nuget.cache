@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "uLp7e0bmk1X2HkTR2l9wHp3oLyRSP8/SAOEX3JXisO7HwprZ7nP7ozyJl9OOomQmGtbinTvbSWlrwW+T+MsPvg==",
+  "dgSpecHash": "BcG06yw4RGoKaijQpIhdDEXMmJRRCmWUCbSflb0DX9pEjDR5M9ipU4/x81lRseSm7qLV2rvaSw9eInYFjHXNaA==",
   "success": true,
   "projectFilePath": "C:\\Users\\하루\\Desktop\\공부\\TIL\\C#\\FileUpload\\FileUpload\\FileUpload.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\하루\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\하루\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\하루\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\하루\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\하루\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\하루\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
   "logs": []
 }
