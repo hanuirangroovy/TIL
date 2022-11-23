@@ -589,3 +589,40 @@
 - TypeScript version 2.1 이상이면 됨
 - 파일(상대) 경로명 type : string
 - `npm install --save-dev @tsconfig/deno`
+
+
+
+### 05. files, include, exclude
+
+- 프로젝트에서 어떤 디렉토리 안에 어떤 파일을 컴파일할 것인지 결정
+
+- files에 setting 된 파일들이 가장 세기에 excludes로 제외가 되어도 files에 정해져있으면 컴파일 하게 됨 
+- 셋 다 설정이 없으면, 전부 다 컴파일
+- files
+  - 상대 혹은 적대 경로의 리스트 배열
+  - exclude보다 셈
+- include, exclude
+  - glob 패턴 (마치 .gitignore)
+  - include
+    - exclude보다 약함
+    - *같은 걸 사용하면, .ts/ .tsx/ .d.ts만 include (allowJS)
+  - exclude
+    - 설정 안하면 4가지(node_modules, bower_components, jspm_packages, <outDir>)를 default로 제외합니다.
+    - <outDir>은 항상 제외합니다.(include에 있어도)
+
+
+
+### compileOptions - typeRoots, types
+
+- 프로젝트에서 라이브러리를 사용했을 때 typing이 안되어있을 때 타입을 지정해주는 도구가 필요
+
+- @types
+  - TypeScript 2.0부터 사용 가능해진 내장 type definition 시스템
+  - 아무 설정을 안하면?
+    - node_modules/@types라는 모든 경로를 찾아서 사용
+  - typeRoots를 사용하면?
+    - 배열 안에 들어있는 경로들 아래서만 가져옴
+  - types를 사용하면?
+    - 배열 안의 모듈 혹은 ./node_modules/@types/ 안의 모듈 이름에서 찾아옴
+    - [] 빈 배열을 넣는다는 건 이 시스템을 이용하지 않겠다는 것
+  - typeRoots와 types를 같이 사용X
