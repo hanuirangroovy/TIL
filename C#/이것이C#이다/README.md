@@ -2142,3 +2142,24 @@
 6. 다형성, 오버라이딩
    - 다형성 - 객체가 여러 형태를 가질 수 있음을 의미. 자신으로부터 상속받아 만들어진 파생 클래스를 통해 다형성을 실현
    - 오버라이딩 - 재정의. 파생 클래스에서 기능 구현을 위해 메소드를 오버라이딩 
+
+7. ```
+   private static double GetDiscountRate(object client)
+   {
+   	switch (client)
+   	{
+   		case ("학생", int n) when n < 18:
+   			return 0.2;
+   		case ("학생", _):
+   			return 0.1;
+   		case ("일반", int n) when n < 18:
+   			return 0.1;
+   		case ("일반", _):
+   			return 0.05;
+   		default:
+   			return 0;
+   	}
+   }
+   ```
+
+8. 

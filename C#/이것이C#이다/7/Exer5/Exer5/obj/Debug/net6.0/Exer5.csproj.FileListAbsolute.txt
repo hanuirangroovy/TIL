@@ -1,0 +1,15 @@
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\7\Exer5\Exer5\bin\Debug\net6.0\Exer5.exe
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\7\Exer5\Exer5\bin\Debug\net6.0\Exer5.deps.json
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\7\Exer5\Exer5\bin\Debug\net6.0\Exer5.runtimeconfig.json
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\7\Exer5\Exer5\bin\Debug\net6.0\Exer5.dll
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\7\Exer5\Exer5\bin\Debug\net6.0\Exer5.pdb
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\7\Exer5\Exer5\obj\Debug\net6.0\Exer5.csproj.AssemblyReference.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\7\Exer5\Exer5\obj\Debug\net6.0\Exer5.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\7\Exer5\Exer5\obj\Debug\net6.0\Exer5.AssemblyInfoInputs.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\7\Exer5\Exer5\obj\Debug\net6.0\Exer5.AssemblyInfo.cs
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\7\Exer5\Exer5\obj\Debug\net6.0\Exer5.csproj.CoreCompileInputs.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\7\Exer5\Exer5\obj\Debug\net6.0\Exer5.dll
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\7\Exer5\Exer5\obj\Debug\net6.0\refint\Exer5.dll
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\7\Exer5\Exer5\obj\Debug\net6.0\Exer5.pdb
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\7\Exer5\Exer5\obj\Debug\net6.0\Exer5.genruntimeconfig.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\7\Exer5\Exer5\obj\Debug\net6.0\ref\Exer5.dll
