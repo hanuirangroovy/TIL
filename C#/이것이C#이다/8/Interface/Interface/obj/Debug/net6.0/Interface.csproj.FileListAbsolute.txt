@@ -1,0 +1,15 @@
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\8\Interface\Interface\obj\Debug\net6.0\Interface.csproj.AssemblyReference.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\8\Interface\Interface\obj\Debug\net6.0\Interface.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\8\Interface\Interface\obj\Debug\net6.0\Interface.AssemblyInfoInputs.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\8\Interface\Interface\obj\Debug\net6.0\Interface.AssemblyInfo.cs
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\8\Interface\Interface\obj\Debug\net6.0\Interface.csproj.CoreCompileInputs.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\8\Interface\Interface\bin\Debug\net6.0\Interface.exe
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\8\Interface\Interface\bin\Debug\net6.0\Interface.deps.json
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\8\Interface\Interface\bin\Debug\net6.0\Interface.runtimeconfig.json
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\8\Interface\Interface\bin\Debug\net6.0\Interface.dll
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\8\Interface\Interface\bin\Debug\net6.0\Interface.pdb
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\8\Interface\Interface\obj\Debug\net6.0\Interface.dll
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\8\Interface\Interface\obj\Debug\net6.0\refint\Interface.dll
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\8\Interface\Interface\obj\Debug\net6.0\Interface.pdb
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\8\Interface\Interface\obj\Debug\net6.0\Interface.genruntimeconfig.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\8\Interface\Interface\obj\Debug\net6.0\ref\Interface.dll
