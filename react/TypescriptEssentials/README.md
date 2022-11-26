@@ -626,3 +626,19 @@
     - 배열 안의 모듈 혹은 ./node_modules/@types/ 안의 모듈 이름에서 찾아옴
     - [] 빈 배열을 넣는다는 건 이 시스템을 이용하지 않겠다는 것
   - typeRoots와 types를 같이 사용X
+
+
+
+### compileOptions - target과 libs
+
+- target - 어떤 런타임에서 실행할 수 있는 지 결정해줌
+  - 빌드의 결과물을 어떤 버전으로 할 것이냐
+  - 지정을 안하면 es3
+- libs - 최종적으로 실행하고자하는 환경에 맞게 기본 타입들을 정의
+  - 기본 type definition 라이브러리를 어떤 것을 사용할 것이냐
+  - lib를 지정하지 않을 때,
+    - target이 'es3'이고, 디폴트로 lib.d.ts를 사용함
+    - target이 'es5'이면, 디폴트로 dom, es5, scripthost를 사용
+    - target이 'es6'이면, 디폴트로 dom, es6, dom.iterable, scripthost를 사용
+  - lib를 지정하면 그 lib 배열로만 라이브러리를 사용
+    - 빈 [] => 'no definition found ...'
