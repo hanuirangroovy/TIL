@@ -642,3 +642,94 @@
     - target이 'es6'이면, 디폴트로 dom, es6, dom.iterable, scripthost를 사용
   - lib를 지정하면 그 lib 배열로만 라이브러리를 사용
     - 빈 [] => 'no definition found ...'
+
+
+
+### compileOptions - outDir, outFile, rootDir
+
+- outFile - 번들러같은 형태로 지원. 일반적인 형태로는 하나의 파일로 떨굴 수 없음. 모듈이 시스템 혹은 amd와 같은 형태로 지원이 되야 파일을 하나로 만들어줌.
+- outDir - 컴파일하고자하는 root 어떤 영역을 대상으로 그대로 outDir로 지정된 특정 폴더에 hierarchy를 똑같이 맞춰서 생성.
+  - 컴파일된 결과물을 모아놓는 특정 폴더이름을 dist, out이라고 보통 붙임
+  - outDir로 폴더를 지정한 다음 컴파일하면 편하게 사용할 수 있음
+- rootDir - 내 소스폴더를 특정 Dir로 지정할 수 있는데 src같은 폴더를 만들어서 rootDir로 삼고 그 rootDir을 그대로 hierarchy에 가져가서 outDir로 컴파일하는 결과물을 가져올 때 rootDir 사용
+  - 사용안하게 되면 files나 include, exclude에 의해서 가장 상위에 어떤 영역을 잡고 그 영역 그대로 컴파일된 결과물로 하여금 맞춰서 가져가게 됨
+  - 사용하게 되면 소스 폴더 지정해서 그대로 들고가서 컴파일 해줄 수 있음
+
+
+
+### compileOptions -strict
+
+- strict를 true로 설정하는 게 기본
+
+- strict - 엄격하게 type을 확인하는 옵션을  활성화
+
+  - --nolmplicitAny
+
+    - Raise error on expressions and declarations with an implied any type.
+    - 명시적이지 않게 any 타입을 사용하여, 표현식과 선언에 사용하면 에러를 발생
+    - 타입스크립트가 추론을 실패한 경우, any가 맞으면 any라고 지정
+    - 아무것도 쓰지 않으면 에러를 발생
+    - 이 오류를 해결하면 any라고 지정되어 있지 않은 경우는 any가 아님(타입 추론이 되었으므로)
+
+  - suppressImplicitAnyIndexErrors
+
+    - Suppress --nolmplicitAny errors for indexing objects lacking index signatures. See issue #1232 for more details.
+
+    - nolmplicitAny 사용할 때, 인덱스 객체에 인덱스 signature가 없는 경우 오류를 발생하는데 이를 예외처리함
+
+    - ```
+      // suppressImplicitAnyIndexErrors
+      var obj = {
+      	bar: 10
+      };
+      
+      obj['foo'] = 10; // Error: Index signature of object type implicitly has an 'any' type
+      obj['bar'] = 10; // Okay
+      obj.baz = 10;
+      ```
+
+      - obj['foo']로 사용할 때, 인덱스 객체라 판단하여, 타입에 인덱스 시그니처가 없는 경우, 에러를 발생시킴
+      - 이때 suppressImplicitAnyIndexErrors 옵션을 사용하면 이런경우 예외로 간주하여 에러를 발생시키니 않음
+
+  - --noImplicitThis
+
+    - Raise error on this expressions with an implied any type.
+
+    - 명시적이지 않게 any 타입을 사용하여 this 표현식에 사용하면 에러를 발생함
+
+    - ```
+      // noImplicitThis
+      function noImplicitThisTestFunc(this, name:string, age:number){
+      	this.name = name;
+      	this.age = age;
+      	
+      	return this;
+      }
+      ```
+
+      - 첫 번째 매개변수 자리에 this를 놓고, this에 대한 타입을 어떤 것이라도 표현하지 않으면, noImplicitAny가 오류를 발생
+      - JavaScript에서는 매개변수에 this를 넣으면 이미 예약된 키워드라 SyntaxError를 발생
+      - call/apply/bind와 같이 this를 대체하여 함수 콜을 하는 용도로도 쓰임
+      - 그래서 this를 any로 명시적으로 지정하는 것은 합리적 (물론 구체적인 사용처가 있는 경우 타입을 표현하기도함)
+
+    - ```
+      // noImplicitThis2
+      class // NoImplicitThisTestClass {
+      	private _name: string;
+      	private _age: number;
+      	
+      	constructor(name: string, age: number){
+      		this._name = name;
+      		this._age = age;
+      	}
+      	
+      	public print(this: NoImplicitThisTestClass){
+      		console.log(this._name, this._age);
+      	}
+      }
+      
+      new NoImplicitThisTestClass('Mark', 36).print();
+      ```
+
+      - Class에서는 this를 사용하면서, noImplicitThis와 관련한 에러가 나지 않음
+      - Class에서 constructor를 제외한 멤버 함수의 첫번째 매개변수도 일반 함수와 마찬가지로 this를 사용할 수 있음
