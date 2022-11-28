@@ -733,3 +733,54 @@
 
       - Class에서는 this를 사용하면서, noImplicitThis와 관련한 에러가 나지 않음
       - Class에서 constructor를 제외한 멤버 함수의 첫번째 매개변수도 일반 함수와 마찬가지로 this를 사용할 수 있음
+    
+  - --strictNullChecks
+  
+    - In strict null checking mode, the null and undefined values are not in the domain of every type and are only assignable to themselves and any (the one exception being that undefined is also assignable to void.)
+    - strictNullChecks모드는 null및 undefined 같이 모든 유형의 도메인에 속하지 않으며, 그 자신을 타입으로 가지거나, any일 경우에만 할당이 가능
+    - 한 가지 예외는 undefined에 void할당 가능
+    - strictNullChecks를 적용하지 않으면,
+      - 모든 타입은 null, undefined 값을 가질 수 있음
+      - string으로 타입을 지정해도, null 혹은 undefined 값을 할당할 수 있다는 것
+    - strictNullChecks를 적용하면
+      - 모든 타입은 null, undefined값을 가질 수 없고, 가지려면 union type을 이용해서 직접 명시해야함
+      - any타입은 null과 undefined를 가짐. 예외적으로 void 타입의 경우 undefined를 가짐
+    - strictNullChecks를 적용하지 않고, 어떤 값이 null과 undefined를 가진다는 것을 암묵적으로 인정하고 계속 사용하다보면, 정확히 어떤 타입이 오는지를 개발자 스스로 간과할 수 있음
+    - 정말로 null과 undefined를 가질 수 있는 경우, 해당 값을 조건부로 제외하고 사용하는 것이 좋음
+    - 이 옵션을 켜고 사용하는 경우 사용하려는 함수를 선언할 떄부터 매개변수와 리턴 값에 정확한 타입을 지정하려는 노력을 기울여야함
+    
+  - --strictFunctionTypes
+  
+    - Disable bivariant parameter checking for function types.
+    - 함수 타입에 대한 bivariant 매개변수 검사를 비활성화하는 옵션
+    - 보통 매개변수는 같거나 넓어야하고 return 타입은 같거나 하위여야 문제가 없다고 함
+    - 반환 타입은 공변적(covariant)
+    - 인자 타입은 반공변적(contravariant)
+    - 타입스크립트에서 인자 타입은 공변적임녀서 반공변적인 게 문제
+    - 이 문제를 해결하는 옵션이 strictFunctionTypes
+    - 옵션을 켜면 에러가 안나던 걸 에러나게 함
+  
+  - --strictPropertyInitialization
+  
+    - Ensure non-undefined class properties are initialized in the constructor.
+    - 정의되지 않은 클래스의 속성이 생성자에서 초기화되었는지 확인
+    - 이 옵션을 사용하려면 --strictNullChecks를 사용하도록 설정해야 함
+    - constructor에서 초기 값을 할당한 경우 -> 정상
+    - constructor에서 안하는 경우
+      - 보통 다른 함수로 이니셜라이즈 하는 경우(async 함수)
+      - constructor에는 async를 사용할 수 없음
+  
+  - --strictBindCallApply
+  
+    - Enable stricter checking of the bind, call, and apply methods on functions.
+    - bind, call, apply에 대한 더 엄격한 검사 수행
+    - Function의 내장 함수인 bind/call/apply를 사용할 떄, 엄격하게 체크하도록 하는 옵션
+    - bind는 해당 함수안에서 사용할 this와 인자를 설정해주는 역할을 하고, call과 apply는 this와 인자를설정한 후 실행까지 함
+    - call과 apply는 인자를 설정하는 방식에서 차이점이 있음
+      - call은 함수의 인자를 여러 인자의 나열로 넣어서 사용하고, apply는 모든 인자를 배열 하나로 넣어서 사용
+  
+  - --alwaysStrict
+  
+    - Parse in strict mode and emit "use strict" for each source file
+    - 각 소스 파일에 대해 JavaScript의 strict mode로 코드를 분석하고, 엄격하게 사용을 해제함
+    - 그러면 syntex 에러가 ts error로 나오고 컴파일된 JavaScript 파일에 "use strict" 추가 됨
