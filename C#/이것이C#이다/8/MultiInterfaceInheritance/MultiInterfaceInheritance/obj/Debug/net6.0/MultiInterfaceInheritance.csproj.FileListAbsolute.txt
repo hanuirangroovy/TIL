@@ -1,0 +1,15 @@
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\8\MultiInterfaceInheritance\MultiInterfaceInheritance\bin\Debug\net6.0\MultiInterfaceInheritance.exe
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\8\MultiInterfaceInheritance\MultiInterfaceInheritance\bin\Debug\net6.0\MultiInterfaceInheritance.deps.json
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\8\MultiInterfaceInheritance\MultiInterfaceInheritance\bin\Debug\net6.0\MultiInterfaceInheritance.runtimeconfig.json
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\8\MultiInterfaceInheritance\MultiInterfaceInheritance\bin\Debug\net6.0\MultiInterfaceInheritance.dll
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\8\MultiInterfaceInheritance\MultiInterfaceInheritance\bin\Debug\net6.0\MultiInterfaceInheritance.pdb
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\8\MultiInterfaceInheritance\MultiInterfaceInheritance\obj\Debug\net6.0\MultiInterfaceInheritance.csproj.AssemblyReference.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\8\MultiInterfaceInheritance\MultiInterfaceInheritance\obj\Debug\net6.0\MultiInterfaceInheritance.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\8\MultiInterfaceInheritance\MultiInterfaceInheritance\obj\Debug\net6.0\MultiInterfaceInheritance.AssemblyInfoInputs.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\8\MultiInterfaceInheritance\MultiInterfaceInheritance\obj\Debug\net6.0\MultiInterfaceInheritance.AssemblyInfo.cs
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\8\MultiInterfaceInheritance\MultiInterfaceInheritance\obj\Debug\net6.0\MultiInterfaceInheritance.csproj.CoreCompileInputs.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\8\MultiInterfaceInheritance\MultiInterfaceInheritance\obj\Debug\net6.0\MultiInterfaceInheritance.dll
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\8\MultiInterfaceInheritance\MultiInterfaceInheritance\obj\Debug\net6.0\refint\MultiInterfaceInheritance.dll
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\8\MultiInterfaceInheritance\MultiInterfaceInheritance\obj\Debug\net6.0\MultiInterfaceInheritance.pdb
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\8\MultiInterfaceInheritance\MultiInterfaceInheritance\obj\Debug\net6.0\MultiInterfaceInheritance.genruntimeconfig.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\8\MultiInterfaceInheritance\MultiInterfaceInheritance\obj\Debug\net6.0\ref\MultiInterfaceInheritance.dll
