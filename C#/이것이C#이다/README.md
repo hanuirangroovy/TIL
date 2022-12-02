@@ -2250,7 +2250,42 @@
     }
     ```
 
-    
+
+
+
+#### 8.5 인터페이스의 기본 구현 메소드
+
+- 인터페이스가 선언하는 메소드는 파생될 클래스가 무어승ㄹ 구현해야 할지를 정의하는 역할만 하면 됐기에 선언하는 메소드에 구현부가 없었음
+
+- 기본 구현 메소드는 새 메소드를 추가할 때 파생클래스가 인터페이스의 모든 메소드를 구현하지 못해 컴파일 에러가 발생하는 상황에서 요긴하게 쓰임
+
+  - 인터페이스에 새로운 메소드를 추가할 때 기본적인 구현체를 갖도록 해서 기존에 있는 파생 클래스에서의 컴파일 에러를 막을 수 있음
+
+  - ```
+    interface ILogger
+    {
+    	void WriteLog(string message);
+    	void WriteError(string error) // 새로운 메소드 추가
+    	{
+    		WriteLog($"Error: {error}"); // WriteError()에 기본 구현을 제공
+    	}
+    }
+    ```
+
+- 인터페이스의 기본 구현 메소드는 인터페이스 참조로 업캐스팅했을 때만 사용할 수 있다는 점 때문에 파생 클래스에서 인터페이스에 추가된 메소드를 엉뚱하게 호출할 가능성도 없음
+
+- ```
+  ILogger logger = new ConsoleLogger();
+  logger.WriteLog("System Up"); // OK
+  logger.WriteError("System Fail"); // OK
+  
+  ConsoleLogger clogger = new ConsoleLogger();
+  clogger.WriteLog("System Up");  // OK
+  clogger.WriteError("System Fail");  // 컴파일 에러
+  ```
+
+  - ConsoleLogger가 WriteError()를 오버라이딩하지 않았기 때문에 마지막 줄 clogger.WriteError()호출은 컴파일 에러를 일으킴
+  - 인터페이스에 선언된 기본 구현 인터페이스는 파생 클래스의 참조로 호출할 수 없음
 
 
 
