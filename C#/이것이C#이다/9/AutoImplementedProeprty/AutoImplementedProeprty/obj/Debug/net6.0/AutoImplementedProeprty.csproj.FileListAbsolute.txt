@@ -1,0 +1,15 @@
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\AutoImplementedProeprty\AutoImplementedProeprty\bin\Debug\net6.0\AutoImplementedProeprty.exe
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\AutoImplementedProeprty\AutoImplementedProeprty\bin\Debug\net6.0\AutoImplementedProeprty.deps.json
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\AutoImplementedProeprty\AutoImplementedProeprty\bin\Debug\net6.0\AutoImplementedProeprty.runtimeconfig.json
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\AutoImplementedProeprty\AutoImplementedProeprty\bin\Debug\net6.0\AutoImplementedProeprty.dll
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\AutoImplementedProeprty\AutoImplementedProeprty\bin\Debug\net6.0\AutoImplementedProeprty.pdb
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\AutoImplementedProeprty\AutoImplementedProeprty\obj\Debug\net6.0\AutoImplementedProeprty.csproj.AssemblyReference.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\AutoImplementedProeprty\AutoImplementedProeprty\obj\Debug\net6.0\AutoImplementedProeprty.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\AutoImplementedProeprty\AutoImplementedProeprty\obj\Debug\net6.0\AutoImplementedProeprty.AssemblyInfoInputs.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\AutoImplementedProeprty\AutoImplementedProeprty\obj\Debug\net6.0\AutoImplementedProeprty.AssemblyInfo.cs
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\AutoImplementedProeprty\AutoImplementedProeprty\obj\Debug\net6.0\AutoImplementedProeprty.csproj.CoreCompileInputs.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\AutoImplementedProeprty\AutoImplementedProeprty\obj\Debug\net6.0\AutoImplementedProeprty.dll
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\AutoImplementedProeprty\AutoImplementedProeprty\obj\Debug\net6.0\refint\AutoImplementedProeprty.dll
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\AutoImplementedProeprty\AutoImplementedProeprty\obj\Debug\net6.0\AutoImplementedProeprty.pdb
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\AutoImplementedProeprty\AutoImplementedProeprty\obj\Debug\net6.0\AutoImplementedProeprty.genruntimeconfig.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\AutoImplementedProeprty\AutoImplementedProeprty\obj\Debug\net6.0\ref\AutoImplementedProeprty.dll
