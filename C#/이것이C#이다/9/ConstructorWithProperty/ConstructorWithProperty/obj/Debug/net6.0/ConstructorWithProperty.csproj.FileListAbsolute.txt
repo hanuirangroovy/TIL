@@ -1,0 +1,15 @@
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\ConstructorWithProperty\ConstructorWithProperty\bin\Debug\net6.0\ConstructorWithProperty.exe
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\ConstructorWithProperty\ConstructorWithProperty\bin\Debug\net6.0\ConstructorWithProperty.deps.json
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\ConstructorWithProperty\ConstructorWithProperty\bin\Debug\net6.0\ConstructorWithProperty.runtimeconfig.json
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\ConstructorWithProperty\ConstructorWithProperty\bin\Debug\net6.0\ConstructorWithProperty.dll
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\ConstructorWithProperty\ConstructorWithProperty\bin\Debug\net6.0\ConstructorWithProperty.pdb
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\ConstructorWithProperty\ConstructorWithProperty\obj\Debug\net6.0\ConstructorWithProperty.csproj.AssemblyReference.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\ConstructorWithProperty\ConstructorWithProperty\obj\Debug\net6.0\ConstructorWithProperty.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\ConstructorWithProperty\ConstructorWithProperty\obj\Debug\net6.0\ConstructorWithProperty.AssemblyInfoInputs.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\ConstructorWithProperty\ConstructorWithProperty\obj\Debug\net6.0\ConstructorWithProperty.AssemblyInfo.cs
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\ConstructorWithProperty\ConstructorWithProperty\obj\Debug\net6.0\ConstructorWithProperty.csproj.CoreCompileInputs.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\ConstructorWithProperty\ConstructorWithProperty\obj\Debug\net6.0\ConstructorWithProperty.dll
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\ConstructorWithProperty\ConstructorWithProperty\obj\Debug\net6.0\refint\ConstructorWithProperty.dll
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\ConstructorWithProperty\ConstructorWithProperty\obj\Debug\net6.0\ConstructorWithProperty.pdb
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\ConstructorWithProperty\ConstructorWithProperty\obj\Debug\net6.0\ConstructorWithProperty.genruntimeconfig.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\ConstructorWithProperty\ConstructorWithProperty\obj\Debug\net6.0\ref\ConstructorWithProperty.dll
