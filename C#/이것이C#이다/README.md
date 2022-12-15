@@ -2444,4 +2444,25 @@
 
 - 초기화하고 싶은 프로퍼티만 넣어서 초기화하면 됨
 
-  
+
+
+#### 9.5 초기화 전용(Init-Only) 자동 구현 프로퍼티
+
+- C# 9.0부터 읽기 전용 프로퍼티를 아주 간편하게 선언할 수 있도록 개선됨 - init 접근자 새로 도입
+
+  - init접근자는 set 접근자처럼 외부에서 프로퍼티를 변경할 수 있지만, 객체 초기화를 할 때만 프로퍼티 변경이 가능하다는 점이 다름
+
+  - 사용하는 방법
+
+    - 자동 구현 프로퍼티를 선언하면서 set 접근자 대신 init 접근자를 명시하면 됨 - 초기화 전용 자동 구현 프로퍼티
+
+    - ```
+      public class Transaction
+      {
+      	public string From {get; init;}
+      	public string To {get; init;}
+      	public int Amount {get; init;}
+      }
+      ```
+
+    - 

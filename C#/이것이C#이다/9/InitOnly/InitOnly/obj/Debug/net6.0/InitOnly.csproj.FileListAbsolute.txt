@@ -1,0 +1,15 @@
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\InitOnly\InitOnly\bin\Debug\net6.0\InitOnly.exe
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\InitOnly\InitOnly\bin\Debug\net6.0\InitOnly.deps.json
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\InitOnly\InitOnly\bin\Debug\net6.0\InitOnly.runtimeconfig.json
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\InitOnly\InitOnly\bin\Debug\net6.0\InitOnly.dll
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\InitOnly\InitOnly\bin\Debug\net6.0\InitOnly.pdb
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\InitOnly\InitOnly\obj\Debug\net6.0\InitOnly.csproj.AssemblyReference.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\InitOnly\InitOnly\obj\Debug\net6.0\InitOnly.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\InitOnly\InitOnly\obj\Debug\net6.0\InitOnly.AssemblyInfoInputs.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\InitOnly\InitOnly\obj\Debug\net6.0\InitOnly.AssemblyInfo.cs
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\InitOnly\InitOnly\obj\Debug\net6.0\InitOnly.csproj.CoreCompileInputs.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\InitOnly\InitOnly\obj\Debug\net6.0\InitOnly.dll
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\InitOnly\InitOnly\obj\Debug\net6.0\refint\InitOnly.dll
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\InitOnly\InitOnly\obj\Debug\net6.0\InitOnly.pdb
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\InitOnly\InitOnly\obj\Debug\net6.0\InitOnly.genruntimeconfig.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\InitOnly\InitOnly\obj\Debug\net6.0\ref\InitOnly.dll
