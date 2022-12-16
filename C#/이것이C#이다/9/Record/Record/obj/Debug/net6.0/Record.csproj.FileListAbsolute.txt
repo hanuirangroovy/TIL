@@ -1,0 +1,15 @@
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\Record\Record\bin\Debug\net6.0\Record.exe
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\Record\Record\bin\Debug\net6.0\Record.deps.json
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\Record\Record\bin\Debug\net6.0\Record.runtimeconfig.json
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\Record\Record\bin\Debug\net6.0\Record.dll
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\Record\Record\bin\Debug\net6.0\Record.pdb
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\Record\Record\obj\Debug\net6.0\Record.csproj.AssemblyReference.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\Record\Record\obj\Debug\net6.0\Record.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\Record\Record\obj\Debug\net6.0\Record.AssemblyInfoInputs.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\Record\Record\obj\Debug\net6.0\Record.AssemblyInfo.cs
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\Record\Record\obj\Debug\net6.0\Record.csproj.CoreCompileInputs.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\Record\Record\obj\Debug\net6.0\Record.dll
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\Record\Record\obj\Debug\net6.0\refint\Record.dll
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\Record\Record\obj\Debug\net6.0\Record.pdb
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\Record\Record\obj\Debug\net6.0\Record.genruntimeconfig.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\Record\Record\obj\Debug\net6.0\ref\Record.dll
