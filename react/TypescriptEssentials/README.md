@@ -784,3 +784,27 @@
     - Parse in strict mode and emit "use strict" for each source file
     - 각 소스 파일에 대해 JavaScript의 strict mode로 코드를 분석하고, 엄격하게 사용을 해제함
     - 그러면 syntex 에러가 ts error로 나오고 컴파일된 JavaScript 파일에 "use strict" 추가 됨
+
+
+
+## Ch5. Interaces
+
+### 01. What are Interfaces
+
+- Interface - Type을 만들어내는 방식
+
+  - 외부적으로 드러나는 개체에 사용방식이 적혀있는 Type
+
+- interface
+
+  - `mkdir interface`
+
+  - `cd interface`
+  - 프로젝트 만들기 : `npm init -y`
+  - `npm i typescript -D`
+  - tsconfig file default로 만들기 : `npx tsc -init`
+  - compile해서 JavaScript로 바뀌면 어떻게 나올지 compile된 결과물 : `npx tsc`
+    - interface keyword로 된 문법은 compile 되면 사라짐
+    - compile time에만 필요
+    - compile time에 interface를 이용해서 문제가 없는지 관계를 규명해서 체크
+    - 에러가 있는지 없는지로 문제를 확인
