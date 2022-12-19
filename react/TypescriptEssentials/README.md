@@ -808,3 +808,12 @@
     - compile time에만 필요
     - compile time에 interface를 이용해서 문제가 없는지 관계를 규명해서 체크
     - 에러가 있는지 없는지로 문제를 확인
+
+
+
+### optional property
+
+- 의도적으로 개체의 property가 있을 수도 있고 없을 수도 있을 때 ? 추가
+
+
+
