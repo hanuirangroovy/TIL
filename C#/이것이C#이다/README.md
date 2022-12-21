@@ -2509,3 +2509,21 @@
     RTransaction tr2 = new RTransaction(From="Bob", To="Charlie", Amount=300);
     ```
 
+
+
+##### 9.6.2 with를 이용한 레코드 복사
+
+- C# 컴파일러는 레코드 형식을 위한 복사 생성자를 자동으로 작성함
+
+  - 이 복사 생성자는 protected로 선언되기 때문에 명싲거으로 호출할 수는 없고 with식을 이용해야함
+
+  - ```
+    RTransaction tr1 = new RTransaction{From="Alice", To="Bob", Amount=100};
+    RTransaction tr2 = with tr1 {To="Charlie"};
+    ```
+
+  - tr1의 모든 상태를 복사한 다음 To 프로퍼티 값만 "Charlie"로 수정해서 tr2라는 새로운 레코드 객체를 생성
+
+  - with 식이 없었다면 RTransaction 인스턴스를 새로 할당하면서 To를 제외한 tr1의 모든 프로퍼티를 입력해줘야 했을 것
+
+  - with식은 객체 상태(프로퍼티)가 다양할수록 유용
