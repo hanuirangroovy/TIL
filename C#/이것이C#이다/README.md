@@ -2527,3 +2527,36 @@
   - with 식이 없었다면 RTransaction 인스턴스를 새로 할당하면서 To를 제외한 tr1의 모든 프로퍼티를 입력해줘야 했을 것
 
   - with식은 객체 상태(프로퍼티)가 다양할수록 유용
+
+
+
+##### 9.6.3 레코드 객체 비교하기
+
+- 컴파일러는 레코드의 상태를 비교하는 Equals() 메소드를 자동으로 구현
+
+- | 클래스                                                       | 레코드                                                       |
+  | ------------------------------------------------------------ | ------------------------------------------------------------ |
+  | 클래스 객체 상태 비교를 위한 Equals() 메소드 오버라이딩 예제 | 레코드 선언  예제                                            |
+  | class CTransaction<br>{<br/>    public string From {get; init;}  <br/>    public string To {get; init;}  <br/>    public int Amount {get; init;}  <br/>    public override bool Equals(Object obj)  <br/>{<br/>    CTransaction target = (CTransaction)<br/>        obj;<br/>    if (this.From == target.From<br/>    && this.To == target.To<br/>    && this.Amount == target.Amount)<br/>        return true;<br/>    else<br/>            return false;<br/>     }<br/>} | record RTransaction<br/>{<br/>    public string From {get; init;}  <br/>    public string To {get; init;}  <br/>    public int Amount {get; init;}  <br/>} |
+
+  - 레코드는 참조 형식이지만 값 형식처럼 Equals() 메소드를 구현하지 않아도 비교가 가능
+
+- CTransaction과 RTransaction의 Equals() 메소드 사용 예시
+
+  - Equals()를 명시적으로 구현하는 CTransaction의 인스턴스 두 개가 같은 상태를 갖고 있을 때, 이 둘을 비교하면 참(True)이 반환
+
+  - 비슷한 경우, RTransaction은 Equals()를 구현하지 않았지만 같은 상태를 지닌 인스턴스 둘을 비교하면 참(True)이 반환
+
+  - ```
+    // 클래스
+    CTransaction trA = new CTransaction{From="Alice", To="Bob", Amount=100};
+    CTransaction trB = new CTransaction{From="Alice", To="Bob", Amount=100};
+    Console.WriteLine(trA.Equals(trB)); //True 출력
+    
+    // 레코드
+    RTransaction tr1 = new RTransaction{From="Alice", To="Bob", Amount=100};
+    RTransaction tr2 = new RTransaction{From="Alice", To="Bob", Amount=100};
+    Console.WriteLine(tr1.Equals(tr2)); //True 출력
+    ```
+
+  - 
