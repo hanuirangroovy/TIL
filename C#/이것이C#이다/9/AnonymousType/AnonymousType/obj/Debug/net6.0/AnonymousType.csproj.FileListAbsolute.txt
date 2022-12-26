@@ -1,0 +1,15 @@
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\AnonymousType\AnonymousType\bin\Debug\net6.0\AnonymousType.exe
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\AnonymousType\AnonymousType\bin\Debug\net6.0\AnonymousType.deps.json
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\AnonymousType\AnonymousType\bin\Debug\net6.0\AnonymousType.runtimeconfig.json
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\AnonymousType\AnonymousType\bin\Debug\net6.0\AnonymousType.dll
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\AnonymousType\AnonymousType\bin\Debug\net6.0\AnonymousType.pdb
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\AnonymousType\AnonymousType\obj\Debug\net6.0\AnonymousType.csproj.AssemblyReference.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\AnonymousType\AnonymousType\obj\Debug\net6.0\AnonymousType.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\AnonymousType\AnonymousType\obj\Debug\net6.0\AnonymousType.AssemblyInfoInputs.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\AnonymousType\AnonymousType\obj\Debug\net6.0\AnonymousType.AssemblyInfo.cs
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\AnonymousType\AnonymousType\obj\Debug\net6.0\AnonymousType.csproj.CoreCompileInputs.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\AnonymousType\AnonymousType\obj\Debug\net6.0\AnonymousType.dll
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\AnonymousType\AnonymousType\obj\Debug\net6.0\refint\AnonymousType.dll
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\AnonymousType\AnonymousType\obj\Debug\net6.0\AnonymousType.pdb
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\AnonymousType\AnonymousType\obj\Debug\net6.0\AnonymousType.genruntimeconfig.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\AnonymousType\AnonymousType\obj\Debug\net6.0\ref\AnonymousType.dll
