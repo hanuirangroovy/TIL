@@ -1,0 +1,15 @@
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\PropertiesInInterface\PropertiesInInterface\bin\Debug\net6.0\PropertiesInInterface.exe
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\PropertiesInInterface\PropertiesInInterface\bin\Debug\net6.0\PropertiesInInterface.deps.json
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\PropertiesInInterface\PropertiesInInterface\bin\Debug\net6.0\PropertiesInInterface.runtimeconfig.json
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\PropertiesInInterface\PropertiesInInterface\bin\Debug\net6.0\PropertiesInInterface.dll
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\PropertiesInInterface\PropertiesInInterface\bin\Debug\net6.0\PropertiesInInterface.pdb
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\PropertiesInInterface\PropertiesInInterface\obj\Debug\net6.0\PropertiesInInterface.csproj.AssemblyReference.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\PropertiesInInterface\PropertiesInInterface\obj\Debug\net6.0\PropertiesInInterface.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\PropertiesInInterface\PropertiesInInterface\obj\Debug\net6.0\PropertiesInInterface.AssemblyInfoInputs.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\PropertiesInInterface\PropertiesInInterface\obj\Debug\net6.0\PropertiesInInterface.AssemblyInfo.cs
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\PropertiesInInterface\PropertiesInInterface\obj\Debug\net6.0\PropertiesInInterface.csproj.CoreCompileInputs.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\PropertiesInInterface\PropertiesInInterface\obj\Debug\net6.0\PropertiesInInterface.dll
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\PropertiesInInterface\PropertiesInInterface\obj\Debug\net6.0\refint\PropertiesInInterface.dll
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\PropertiesInInterface\PropertiesInInterface\obj\Debug\net6.0\PropertiesInInterface.pdb
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\PropertiesInInterface\PropertiesInInterface\obj\Debug\net6.0\PropertiesInInterface.genruntimeconfig.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\PropertiesInInterface\PropertiesInInterface\obj\Debug\net6.0\ref\PropertiesInInterface.dll
