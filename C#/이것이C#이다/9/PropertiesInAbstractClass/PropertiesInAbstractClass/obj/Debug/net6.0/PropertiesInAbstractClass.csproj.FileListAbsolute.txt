@@ -1,0 +1,15 @@
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\PropertiesInAbstractClass\PropertiesInAbstractClass\bin\Debug\net6.0\PropertiesInAbstractClass.exe
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\PropertiesInAbstractClass\PropertiesInAbstractClass\bin\Debug\net6.0\PropertiesInAbstractClass.deps.json
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\PropertiesInAbstractClass\PropertiesInAbstractClass\bin\Debug\net6.0\PropertiesInAbstractClass.runtimeconfig.json
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\PropertiesInAbstractClass\PropertiesInAbstractClass\bin\Debug\net6.0\PropertiesInAbstractClass.dll
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\PropertiesInAbstractClass\PropertiesInAbstractClass\bin\Debug\net6.0\PropertiesInAbstractClass.pdb
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\PropertiesInAbstractClass\PropertiesInAbstractClass\obj\Debug\net6.0\PropertiesInAbstractClass.csproj.AssemblyReference.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\PropertiesInAbstractClass\PropertiesInAbstractClass\obj\Debug\net6.0\PropertiesInAbstractClass.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\PropertiesInAbstractClass\PropertiesInAbstractClass\obj\Debug\net6.0\PropertiesInAbstractClass.AssemblyInfoInputs.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\PropertiesInAbstractClass\PropertiesInAbstractClass\obj\Debug\net6.0\PropertiesInAbstractClass.AssemblyInfo.cs
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\PropertiesInAbstractClass\PropertiesInAbstractClass\obj\Debug\net6.0\PropertiesInAbstractClass.csproj.CoreCompileInputs.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\PropertiesInAbstractClass\PropertiesInAbstractClass\obj\Debug\net6.0\PropertiesInAbstractClass.dll
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\PropertiesInAbstractClass\PropertiesInAbstractClass\obj\Debug\net6.0\refint\PropertiesInAbstractClass.dll
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\PropertiesInAbstractClass\PropertiesInAbstractClass\obj\Debug\net6.0\PropertiesInAbstractClass.pdb
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\PropertiesInAbstractClass\PropertiesInAbstractClass\obj\Debug\net6.0\PropertiesInAbstractClass.genruntimeconfig.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\9\PropertiesInAbstractClass\PropertiesInAbstractClass\obj\Debug\net6.0\ref\PropertiesInAbstractClass.dll

@@ -2641,4 +2641,53 @@
     }
     ```
 
-  - 
+
+
+#### 9.9 추상 클래스의 프로퍼티
+
+- 추상 클래스는 클래스처럼 구현된 프로퍼티를 가질 수 있는 한편, 인터페이스처럼 구현되지 않은 프로퍼티도 가질 수 있음. 이것을 추상 클래스에서 추상 프로퍼티라고 함.
+
+- 추상 클래스의 추상 프로퍼티 선언
+
+  - abstract 한정자 이용
+
+  - ```
+    abstract class 추상 클래스이름
+    {
+    	abstract 데이터형식 프로퍼티이름
+    	{
+    		get;
+    		set;
+    	}
+    }
+    ```
+
+- 추상 프로퍼티를 갖는 추상 클래스와 이를 상속하는 파생클래스
+
+  - ```
+    abstract class Product
+    {
+    	private static int serial = 0;
+    	public string SerialID  // 추상 클래스는 구현을 가진 프로퍼티와
+    	{
+    		get { return String.Format("{0:d5}", Serial++); }
+    	}
+    	
+    	abstract public DateTime ProductDate // 구현이 없는 추상 프로퍼티 모두를 가질 수 있음.
+    	{
+    		get;
+    		set;
+    	}
+    }
+    
+    class MyProduct : Product
+    {
+    	public override DateTime ProductDate // 파생클래스는 기반 추상 클래스의 모든 추상 메소드뿐 아니라 추상 프로퍼티를 재정의해야 함
+    	{
+    		get;
+    		set;
+    	}
+    }
+    ```
+
+  
