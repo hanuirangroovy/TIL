@@ -1,0 +1,15 @@
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\10\ArraySample\ArraySample\bin\Debug\net6.0\ArraySample.exe
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\10\ArraySample\ArraySample\bin\Debug\net6.0\ArraySample.deps.json
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\10\ArraySample\ArraySample\bin\Debug\net6.0\ArraySample.runtimeconfig.json
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\10\ArraySample\ArraySample\bin\Debug\net6.0\ArraySample.dll
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\10\ArraySample\ArraySample\bin\Debug\net6.0\ArraySample.pdb
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\10\ArraySample\ArraySample\obj\Debug\net6.0\ArraySample.csproj.AssemblyReference.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\10\ArraySample\ArraySample\obj\Debug\net6.0\ArraySample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\10\ArraySample\ArraySample\obj\Debug\net6.0\ArraySample.AssemblyInfoInputs.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\10\ArraySample\ArraySample\obj\Debug\net6.0\ArraySample.AssemblyInfo.cs
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\10\ArraySample\ArraySample\obj\Debug\net6.0\ArraySample.csproj.CoreCompileInputs.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\10\ArraySample\ArraySample\obj\Debug\net6.0\ArraySample.dll
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\10\ArraySample\ArraySample\obj\Debug\net6.0\refint\ArraySample.dll
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\10\ArraySample\ArraySample\obj\Debug\net6.0\ArraySample.pdb
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\10\ArraySample\ArraySample\obj\Debug\net6.0\ArraySample.genruntimeconfig.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\10\ArraySample\ArraySample\obj\Debug\net6.0\ref\ArraySample.dll
