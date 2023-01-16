@@ -1,0 +1,15 @@
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\10\InitializingArray\InitializingArray\bin\Debug\net6.0\InitializingArray.exe
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\10\InitializingArray\InitializingArray\bin\Debug\net6.0\InitializingArray.deps.json
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\10\InitializingArray\InitializingArray\bin\Debug\net6.0\InitializingArray.runtimeconfig.json
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\10\InitializingArray\InitializingArray\bin\Debug\net6.0\InitializingArray.dll
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\10\InitializingArray\InitializingArray\bin\Debug\net6.0\InitializingArray.pdb
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\10\InitializingArray\InitializingArray\obj\Debug\net6.0\InitializingArray.csproj.AssemblyReference.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\10\InitializingArray\InitializingArray\obj\Debug\net6.0\InitializingArray.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\10\InitializingArray\InitializingArray\obj\Debug\net6.0\InitializingArray.AssemblyInfoInputs.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\10\InitializingArray\InitializingArray\obj\Debug\net6.0\InitializingArray.AssemblyInfo.cs
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\10\InitializingArray\InitializingArray\obj\Debug\net6.0\InitializingArray.csproj.CoreCompileInputs.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\10\InitializingArray\InitializingArray\obj\Debug\net6.0\InitializingArray.dll
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\10\InitializingArray\InitializingArray\obj\Debug\net6.0\refint\InitializingArray.dll
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\10\InitializingArray\InitializingArray\obj\Debug\net6.0\InitializingArray.pdb
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\10\InitializingArray\InitializingArray\obj\Debug\net6.0\InitializingArray.genruntimeconfig.cache
+C:\Users\하루\Desktop\공부\TIL\C#\이것이C#이다\10\InitializingArray\InitializingArray\obj\Debug\net6.0\ref\InitializingArray.dll
